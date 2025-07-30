@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A collection of thoughts.">
+<meta name="description" content="Meet the researchers in the Papadopoulos Lab.">
 
-<title>Blog – Papadopoulos Lab</title>
+<title>Team – Papadopoulos Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -71,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -118,35 +87,6 @@ background: #b8e2f2;
       }
 </style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -188,7 +128,7 @@ window.Quarto = {
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./team.html"> 
+    <a class="nav-link active" href="./team.html" aria-current="page"> 
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
@@ -196,7 +136,7 @@ window.Quarto = {
 <span class="menu-text">swereg</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item compact">
@@ -215,10 +155,10 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Blog</h1>
+      <h1 class="title">Team</h1>
                   <div>
         <div class="description">
-          <p>A collection of thoughts.</p>
+          <p>Meet the researchers in the Papadopoulos Lab.</p>
         </div>
       </div>
                 </div>
@@ -244,65 +184,59 @@ window.Quarto = {
 
 
 
+<section id="principal-investigator" class="level2">
+<h2 class="anchored" data-anchor-id="principal-investigator">Principal Investigator</h2>
+<section id="dr.-fotis-papadopoulos" class="level3">
+<h3 class="anchored" data-anchor-id="dr.-fotis-papadopoulos">Dr.&nbsp;Fotis Papadopoulos</h3>
+<p><strong>Assistant Professor</strong><br>
+Department of Neuroscience, Uppsala University</p>
+<p>Dr.&nbsp;Papadopoulos leads the lab’s research in transgender health and gender dysphoria epidemiology. His work focuses on large-scale registry-based studies and methodological innovation in epidemiological research.</p>
+<p><em>Research Interests:</em> Transgender health epidemiology, registry-based research, gender dysphoria, healthcare outcomes</p>
+<hr>
+</section>
+</section>
+<section id="research-team" class="level2">
+<h2 class="anchored" data-anchor-id="research-team">Research Team</h2>
+<section id="lab-member-name" class="level3">
+<h3 class="anchored" data-anchor-id="lab-member-name">[Lab Member Name]</h3>
+<p><strong>[Position - e.g., Postdoctoral Researcher]</strong></p>
+<p>Brief description of research focus and background. Areas of expertise and current projects.</p>
+<p><em>Research Interests:</em> [List key areas]</p>
+</section>
+<section id="lab-member-name-1" class="level3">
+<h3 class="anchored" data-anchor-id="lab-member-name-1">[Lab Member Name]</h3>
+<p><strong>[Position - e.g., PhD Student]</strong></p>
+<p>Brief description of research focus and background. Areas of expertise and current projects.</p>
+<p><em>Research Interests:</em> [List key areas]</p>
+</section>
+<section id="lab-member-name-2" class="level3">
+<h3 class="anchored" data-anchor-id="lab-member-name-2">[Lab Member Name]</h3>
+<p><strong>[Position - e.g., Research Assistant]</strong></p>
+<p>Brief description of research focus and background. Areas of expertise and current projects.</p>
+<p><em>Research Interests:</em> [List key areas]</p>
+<hr>
+</section>
+</section>
+<section id="collaborators" class="level2">
+<h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<p>We maintain active collaborations with researchers at:</p>
+<ul>
+<li><strong>Uppsala University</strong> - Department of Neuroscience</li>
+<li><strong>Karolinska Institutet</strong> - Department of Medical Epidemiology and Biostatistics</li>
+<li><strong>University of Gothenburg</strong> - Sahlgrenska Academy</li>
+<li><strong>International research networks</strong> - Transgender health research consortiums</li>
+</ul>
+<hr>
+</section>
+<section id="join-our-team" class="level2">
+<h2 class="anchored" data-anchor-id="join-our-team">Join Our Team</h2>
+<p>We are always interested in hearing from motivated researchers at all career stages. If you are interested in transgender health research, registry-based epidemiology, or methodological development, please reach out to discuss potential opportunities.</p>
+<p>Current opportunities and application instructions will be posted here as they become available.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1681423200000" data-listing-file-modified-sort="1725951585776" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1305">
-<div class="thumbnail"><a href="./post/2023-04-14-sparse-inference/sparse-inference.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/2023-04-14-sparse-inference/sparse-inference.html" class="no-external">Sparse Inference</a>
-</h3>
-<div class="delink listing-description"><a href="./post/2023-04-14-sparse-inference/sparse-inference.html" class="no-external">
-<p>Examining sparse inference using both frequentist and bayesian methodology.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./post/2023-04-14-sparse-inference/sparse-inference.html" class="no-external">
-<div class="listing-date">
-Apr 14, 2023
-</div>
-<div class="listing-author">
-Richard Aubrey White
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1677106800000" data-listing-file-modified-sort="1725951579508" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="738">
-<div class="thumbnail"><a href="./post/2023-02-23-sampling-bias/sampling-bias.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/2023-02-23-sampling-bias/sampling-bias.html" class="no-external">Sampling Bias</a>
-</h3>
-<div class="delink listing-description"><a href="./post/2023-02-23-sampling-bias/sampling-bias.html" class="no-external">
-<p>Examining sampling bias in simulated data.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./post/2023-02-23-sampling-bias/sampling-bias.html" class="no-external">
-<div class="listing-date">
-Feb 23, 2023
-</div>
-<div class="listing-author">
-Richard Aubrey White
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
