@@ -8,13 +8,13 @@ body {
   color: #333;
 }
 
-/* Custom color scheme - Neutral Gray-Green */
+/* Custom color scheme - Minimal Light Gray */
 :root {
-  --lab-primary: #eef0ed;
-  --lab-primary-dark: #dde2d9;
+  --lab-primary: #f0f0f0;
+  --lab-primary-dark: #e0e0e0;
   --lab-text: #000000;
-  --lab-secondary: #6b7269;
-  --lab-accent: #3d4a3a;
+  --lab-secondary: #707070;
+  --lab-accent: #1e5fa8;
 }
 
 /* Navigation styling */
@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-  color: var(--lab-primary-dark);
+  color: #1a4f8f;
   text-decoration: underline;
 }
 
