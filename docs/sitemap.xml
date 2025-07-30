@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://papadopoulos-lab.github.io/index.html</loc>
-    <lastmod>2025-07-30T14:21:17.154Z</lastmod>
-  </url>
-  <url>
-    <loc>https://papadopoulos-lab.github.io/team.html</loc>
-    <lastmod>2025-07-30T13:52:21.449Z</lastmod>
-  </url>
-  <url>
-    <loc>https://papadopoulos-lab.github.io/post/2023-04-14-sparse-inference/sparse-inference.html</loc>
-    <lastmod>2024-09-10T06:59:45.776Z</lastmod>
-  </url>
-  <url>
     <loc>https://papadopoulos-lab.github.io/blog.html</loc>
-    <lastmod>2024-09-10T06:37:39.083Z</lastmod>
+    <lastmod>2025-07-30T14:29:14.285Z</lastmod>
   </url>
   <url>
-    <loc>https://papadopoulos-lab.github.io/post/2023-02-23-sampling-bias/sampling-bias.html</loc>
-    <lastmod>2024-09-10T06:59:39.508Z</lastmod>
+    <loc>https://papadopoulos-lab.github.io/presentations.html</loc>
+    <lastmod>2025-07-30T13:58:19.575Z</lastmod>
   </url>
   <url>
     <loc>https://papadopoulos-lab.github.io/publications.html</loc>
     <lastmod>2024-09-10T06:54:57.355Z</lastmod>
   </url>
   <url>
-    <loc>https://papadopoulos-lab.github.io/presentations.html</loc>
-    <lastmod>2025-07-30T13:58:19.575Z</lastmod>
+    <loc>https://papadopoulos-lab.github.io/post/2023-02-23-sampling-bias/sampling-bias.html</loc>
+    <lastmod>2024-09-10T06:59:39.508Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/post/2023-04-14-sparse-inference/sparse-inference.html</loc>
+    <lastmod>2024-09-10T06:59:45.776Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/team.html</loc>
+    <lastmod>2025-07-30T13:52:21.449Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/index.html</loc>
+    <lastmod>2025-07-30T14:21:17.154Z</lastmod>
   </url>
 </urlset>

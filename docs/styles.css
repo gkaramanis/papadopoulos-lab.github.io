@@ -14,7 +14,7 @@ body {
   --lab-primary-dark: #e0e0e0;
   --lab-text: #000000;
   --lab-secondary: #707070;
-  --lab-accent: #1e5fa8;
+  --lab-accent: #0080ff;
 }
 
 /* Navigation styling */
@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-  color: #1a4f8f;
+  color: #0066cc;
   text-decoration: underline;
 }
 
