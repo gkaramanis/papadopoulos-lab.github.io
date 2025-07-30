@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "presentations.html",
-    "href": "presentations.html",
-    "title": "Presentations",
-    "section": "",
-    "text": "Practical data management for modern open science. [pdf]"
-  },
-  {
-    "objectID": "presentations.html#section",
-    "href": "presentations.html#section",
-    "title": "Presentations",
-    "section": "",
-    "text": "Practical data management for modern open science. [pdf]"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Papadopoulos Lab",
@@ -26,6 +12,41 @@
     "title": "Papadopoulos Lab",
     "section": "Contact",
     "text": "Contact\nfotis.papadopoulos@neuro.uu.se"
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
+    "section": "",
+    "text": "Assistant Professor\nDepartment of Neuroscience, Uppsala University\nDr. Papadopoulos leads the lab’s research in transgender health and gender dysphoria epidemiology. His work focuses on large-scale registry-based studies and methodological innovation in epidemiological research.\nResearch Interests: Transgender health epidemiology, registry-based research, gender dysphoria, healthcare outcomes"
+  },
+  {
+    "objectID": "team.html#principal-investigator",
+    "href": "team.html#principal-investigator",
+    "title": "Team",
+    "section": "",
+    "text": "Assistant Professor\nDepartment of Neuroscience, Uppsala University\nDr. Papadopoulos leads the lab’s research in transgender health and gender dysphoria epidemiology. His work focuses on large-scale registry-based studies and methodological innovation in epidemiological research.\nResearch Interests: Transgender health epidemiology, registry-based research, gender dysphoria, healthcare outcomes"
+  },
+  {
+    "objectID": "team.html#research-team",
+    "href": "team.html#research-team",
+    "title": "Team",
+    "section": "Research Team",
+    "text": "Research Team\n\n[Lab Member Name]\n[Position - e.g., Postdoctoral Researcher]\nBrief description of research focus and background. Areas of expertise and current projects.\nResearch Interests: [List key areas]\n\n\n[Lab Member Name]\n[Position - e.g., PhD Student]\nBrief description of research focus and background. Areas of expertise and current projects.\nResearch Interests: [List key areas]\n\n\n[Lab Member Name]\n[Position - e.g., Research Assistant]\nBrief description of research focus and background. Areas of expertise and current projects.\nResearch Interests: [List key areas]"
+  },
+  {
+    "objectID": "team.html#collaborators",
+    "href": "team.html#collaborators",
+    "title": "Team",
+    "section": "Collaborators",
+    "text": "Collaborators\nWe maintain active collaborations with researchers at:\n\nUppsala University - Department of Neuroscience\nKarolinska Institutet - Department of Medical Epidemiology and Biostatistics\nUniversity of Gothenburg - Sahlgrenska Academy\nInternational research networks - Transgender health research consortiums"
+  },
+  {
+    "objectID": "team.html#join-our-team",
+    "href": "team.html#join-our-team",
+    "title": "Team",
+    "section": "Join Our Team",
+    "text": "Join Our Team\nWe are always interested in hearing from motivated researchers at all career stages. If you are interested in transgender health research, registry-based epidemiology, or methodological development, please reach out to discuss potential opportunities.\nCurrent opportunities and application instructions will be posted here as they become available."
   },
   {
     "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html",
@@ -154,38 +175,17 @@
     "text": "2021\n\n[1] Indremo, M. et al.  (2021). “Validity of the Gender Dysphoria diagnosis and incidence trends in Sweden: a nationwide register study”. In: Scientific reports 11.1, pp. 1–10. URL: https://papadopoulos-lab.github.io/articles/2021-indremo.pdf."
   },
   {
-    "objectID": "team.html",
-    "href": "team.html",
-    "title": "Team",
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
     "section": "",
-    "text": "Assistant Professor\nDepartment of Neuroscience, Uppsala University\nDr. Papadopoulos leads the lab’s research in transgender health and gender dysphoria epidemiology. His work focuses on large-scale registry-based studies and methodological innovation in epidemiological research.\nResearch Interests: Transgender health epidemiology, registry-based research, gender dysphoria, healthcare outcomes"
+    "text": "Practical data management for modern open science. [pdf]"
   },
   {
-    "objectID": "team.html#principal-investigator",
-    "href": "team.html#principal-investigator",
-    "title": "Team",
+    "objectID": "presentations.html#section",
+    "href": "presentations.html#section",
+    "title": "Presentations",
     "section": "",
-    "text": "Assistant Professor\nDepartment of Neuroscience, Uppsala University\nDr. Papadopoulos leads the lab’s research in transgender health and gender dysphoria epidemiology. His work focuses on large-scale registry-based studies and methodological innovation in epidemiological research.\nResearch Interests: Transgender health epidemiology, registry-based research, gender dysphoria, healthcare outcomes"
-  },
-  {
-    "objectID": "team.html#research-team",
-    "href": "team.html#research-team",
-    "title": "Team",
-    "section": "Research Team",
-    "text": "Research Team\n\n[Lab Member Name]\n[Position - e.g., Postdoctoral Researcher]\nBrief description of research focus and background. Areas of expertise and current projects.\nResearch Interests: [List key areas]\n\n\n[Lab Member Name]\n[Position - e.g., PhD Student]\nBrief description of research focus and background. Areas of expertise and current projects.\nResearch Interests: [List key areas]\n\n\n[Lab Member Name]\n[Position - e.g., Research Assistant]\nBrief description of research focus and background. Areas of expertise and current projects.\nResearch Interests: [List key areas]"
-  },
-  {
-    "objectID": "team.html#collaborators",
-    "href": "team.html#collaborators",
-    "title": "Team",
-    "section": "Collaborators",
-    "text": "Collaborators\nWe maintain active collaborations with researchers at:\n\nUppsala University - Department of Neuroscience\nKarolinska Institutet - Department of Medical Epidemiology and Biostatistics\nUniversity of Gothenburg - Sahlgrenska Academy\nInternational research networks - Transgender health research consortiums"
-  },
-  {
-    "objectID": "team.html#join-our-team",
-    "href": "team.html#join-our-team",
-    "title": "Team",
-    "section": "Join Our Team",
-    "text": "Join Our Team\nWe are always interested in hearing from motivated researchers at all career stages. If you are interested in transgender health research, registry-based epidemiology, or methodological development, please reach out to discuss potential opportunities.\nCurrent opportunities and application instructions will be posted here as they become available."
+    "text": "Practical data management for modern open science. [pdf]"
   }
 ]

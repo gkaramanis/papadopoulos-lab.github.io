@@ -8,13 +8,13 @@ body {
   color: #333;
 }
 
-/* Custom color scheme - Modern Navy/Slate */
+/* Custom color scheme - Neutral Gray-Green */
 :root {
-  --lab-primary: #e8eaed;
-  --lab-primary-dark: #d6dade;
+  --lab-primary: #eef0ed;
+  --lab-primary-dark: #dde2d9;
   --lab-text: #000000;
-  --lab-secondary: #5a6670;
-  --lab-accent: #1e3a5f;
+  --lab-secondary: #6b7269;
+  --lab-accent: #3d4a3a;
 }
 
 /* Navigation styling */
