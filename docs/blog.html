@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-26cf08260413e3eae9f2fecad33ac35c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e8180a336f15ce455dc11977f03a7411.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,20 +74,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-sample-listings .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-subtitle','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-sample-listings'] = new List('listing-sample-listings', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -132,9 +132,9 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="Papadopoulos Lab" href="blog.xml" data-external="1"></head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -190,93 +190,65 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Blog</h1></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
-
-<div>
-  <div class="description">
-    <p>A collection of thoughts.</p>
-  </div>
-</div>
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
+<header id="title-block-header">
 
 
 </header>
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1681423200000" data-listing-file-modified-sort="1753940146783" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1305">
-<div class="thumbnail"><a href="./post/2023-04-14-sparse-inference/sparse-inference.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/2023-04-14-sparse-inference/sparse-inference.html" class="no-external">Sparse Inference</a>
-</h3>
-<div class="delink listing-description"><a href="./post/2023-04-14-sparse-inference/sparse-inference.html" class="no-external">
+<div id="listing-sample-listings" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1681423200000" data-listing-file-modified-sort="1753940146783" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1305">
+<a href="./post/2023-04-14-sparse-inference/sparse-inference.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sparse Inference
+</h5>
+<div class="card-text listing-description delink">
 <p>Examining sparse inference using both frequentist and bayesian methodology.</p>
-</a></div>
 </div>
-<div class="metadata">
-<a href="./post/2023-04-14-sparse-inference/sparse-inference.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Apr 14, 2023
 </div>
-<div class="listing-author">
-Richard Aubrey White
-</div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1677106800000" data-listing-file-modified-sort="1753940161124" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="738">
-<div class="thumbnail"><a href="./post/2023-02-23-sampling-bias/sampling-bias.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/2023-02-23-sampling-bias/sampling-bias.html" class="no-external">Sampling Bias</a>
-</h3>
-<div class="delink listing-description"><a href="./post/2023-02-23-sampling-bias/sampling-bias.html" class="no-external">
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1677106800000" data-listing-file-modified-sort="1753940161124" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="738">
+<a href="./post/2023-02-23-sampling-bias/sampling-bias.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sampling Bias
+</h5>
+<div class="card-text listing-description delink">
 <p>Examining sampling bias in simulated data.</p>
-</a></div>
 </div>
-<div class="metadata">
-<a href="./post/2023-02-23-sampling-bias/sampling-bias.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Feb 23, 2023
 </div>
-<div class="listing-author">
-Richard Aubrey White
 </div>
-</a>
 </div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+<p><a href="writing.xml" class="btn btn-outline-primary btn-sm">RSS Feed</a></p>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
