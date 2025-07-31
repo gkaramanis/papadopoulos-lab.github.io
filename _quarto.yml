@@ -11,9 +11,12 @@ resources:
 
 website:
   title: "Papadopoulos Lab"
-  # body-header: <script data-goatcounter="https://rwhiteno.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  site-url: "https://papadopoulos-lab.github.io"
   favicon: favicon.png
   navbar:
+    left:
+      - icon: resources/logo.png
+        href: index.html
     right:
       - text: "Home"
         href: index.html
@@ -22,12 +25,12 @@ website:
       - blog.qmd
       - icon: github
         href: https://github.com/papadopoulos-lab
-# format:
-#   html:
-#     theme: flatly
-#     # css: styles.css
-#     title-block-banner: "#b8e2f2"
-#     title-block-banner-color: "#000000"
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    title-block-banner: "#f8f8f8"
+    title-block-banner-color: "#000000"
 
 
 

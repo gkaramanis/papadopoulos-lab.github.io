@@ -4,19 +4,24 @@ image: resources/fotis.jpeg
 about:
   id: hero-heading
   template: solana
-  links:
-    - icon: github
-      href: https://github.com/papadopoulos-lab
+  image-width: 16em
+  image-shape: round
 title-block-banner: false
 ---
 
 :::{#hero-heading}
 
-The Papadopoulos lab at Uppsala University focuses on gender dysphoria, transgender health, and perinatal mental health. The lab investigates a wide range of topics related to ...
+The Papadopoulos Lab at Uppsala University is dedicated to advancing research in gender dysphoria and transgender health. Our multidisciplinary approach combines epidemiological methods, registry-based research, and innovative data science techniques to better understand transgender health outcomes and improve clinical care.
 
-Another major focus of the lab is perinatal health, where they utilize innovative digital tools such as the "Mom2B" project to analyze perinatal outcomes using smartphone-based phenotyping and machine learning techniques. Additionally, the lab conducts research on postpartum depression and the relationship between environmental factors, such as sunlight and seasonal changes, and their effects on mental health.
+Our research focuses on several key areas within transgender health:
 
-Hello
+**Epidemiological Research**: We conduct large-scale population studies using Swedish health registries to investigate prevalence, incidence, and health outcomes in transgender populations. Our work contributes to the global understanding of transgender health through rigorous epidemiological methods.
+
+**Registry-Based Studies**: Leveraging Sweden's comprehensive healthcare registries, we examine long-term health trajectories, treatment outcomes, and healthcare utilization patterns among transgender individuals. Our research helps inform evidence-based clinical guidelines and policy decisions.
+
+**Methodological Innovation**: We develop and maintain the [swereg](https://papadopoulos-lab.github.io/swereg/) R package, a specialized tool for analyzing Swedish healthcare registry data. This open-source software enables researchers worldwide to conduct robust epidemiological studies using registry data.
+
+**Collaborative Research**: We actively collaborate with national and international research teams, contributing to large-scale studies and consortiums focused on transgender health research.
 
 :::
 

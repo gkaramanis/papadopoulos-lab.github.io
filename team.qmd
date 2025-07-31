@@ -1,0 +1,59 @@
+---
+title: "Team"
+description: |
+  Meet the researchers in the Papadopoulos Lab.
+---
+
+## Principal Investigator
+
+### Dr. Fotis Papadopoulos
+**Assistant Professor**  
+Department of Neuroscience, Uppsala University
+
+Dr. Papadopoulos leads the lab's research in transgender health and gender dysphoria epidemiology. His work focuses on large-scale registry-based studies and methodological innovation in epidemiological research.
+
+*Research Interests:* Transgender health epidemiology, registry-based research, gender dysphoria, healthcare outcomes
+
+---
+
+## Research Team
+
+### [Lab Member Name]
+**[Position - e.g., Postdoctoral Researcher]**
+
+Brief description of research focus and background. Areas of expertise and current projects.
+
+*Research Interests:* [List key areas]
+
+### [Lab Member Name]
+**[Position - e.g., PhD Student]**
+
+Brief description of research focus and background. Areas of expertise and current projects.
+
+*Research Interests:* [List key areas]
+
+### [Lab Member Name]
+**[Position - e.g., Research Assistant]**
+
+Brief description of research focus and background. Areas of expertise and current projects.
+
+*Research Interests:* [List key areas]
+
+---
+
+## Collaborators
+
+We maintain active collaborations with researchers at:
+
+- **Uppsala University** - Department of Neuroscience
+- **Karolinska Institutet** - Department of Medical Epidemiology and Biostatistics
+- **University of Gothenburg** - Sahlgrenska Academy
+- **International research networks** - Transgender health research consortiums
+
+---
+
+## Join Our Team
+
+We are always interested in hearing from motivated researchers at all career stages. If you are interested in transgender health research, registry-based epidemiology, or methodological development, please reach out to discuss potential opportunities.
+
+Current opportunities and application instructions will be posted here as they become available.

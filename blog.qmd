@@ -2,13 +2,25 @@
 title: "Blog"
 description: |
   A collection of thoughts.
+title-block-banner: false
+title-block-style: none
+body-class: hide-title
 listing:
+  id: sample-listings
   contents: post
   sort: "date desc"
-  type: default
-  categories: false
+  type: grid
+  fields: [date, title, subtitle, description]
+  image-height: 350px
+  grid-columns: 2
+  page-size: 1000
+  categories: true
   sort-ui: false
   filter-ui: false
+  feed: true
 ---
 
+::: {#sample-listings}
+:::
 
+[RSS Feed](writing.xml){.btn .btn-outline-primary .btn-sm}
