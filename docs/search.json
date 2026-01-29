@@ -4,63 +4,105 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Sparse Inference\n\n\nExamining sparse inference using both frequentist and bayesian methodology.\n\n\n\nApr 14, 2023\n\n\n\n\n\n\n\n\n\n\nSampling Bias\n\n\nExamining sampling bias in simulated data.\n\n\n\nFeb 23, 2023\n\n\n\n\n\n\nNo matching items\n\nRSS Feed"
+    "text": "Sparse Inference\n\n\nExamining sparse inference using both frequentist and bayesian methodology.\n\n\n\n\n\nApr 14, 2023\n\n\n\n\n\n\n\nSampling Bias\n\n\nExamining sampling bias in simulated data.\n\n\n\n\n\nFeb 23, 2023\n\n\n\n\n\nNo matching items\n\nRSS Feed"
   },
   {
-    "objectID": "presentations.html",
-    "href": "presentations.html",
-    "title": "Presentations",
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
     "section": "",
-    "text": "Practical data management for modern open science. [pdf]"
+    "text": "Dr. Alex Papadopoulos\nPrincipal Investigator\nShort bio goes here. Research interests, background, and a fun fact.\nORCID | Website | Email"
   },
   {
-    "objectID": "presentations.html#section",
-    "href": "presentations.html#section",
-    "title": "Presentations",
+    "objectID": "people.html#principal-investigator",
+    "href": "people.html#principal-investigator",
+    "title": "People",
     "section": "",
-    "text": "Practical data management for modern open science. [pdf]"
+    "text": "Dr. Alex Papadopoulos\nPrincipal Investigator\nShort bio goes here. Research interests, background, and a fun fact.\nORCID | Website | Email"
+  },
+  {
+    "objectID": "people.html#researchers",
+    "href": "people.html#researchers",
+    "title": "People",
+    "section": "Researchers",
+    "text": "Researchers\n\n\n Dr. Maria Smith\nResearcher\nShort bio for Maria. Main research focus and background.\nORCID | Email\n\n\n Dr. John Doe\nResearcher\nShort bio for John. Main research focus and background.\nORCID | Email"
+  },
+  {
+    "objectID": "people.html#students",
+    "href": "people.html#students",
+    "title": "People",
+    "section": "Students",
+    "text": "Students\n\n\n Jane Roe\nPhD Student\nShort bio for Jane. Research interests and background.\nEmail\n\n\n Mark Lee\nMSc Student\nShort bio for Mark. Research interests and background.\nEmail"
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "[8] Özel, F. et al.  (2025). “Associations between autism, gender dysphoria and gender incongruence: insights from the Swedish Gender Dysphoria Study (SKDS)”. In: Psychiatry Research 351, p. 116591. ISSN: 0165-1781. DOI: https://doi.org/10.1016/j.psychres.2025.116591. URL: https://www.sciencedirect.com/science/article/pii/S0165178125002392."
+    "text": "[5] Clark, K. D. et al.  (2025). “Stability After Legal Gender Change Among Adults With Gender Dysphoria”. In: JAMA Network Open 8.9, p. e2527780. ISSN: 2574-3805. DOI: 10.1001/jamanetworkopen.2025.27780. URL: http://dx.doi.org/10.1001/jamanetworkopen.2025.27780."
   },
   {
     "objectID": "publications.html#section",
     "href": "publications.html#section",
     "title": "Publications",
     "section": "",
-    "text": "[8] Özel, F. et al.  (2025). “Associations between autism, gender dysphoria and gender incongruence: insights from the Swedish Gender Dysphoria Study (SKDS)”. In: Psychiatry Research 351, p. 116591. ISSN: 0165-1781. DOI: https://doi.org/10.1016/j.psychres.2025.116591. URL: https://www.sciencedirect.com/science/article/pii/S0165178125002392."
+    "text": "[5] Clark, K. D. et al.  (2025). “Stability After Legal Gender Change Among Adults With Gender Dysphoria”. In: JAMA Network Open 8.9, p. e2527780. ISSN: 2574-3805. DOI: 10.1001/jamanetworkopen.2025.27780. URL: http://dx.doi.org/10.1001/jamanetworkopen.2025.27780."
   },
   {
     "objectID": "publications.html#section-1",
     "href": "publications.html#section-1",
     "title": "Publications",
     "section": "2023",
-    "text": "2023\n\n[7] Axfors, C. et al.  (2023). “Preferences for gender affirming treatment and associated factors among transgender people in sweden”. In: Sexuality Research and Social Policy 20.2, pp. 479–490. URL: https://papadopoulos-lab.github.io/articles/2023-axfors.pdf.\n\n\n[6] Özel, F. et al.  (2023). “Exploring gender dysphoria and related outcomes in a prospective cohort study: protocol for the Swedish Gender Dysphoria Study (SKDS)”. In: BMJ Open 13.4. ISSN: 2044-6055. DOI: 10.1136/bmjopen-2022-066571. URL: https://papadopoulos-lab.github.io/articles/2023-ozel.pdf eprint = https://bmjopen.bmj.com/content/13/4/e066571.full.pdf."
+    "text": "2023\n\n[4] Karamanis, G. et al.  (2023). “Incidence of Idiopathic Intracranial Hypertension in Individuals With Gonadotropin-Releasing Hormone Analogue Treatment for Gender Dysphoria in Sweden”. In: JAMA Pediatrics 177.7, p. 726. ISSN: 2168-6203. DOI: 10.1001/jamapediatrics.2023.0656. URL: http://dx.doi.org/10.1001/jamapediatrics.2023.0656.\n\n\n[3] Özel, F. et al.  (2023). “Exploring gender dysphoria and related outcomes in a prospective cohort study: protocol for the Swedish Gender Dysphoria Study (SKDS)”. In: BMJ Open 13.4, p. e066571. ISSN: 2044-6055. DOI: 10.1136/bmjopen-2022-066571. URL: http://dx.doi.org/10.1136/bmjopen-2022-066571."
   },
   {
     "objectID": "publications.html#section-2",
     "href": "publications.html#section-2",
     "title": "Publications",
     "section": "2022",
-    "text": "2022\n\n[5] Bilal, A. M. et al.  (2022). “Predicting perinatal health outcomes using smartphone-based digital phenotyping and machine learning in a prospective Swedish cohort (Mom2B): study protocol”. In: BMJ open 12.4, p. e059033. URL: https://papadopoulos-lab.github.io/articles/2022-bilal.pdf.\n\n\n[4] Fransson, E. et al.  (2022). “Differentiated mental health patterns in pregnancy during COVID-19 first two waves in Sweden: a mixed methods study using digital phenotyping”. In: Scientific reports 12.1, p. 21253. URL: https://papadopoulos-lab.github.io/articles/2022-fransson.pdf.\n\n\n[3] Karamanis, G. et al.  (2022). “Gender dysphoria in twins: a register-based population study”. In: Scientific Reports 12.1, pp. 1–8. URL: https://papadopoulos-lab.github.io/articles/2022-karamanis.pdf."
+    "text": "2022\n\n[2] Karamanis, G. et al.  (2022). “Gender dysphoria in twins: a register-based population study”. In: Scientific Reports 12.1. ISSN: 2045-2322. DOI: 10.1038/s41598-022-17749-0. URL: http://dx.doi.org/10.1038/s41598-022-17749-0."
   },
   {
     "objectID": "publications.html#section-3",
     "href": "publications.html#section-3",
     "title": "Publications",
-    "section": "2021",
-    "text": "2021\n\n[2] Indremo, M. et al.  (2021). “Validity of the Gender Dysphoria diagnosis and incidence trends in Sweden: a nationwide register study”. In: Scientific reports 11.1, pp. 1–10. URL: https://papadopoulos-lab.github.io/articles/2021-indremo.pdf.\n\n\n[1] Makris, G. D. et al.  (2021). “Sunshine, temperature and suicidal behaviour in patients treated with antidepressants: an explorative nested case–control study”. In: Scientific reports 11.1, p. 10178. URL: https://papadopoulos-lab.github.io/articles/2021-makris.pdf."
+    "section": "2013",
+    "text": "2013\n\n[1] Karamanis, G. et al.  (2013). “Cancer incidence and mortality patterns in women with anorexia nervosa”. In: International Journal of Cancer 134.7, p. 1751–1757. ISSN: 1097-0215. DOI: 10.1002/ijc.28495. URL: http://dx.doi.org/10.1002/ijc.28495."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Our lab is involved in a variety of research projects spanning multiple disciplines. Below is a selection of our current and past projects.\n\n\nA study on innovative methods in data analysis and modeling.\n\n\n\nExploring new approaches in computational biology.\n\n\n\nDeveloping tools for reproducible research and open science."
+  },
+  {
+    "objectID": "projects.html#project-alpha",
+    "href": "projects.html#project-alpha",
+    "title": "Projects",
+    "section": "",
+    "text": "A study on innovative methods in data analysis and modeling."
+  },
+  {
+    "objectID": "projects.html#project-beta",
+    "href": "projects.html#project-beta",
+    "title": "Projects",
+    "section": "",
+    "text": "Exploring new approaches in computational biology."
+  },
+  {
+    "objectID": "projects.html#project-gamma",
+    "href": "projects.html#project-gamma",
+    "title": "Projects",
+    "section": "",
+    "text": "Developing tools for reproducible research and open science."
   },
   {
     "objectID": "post/2023-02-23-sampling-bias/sampling-bias.html",
     "href": "post/2023-02-23-sampling-bias/sampling-bias.html",
     "title": "Sampling Bias",
     "section": "",
-    "text": "library(data.table)\nlibrary(magrittr)\nlibrary(ggplot2)"
+    "text": "library(data.table)\n\nWarning: package 'data.table' was built under R version 4.5.2\n\nlibrary(magrittr)\nlibrary(ggplot2)\n\nWarning: package 'ggplot2' was built under R version 4.5.2"
   },
   {
     "objectID": "post/2023-02-23-sampling-bias/sampling-bias.html#what-is-sampling-bias",
@@ -95,7 +137,7 @@
     "href": "post/2023-04-14-sparse-inference/sparse-inference.html",
     "title": "Sparse Inference",
     "section": "",
-    "text": "Machine learning and statistical modeling are two important tools in data science that are used to make predictions and infer relationships between variables, respectively. Models for prediction aim to estimate the relationship between inputs and outputs in order to make accurate predictions about new, unseen data. In contrast, models for inference aim to understand the underlying relationships between variables in the data, often in the form of identifying causal relationships.\nIn this blog post, we will explore using models for inference using a simulated dataset, and we will apply penalized regression to perform feature selection on a binary outcome. Penalized regression is particularly useful in situations where the number of predictors (i.e. independent variables) is much larger than the sample size.\nWe will investigate the frequentist solution of using a two-stage solution with LASSO regression via glmnet and then using the selectiveInference package to perform post inference and adjust for the bias introduced by the selection process. We will also investigate a Bayesian solution that approximates a LASSO regression via a Laplace prior.\noptions(mc.cores = parallel::detectCores())\n\nfit &lt;- rstanarm::stan_glm(\n  formula = y ~ .,\n  data = data,\n  family = binomial(),\n  prior = rstanarm::laplace(),\n  chains = 4,\n  iter = 5000,\n  refresh=0\n)\n\nretval &lt;- data.frame(\n  var = names(coef(fit)),\n  Odds_Ratio = round(exp(coef(fit)),3),\n  round(exp(rstanarm::posterior_interval(fit, prob = 0.9)),3),\n  pvalue_equivalent = round(bayestestR::pd_to_p(bayestestR::p_direction(fit)$pd),2)\n)\nrow.names(retval) &lt;- NULL\nretval$var[retval$pvalue_equivalent &lt; 0.05] &lt;- paste0(\"*\", retval$var[retval$pvalue_equivalent &lt; 0.05])\nnames(retval) &lt;- c(\n  \"Variable\",\n  \"Odds ratio\",\n  \"Cred int 5%\",\n  \"Cred int 95%\",\n  \"Pvalue equivalent\"\n)\nretval\n\n      Variable Odds ratio Cred int 5% Cred int 95% Pvalue equivalent\n1  (Intercept)      1.009       0.949        1.073              0.81\n2          *x1      4.049       3.744        4.385              0.00\n3          *x2      2.968       2.767        3.193              0.00\n4          *x3      1.932       1.815        2.058              0.00\n5           x4      0.953       0.899        1.011              0.18\n6           x5      1.018       0.961        1.079              0.62\n7           x6      0.999       0.942        1.060              0.98\n8           x7      0.984       0.927        1.044              0.66\n9           x8      0.974       0.918        1.034              0.46\n10          x9      0.961       0.904        1.019              0.26\n11         x10      0.998       0.941        1.058              0.96\n12         x11      1.042       0.983        1.104              0.26\n13         x12      0.962       0.908        1.020              0.29\n14         x13      1.039       0.979        1.103              0.29\n15         x14      1.004       0.944        1.066              0.91\n16         x15      0.998       0.940        1.059              0.96\n17         x16      0.960       0.905        1.018              0.25\n18         x17      1.031       0.972        1.095              0.39\n19         x18      0.958       0.901        1.018              0.25\n20         x19      0.993       0.936        1.054              0.84\n21         x20      1.007       0.949        1.069              0.86\n22         x21      0.984       0.930        1.042              0.65\n23         x22      1.042       0.984        1.106              0.25\n24         x23      0.958       0.902        1.017              0.24\n25         x24      0.996       0.938        1.057              0.92\n26         x25      1.040       0.980        1.105              0.28\n27         x26      0.980       0.925        1.039              0.57\n28         x27      1.038       0.980        1.101              0.29\n29         x28      1.013       0.958        1.072              0.71\n30         x29      1.024       0.964        1.085              0.52\n31         x30      1.007       0.951        1.068              0.84\n32        *x31      0.904       0.851        0.961              0.00\n33         x32      1.026       0.968        1.085              0.47\n34         x33      1.032       0.972        1.097              0.39\n35         x34      1.001       0.943        1.063              0.99\n36         x35      1.007       0.950        1.065              0.85\n37         x36      1.049       0.989        1.113              0.18\n38         x37      1.023       0.965        1.086              0.52\n39         x38      1.060       1.000        1.123              0.10\n40         x39      1.022       0.961        1.085              0.56\n41         x40      1.030       0.969        1.093              0.41\n42         x41      0.985       0.926        1.045              0.67\n43         x42      1.007       0.949        1.067              0.85\n44         x43      1.026       0.967        1.089              0.47\n45         x44      0.947       0.892        1.005              0.13\n46         x45      1.045       0.983        1.109              0.24\n47         x46      1.012       0.953        1.075              0.74\n48         x47      1.005       0.947        1.066              0.90\n49         x48      0.954       0.899        1.011              0.18\n50         x49      0.960       0.904        1.017              0.25\n51         x50      0.969       0.912        1.027              0.38"
+    "text": "Machine learning and statistical modeling are two important tools in data science that are used to make predictions and infer relationships between variables, respectively. Models for prediction aim to estimate the relationship between inputs and outputs in order to make accurate predictions about new, unseen data. In contrast, models for inference aim to understand the underlying relationships between variables in the data, often in the form of identifying causal relationships.\nIn this blog post, we will explore using models for inference using a simulated dataset, and we will apply penalized regression to perform feature selection on a binary outcome. Penalized regression is particularly useful in situations where the number of predictors (i.e. independent variables) is much larger than the sample size.\nWe will investigate the frequentist solution of using a two-stage solution with LASSO regression via glmnet and then using the selectiveInference package to perform post inference and adjust for the bias introduced by the selection process. We will also investigate a Bayesian solution that approximates a LASSO regression via a Laplace prior.\noptions(mc.cores = parallel::detectCores())\n\nfit &lt;- rstanarm::stan_glm(\n  formula = y ~ .,\n  data = data,\n  family = binomial(),\n  prior = rstanarm::laplace(),\n  chains = 4,\n  iter = 5000,\n  refresh=0\n)\n\nretval &lt;- data.frame(\n  var = names(coef(fit)),\n  Odds_Ratio = round(exp(coef(fit)),3),\n  round(exp(rstanarm::posterior_interval(fit, prob = 0.9)),3),\n  pvalue_equivalent = round(bayestestR::pd_to_p(bayestestR::p_direction(fit)$pd),2)\n)\nrow.names(retval) &lt;- NULL\nretval$var[retval$pvalue_equivalent &lt; 0.05] &lt;- paste0(\"*\", retval$var[retval$pvalue_equivalent &lt; 0.05])\nnames(retval) &lt;- c(\n  \"Variable\",\n  \"Odds ratio\",\n  \"Cred int 5%\",\n  \"Cred int 95%\",\n  \"Pvalue equivalent\"\n)\nretval"
   },
   {
     "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html#introduction",
@@ -116,7 +158,7 @@
     "href": "post/2023-04-14-sparse-inference/sparse-inference.html#lasso-regression",
     "title": "Sparse Inference",
     "section": "LASSO Regression",
-    "text": "LASSO Regression\nWe will now fit a LASSO regression model using the glmnet package in R. LASSO is a popular method for feature selection in high-dimensional data, where the number of predictors p is much larger than the number of observations n.\n\n# get standard deviation of X, because we will need to standardize/scale it outside of glmnet\nsds &lt;- apply(x, 2, sd)\n\n# standardize x\nx_scaled &lt;- scale(x,TRUE,TRUE)\n\n# run glmnet\ncfit &lt;- glmnet::cv.glmnet(x_scaled,y,standardize=FALSE, family=\"binomial\")\ncoef(cfit)\n\n51 x 1 sparse Matrix of class \"dgCMatrix\"\n                     s1\n(Intercept) 0.008303975\nx1          1.081745656\nx2          0.821477348\nx3          0.452041341\nx4          .          \nx5          .          \nx6          .          \nx7          .          \nx8          .          \nx9          .          \nx10         .          \nx11         .          \nx12         .          \nx13         .          \nx14         .          \nx15         .          \nx16         .          \nx17         .          \nx18         .          \nx19         .          \nx20         .          \nx21         .          \nx22         .          \nx23         .          \nx24         .          \nx25         .          \nx26         .          \nx27         .          \nx28         .          \nx29         .          \nx30         .          \nx31         .          \nx32         .          \nx33         .          \nx34         .          \nx35         .          \nx36         .          \nx37         .          \nx38         .          \nx39         .          \nx40         .          \nx41         .          \nx42         .          \nx43         .          \nx44         .          \nx45         .          \nx46         .          \nx47         .          \nx48         .          \nx49         .          \nx50         ."
+    "text": "LASSO Regression\nWe will now fit a LASSO regression model using the glmnet package in R. LASSO is a popular method for feature selection in high-dimensional data, where the number of predictors p is much larger than the number of observations n.\n\n# get standard deviation of X, because we will need to standardize/scale it outside of glmnet\nsds &lt;- apply(x, 2, sd)\n\n# standardize x\nx_scaled &lt;- scale(x,TRUE,TRUE)\n\n# run glmnet\ncfit &lt;- glmnet::cv.glmnet(x_scaled,y,standardize=FALSE, family=\"binomial\")\ncoef(cfit)"
   },
   {
     "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html#no-confidence-intervals",
@@ -200,6 +242,27 @@
     "href": "index.html#contact",
     "title": "Papadopoulos Lab",
     "section": "Contact",
-    "text": "Contact\nfotis.papadopoulos@neuro.uu.se"
+    "text": "Contact\nfotis.papadopoulos@uu.se"
+  },
+  {
+    "objectID": "funding.html",
+    "href": "funding.html",
+    "title": "Funding",
+    "section": "",
+    "text": "Funding\nOur research is supported by generous funding from various organizations.\n\nNational Science Foundation (NSF)\nEuropean Research Council (ERC)\nLocal University Grants\nPrivate Foundations"
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Practical data management for modern open science. [pdf]"
+  },
+  {
+    "objectID": "presentations.html#section",
+    "href": "presentations.html#section",
+    "title": "Presentations",
+    "section": "",
+    "text": "Practical data management for modern open science. [pdf]"
   }
 ]

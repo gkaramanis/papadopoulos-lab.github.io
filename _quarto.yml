@@ -20,17 +20,19 @@ website:
     right:
       - text: "Home"
         href: index.html
+      - people.qmd
+      - projects.qmd
       - publications.qmd
       - presentations.qmd
+      - funding.qmd
       - blog.qmd
       - icon: github
         href: https://github.com/papadopoulos-lab
 format:
   html:
-    theme: flatly
+    theme: litera
     css: styles.css
     title-block-banner: "#f8f8f8"
     title-block-banner-color: "#000000"
-
 
 

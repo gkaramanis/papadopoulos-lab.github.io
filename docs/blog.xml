@@ -10,7 +10,7 @@
 <atom:link href="https://papadopoulos-lab.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A collection of thoughts.
 </description>
-<generator>quarto-1.7.32</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Thu, 13 Apr 2023 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Sparse Inference</title>
@@ -32,7 +32,7 @@
 <h2 class="anchored" data-anchor-id="simulating-a-dataset">Simulating a Dataset</h2>
 <p>We will simulate a dataset with <code>n = 5000</code> people and <code>p = 50</code> variables, where only three of the 50 variables will have an association with the binary outcome, and they will have odds ratios of 4, 3, and 2. The remaining variables will have no association with the outcome.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(data.table)</span>
 <span id="cb1-2"><span class="fu" style="color: #4758AB;
@@ -150,14 +150,14 @@ font-style: inherit;">1</span>]</span>
 background-color: null;
 font-style: inherit;">&lt;-</span> data<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">$</span>y</span></code></pre></div>
+font-style: inherit;">$</span>y</span></code></pre></div></div>
 </div>
 </section>
 <section id="lasso-regression" class="level2">
 <h2 class="anchored" data-anchor-id="lasso-regression">LASSO Regression</h2>
 <p>We will now fit a LASSO regression model using the <code>glmnet</code> package in R. LASSO is a popular method for feature selection in high-dimensional data, where the number of predictors <code>p</code> is much larger than the number of observations <code>n</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># get standard deviation of X, because we will need to standardize/scale it outside of glmnet</span></span>
 <span id="cb2-2">sds <span class="ot" style="color: #003B4F;
@@ -201,62 +201,7 @@ background-color: null;
 font-style: inherit;">"binomial"</span>)</span>
 <span id="cb2-9"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">coef</span>(cfit)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>51 x 1 sparse Matrix of class "dgCMatrix"
-                     s1
-(Intercept) 0.008303975
-x1          1.081745656
-x2          0.821477348
-x3          0.452041341
-x4          .          
-x5          .          
-x6          .          
-x7          .          
-x8          .          
-x9          .          
-x10         .          
-x11         .          
-x12         .          
-x13         .          
-x14         .          
-x15         .          
-x16         .          
-x17         .          
-x18         .          
-x19         .          
-x20         .          
-x21         .          
-x22         .          
-x23         .          
-x24         .          
-x25         .          
-x26         .          
-x27         .          
-x28         .          
-x29         .          
-x30         .          
-x31         .          
-x32         .          
-x33         .          
-x34         .          
-x35         .          
-x36         .          
-x37         .          
-x38         .          
-x39         .          
-x40         .          
-x41         .          
-x42         .          
-x43         .          
-x44         .          
-x45         .          
-x46         .          
-x47         .          
-x48         .          
-x49         .          
-x50         .          </code></pre>
-</div>
+font-style: inherit;">coef</span>(cfit)</span></code></pre></div></div>
 </div>
 </section>
 <section id="no-confidence-intervals" class="level2 callout-info">
@@ -274,7 +219,7 @@ x50         .          </code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Remember to account for decisions taken at all stages of your modelling process.
+<span class="screen-reader-only">Warning</span>Remember to account for decisions taken at all stages of your modelling process.
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -284,59 +229,59 @@ Remember to account for decisions taken at all stages of your modelling process.
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># compute fixed lambda p-values and selection intervals</span></span>
-<span id="cb4-2">out <span class="ot" style="color: #003B4F;
+<span id="cb3-2">out <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> selectiveInference<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">fixedLassoInf</span>(</span>
-<span id="cb4-3">  <span class="at" style="color: #657422;
+<span id="cb3-3">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">x =</span> x_scaled,</span>
-<span id="cb4-4">  <span class="at" style="color: #657422;
+<span id="cb3-4">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">y =</span> y,</span>
-<span id="cb4-5">  <span class="at" style="color: #657422;
+<span id="cb3-5">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">beta =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">coef</span>(cfit),</span>
-<span id="cb4-6">  <span class="at" style="color: #657422;
+<span id="cb3-6">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">lambda =</span> cfit<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>lambda<span class="fl" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">.1</span>se,</span>
-<span id="cb4-7">  <span class="at" style="color: #657422;
+<span id="cb3-7">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">alpha =</span> <span class="fl" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0.05</span>,</span>
-<span id="cb4-8">  <span class="at" style="color: #657422;
+<span id="cb3-8">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">family =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"binomial"</span></span>
-<span id="cb4-9">)</span>
-<span id="cb4-10"></span>
-<span id="cb4-11">retval <span class="ot" style="color: #003B4F;
+<span id="cb3-9">)</span>
+<span id="cb3-10"></span>
+<span id="cb3-11">retval <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">data.frame</span>(</span>
-<span id="cb4-12">  <span class="at" style="color: #657422;
+<span id="cb3-12">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">var =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">names</span>(out<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>vars),</span>
-<span id="cb4-13">  <span class="at" style="color: #657422;
+<span id="cb3-13">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">Odds_Ratio =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -347,7 +292,7 @@ background-color: null;
 font-style: inherit;">/</span>sds[out<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>vars]),</span>
-<span id="cb4-14">  <span class="at" style="color: #657422;
+<span id="cb3-14">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">LowConf =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -360,7 +305,7 @@ background-color: null;
 font-style: inherit;">/</span>sds[out<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>vars]),</span>
-<span id="cb4-15">  <span class="at" style="color: #657422;
+<span id="cb3-15">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">UpperConf =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -373,20 +318,20 @@ background-color: null;
 font-style: inherit;">/</span>sds[out<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>vars]),</span>
-<span id="cb4-16">  <span class="at" style="color: #657422;
+<span id="cb3-16">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">pval =</span> out<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>pv</span>
-<span id="cb4-17">)</span>
-<span id="cb4-18"><span class="fu" style="color: #4758AB;
+<span id="cb3-17">)</span>
+<span id="cb3-18"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">row.names</span>(retval) <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="cn" style="color: #8f5902;
 background-color: null;
 font-style: inherit;">NULL</span></span>
-<span id="cb4-19">retval<span class="sc" style="color: #5E5E5E;
+<span id="cb3-19">retval<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>var[retval<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -409,36 +354,30 @@ background-color: null;
 font-style: inherit;">&lt;</span> <span class="fl" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0.05</span>])</span>
-<span id="cb4-20"><span class="fu" style="color: #4758AB;
+<span id="cb3-20"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">names</span>(retval) <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">c</span>(</span>
-<span id="cb4-21">  <span class="st" style="color: #20794D;
+<span id="cb3-21">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Variable"</span>,</span>
-<span id="cb4-22">  <span class="st" style="color: #20794D;
+<span id="cb3-22">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Odds ratio"</span>,</span>
-<span id="cb4-23">  <span class="st" style="color: #20794D;
+<span id="cb3-23">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Conf int 5%"</span>,</span>
-<span id="cb4-24">  <span class="st" style="color: #20794D;
+<span id="cb3-24">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Conf int 95%"</span>,</span>
-<span id="cb4-25">  <span class="st" style="color: #20794D;
+<span id="cb3-25">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Pvalue"</span></span>
-<span id="cb4-26">)</span>
-<span id="cb4-27">retval</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  Variable Odds ratio Conf int 5% Conf int 95% Pvalue
-1      *x1   3.761571    3.471404     4.073621      0
-2      *x2   2.793509    2.594666     3.007784      0
-3      *x3   1.848946    1.727840     1.979062      0</code></pre>
-</div>
+<span id="cb3-26">)</span>
+<span id="cb3-27">retval</span></code></pre></div></div>
 </div>
 </section>
 <section id="bayesian-logistic-regression-using-rstanarm" class="level2">
@@ -450,7 +389,7 @@ font-style: inherit;">"Pvalue"</span></span>
 <p>The Laplace prior is used to promote sparsity by assigning a probability distribution to the coefficients that puts more probability mass around zero. It is equivalent to LASSO regression <span class="citation" data-cites="Tibshirani1996">(Tibshirani 1996)</span>.</p>
 </section>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">options</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -459,64 +398,64 @@ background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">detectCores</span>())</span>
-<span id="cb6-2"></span>
-<span id="cb6-3">fit <span class="ot" style="color: #003B4F;
+<span id="cb4-2"></span>
+<span id="cb4-3">fit <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> rstanarm<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">stan_glm</span>(</span>
-<span id="cb6-4">  <span class="at" style="color: #657422;
+<span id="cb4-4">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">formula =</span> y <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">~</span> .,</span>
-<span id="cb6-5">  <span class="at" style="color: #657422;
+<span id="cb4-5">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">data =</span> data,</span>
-<span id="cb6-6">  <span class="at" style="color: #657422;
+<span id="cb4-6">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">family =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">binomial</span>(),</span>
-<span id="cb6-7">  <span class="at" style="color: #657422;
+<span id="cb4-7">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">prior =</span> rstanarm<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">laplace</span>(),</span>
-<span id="cb6-8">  <span class="at" style="color: #657422;
+<span id="cb4-8">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">chains =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">4</span>,</span>
-<span id="cb6-9">  <span class="at" style="color: #657422;
+<span id="cb4-9">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">iter =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">5000</span>,</span>
-<span id="cb6-10">  <span class="at" style="color: #657422;
+<span id="cb4-10">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">refresh=</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span></span>
-<span id="cb6-11">)</span>
-<span id="cb6-12"></span>
-<span id="cb6-13">retval <span class="ot" style="color: #003B4F;
+<span id="cb4-11">)</span>
+<span id="cb4-12"></span>
+<span id="cb4-13">retval <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">data.frame</span>(</span>
-<span id="cb6-14">  <span class="at" style="color: #657422;
+<span id="cb4-14">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">var =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">names</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">coef</span>(fit)),</span>
-<span id="cb6-15">  <span class="at" style="color: #657422;
+<span id="cb4-15">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">Odds_Ratio =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -527,7 +466,7 @@ background-color: null;
 font-style: inherit;">coef</span>(fit)),<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">3</span>),</span>
-<span id="cb6-16">  <span class="fu" style="color: #4758AB;
+<span id="cb4-16">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">round</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -542,7 +481,7 @@ background-color: null;
 font-style: inherit;">0.9</span>)),<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">3</span>),</span>
-<span id="cb6-17">  <span class="at" style="color: #657422;
+<span id="cb4-17">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">pvalue_equivalent =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -559,15 +498,15 @@ background-color: null;
 font-style: inherit;">$</span>pd),<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2</span>)</span>
-<span id="cb6-18">)</span>
-<span id="cb6-19"><span class="fu" style="color: #4758AB;
+<span id="cb4-18">)</span>
+<span id="cb4-19"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">row.names</span>(retval) <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="cn" style="color: #8f5902;
 background-color: null;
 font-style: inherit;">NULL</span></span>
-<span id="cb6-20">retval<span class="sc" style="color: #5E5E5E;
+<span id="cb4-20">retval<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>var[retval<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -590,84 +529,30 @@ background-color: null;
 font-style: inherit;">&lt;</span> <span class="fl" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0.05</span>])</span>
-<span id="cb6-21"><span class="fu" style="color: #4758AB;
+<span id="cb4-21"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">names</span>(retval) <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">c</span>(</span>
-<span id="cb6-22">  <span class="st" style="color: #20794D;
+<span id="cb4-22">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Variable"</span>,</span>
-<span id="cb6-23">  <span class="st" style="color: #20794D;
+<span id="cb4-23">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Odds ratio"</span>,</span>
-<span id="cb6-24">  <span class="st" style="color: #20794D;
+<span id="cb4-24">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Cred int 5%"</span>,</span>
-<span id="cb6-25">  <span class="st" style="color: #20794D;
+<span id="cb4-25">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Cred int 95%"</span>,</span>
-<span id="cb6-26">  <span class="st" style="color: #20794D;
+<span id="cb4-26">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Pvalue equivalent"</span></span>
-<span id="cb6-27">)</span>
-<span id="cb6-28">retval</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>      Variable Odds ratio Cred int 5% Cred int 95% Pvalue equivalent
-1  (Intercept)      1.009       0.949        1.073              0.81
-2          *x1      4.049       3.744        4.385              0.00
-3          *x2      2.968       2.767        3.193              0.00
-4          *x3      1.932       1.815        2.058              0.00
-5           x4      0.953       0.899        1.011              0.18
-6           x5      1.018       0.961        1.079              0.62
-7           x6      0.999       0.942        1.060              0.98
-8           x7      0.984       0.927        1.044              0.66
-9           x8      0.974       0.918        1.034              0.46
-10          x9      0.961       0.904        1.019              0.26
-11         x10      0.998       0.941        1.058              0.96
-12         x11      1.042       0.983        1.104              0.26
-13         x12      0.962       0.908        1.020              0.29
-14         x13      1.039       0.979        1.103              0.29
-15         x14      1.004       0.944        1.066              0.91
-16         x15      0.998       0.940        1.059              0.96
-17         x16      0.960       0.905        1.018              0.25
-18         x17      1.031       0.972        1.095              0.39
-19         x18      0.958       0.901        1.018              0.25
-20         x19      0.993       0.936        1.054              0.84
-21         x20      1.007       0.949        1.069              0.86
-22         x21      0.984       0.930        1.042              0.65
-23         x22      1.042       0.984        1.106              0.25
-24         x23      0.958       0.902        1.017              0.24
-25         x24      0.996       0.938        1.057              0.92
-26         x25      1.040       0.980        1.105              0.28
-27         x26      0.980       0.925        1.039              0.57
-28         x27      1.038       0.980        1.101              0.29
-29         x28      1.013       0.958        1.072              0.71
-30         x29      1.024       0.964        1.085              0.52
-31         x30      1.007       0.951        1.068              0.84
-32        *x31      0.904       0.851        0.961              0.00
-33         x32      1.026       0.968        1.085              0.47
-34         x33      1.032       0.972        1.097              0.39
-35         x34      1.001       0.943        1.063              0.99
-36         x35      1.007       0.950        1.065              0.85
-37         x36      1.049       0.989        1.113              0.18
-38         x37      1.023       0.965        1.086              0.52
-39         x38      1.060       1.000        1.123              0.10
-40         x39      1.022       0.961        1.085              0.56
-41         x40      1.030       0.969        1.093              0.41
-42         x41      0.985       0.926        1.045              0.67
-43         x42      1.007       0.949        1.067              0.85
-44         x43      1.026       0.967        1.089              0.47
-45         x44      0.947       0.892        1.005              0.13
-46         x45      1.045       0.983        1.109              0.24
-47         x46      1.012       0.953        1.075              0.74
-48         x47      1.005       0.947        1.066              0.90
-49         x48      0.954       0.899        1.011              0.18
-50         x49      0.960       0.904        1.017              0.25
-51         x50      0.969       0.912        1.027              0.38</code></pre>
-</div>
+<span id="cb4-27">)</span>
+<span id="cb4-28">retval</span></code></pre></div></div>
 </div>
 <section id="p-value-equivalent" class="level2 callout-info">
 <h2 class="anchored" data-anchor-id="p-value-equivalent">P-value equivalent</h2>
@@ -713,15 +598,21 @@ Tibshirani, Robert. 1996. <span>“Regression Shrinkage and Selection via the La
 
 
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">library</span>(data.table)</span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;
+font-style: inherit;">library</span>(data.table)</span></code></pre></div></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'data.table' was built under R version 4.5.2</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(magrittr)</span>
-<span id="cb1-3"><span class="fu" style="color: #4758AB;
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">library</span>(ggplot2)</span></code></pre></div>
+font-style: inherit;">library</span>(ggplot2)</span></code></pre></div></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.5.2</code></pre>
+</div>
 </div>
 <section id="what-is-sampling-bias" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-sampling-bias">What is Sampling Bias?</h2>
@@ -752,13 +643,13 @@ font-style: inherit;">library</span>(ggplot2)</span></code></pre></div>
 <p>Suppose we want to study the relationship between smoking and lung function. We know that in our city there are 100,000 people, 20,000 of whom are smokers. To our study we recruit 5,000 smokers and 5,000 non-smokers (oversampling the smokers, a type of selection bias). We also collect data on how frequently they exercise, whether they have good genes for lung function, and whether they frequently wear hats.</p>
 <p>We now want to overcome our selection bias when assessing the association between the outcome of lung function and the exposures of exercise, good genes, and the frequency of hat wearing.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">4</span>)</span>
-<span id="cb2-2"></span>
-<span id="cb2-3">d <span class="ot" style="color: #003B4F;
+<span id="cb5-2"></span>
+<span id="cb5-3">d <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -771,7 +662,7 @@ background-color: null;
 font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">100000</span>)</span>
-<span id="cb2-4">d[, is_smoker <span class="sc" style="color: #5E5E5E;
+<span id="cb5-4">d[, is_smoker <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -782,7 +673,7 @@ background-color: null;
 font-style: inherit;">1</span>, <span class="fl" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0.2</span>)]</span>
-<span id="cb2-5">d[, probability_of_exercises_frequently <span class="sc" style="color: #5E5E5E;
+<span id="cb5-5">d[, probability_of_exercises_frequently <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -795,7 +686,7 @@ background-color: null;
 font-style: inherit;">0.05</span>, <span class="fl" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0.3</span>)]</span>
-<span id="cb2-6">d[, exercises_frequently <span class="sc" style="color: #5E5E5E;
+<span id="cb5-6">d[, exercises_frequently <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -804,7 +695,7 @@ background-color: null;
 font-style: inherit;">rbinom</span>(.N, <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>, probability_of_exercises_frequently)]</span>
-<span id="cb2-7">d[, has_good_genes <span class="sc" style="color: #5E5E5E;
+<span id="cb5-7">d[, has_good_genes <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -815,7 +706,7 @@ background-color: null;
 font-style: inherit;">1</span>, <span class="fl" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0.2</span>)]</span>
-<span id="cb2-8">d[, wears_hats_frequently <span class="sc" style="color: #5E5E5E;
+<span id="cb5-8">d[, wears_hats_frequently <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -826,8 +717,8 @@ background-color: null;
 font-style: inherit;">1</span>, <span class="fl" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0.2</span>)]</span>
-<span id="cb2-9"></span>
-<span id="cb2-10">d[, lung_function <span class="sc" style="color: #5E5E5E;
+<span id="cb5-9"></span>
+<span id="cb5-10">d[, lung_function <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -864,8 +755,8 @@ background-color: null;
 font-style: inherit;">sd =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">3</span>)]</span>
-<span id="cb2-11"></span>
-<span id="cb2-12">d[, probability_of_selection_uniform <span class="sc" style="color: #5E5E5E;
+<span id="cb5-11"></span>
+<span id="cb5-12">d[, probability_of_selection_uniform <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -874,8 +765,8 @@ background-color: null;
 font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">/</span>.N]</span>
-<span id="cb2-13"></span>
-<span id="cb2-14">d[, probability_of_selection_oversample_smoker <span class="sc" style="color: #5E5E5E;
+<span id="cb5-13"></span>
+<span id="cb5-14">d[, probability_of_selection_oversample_smoker <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -888,7 +779,7 @@ background-color: null;
 font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>)]</span>
-<span id="cb2-15">d[, probability_of_selection_oversample_smoker <span class="sc" style="color: #5E5E5E;
+<span id="cb5-15">d[, probability_of_selection_oversample_smoker <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -897,11 +788,11 @@ background-color: null;
 font-style: inherit;">/</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">sum</span>(probability_of_selection_oversample_smoker)]</span>
-<span id="cb2-16"></span>
-<span id="cb2-17"><span class="co" style="color: #5E5E5E;
+<span id="cb5-16"></span>
+<span id="cb5-17"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># We have a dataset with oversampled smokers</span></span>
-<span id="cb2-18">d_oversampled_smokers <span class="ot" style="color: #003B4F;
+<span id="cb5-18">d_oversampled_smokers <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> d[<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -916,7 +807,7 @@ background-color: null;
 font-style: inherit;">5000</span>, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">prob =</span> probability_of_selection_oversample_smoker)]</span>
-<span id="cb2-19">(weight_smoker <span class="ot" style="color: #003B4F;
+<span id="cb5-19">(weight_smoker <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -928,11 +819,11 @@ font-style: inherit;">/</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mean</span>(d_oversampled_smokers<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">$</span>is_smoker))</span></code></pre></div>
+font-style: inherit;">$</span>is_smoker))</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.3700516</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">(weight_non_smoker <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1">(weight_non_smoker <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -948,11 +839,11 @@ font-style: inherit;">mean</span>(<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">!</span>d_oversampled_smokers<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">$</span>is_smoker))</span></code></pre></div>
+font-style: inherit;">$</span>is_smoker))</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1.747289</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">d_oversampled_smokers[, weights <span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">d_oversampled_smokers[, weights <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -961,23 +852,23 @@ background-color: null;
 font-style: inherit;">ifelse</span>(is_smoker<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span>T, weight_smoker, weight_non_smoker)]</span>
-<span id="cb6-2"></span>
-<span id="cb6-3"><span class="co" style="color: #5E5E5E;
+<span id="cb9-2"></span>
+<span id="cb9-3"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># The real associations:</span></span>
-<span id="cb6-4"><span class="co" style="color: #5E5E5E;
+<span id="cb9-4"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># is_smoker: -10 (also associated with exercises_frequently!)</span></span>
-<span id="cb6-5"><span class="co" style="color: #5E5E5E;
+<span id="cb9-5"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># exercises_frequently: +5 (also associated with is_smoker!)</span></span>
-<span id="cb6-6"><span class="co" style="color: #5E5E5E;
+<span id="cb9-6"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># has_good_genes: +8 (only associated with outcome, not with other exposures)</span></span>
-<span id="cb6-7"><span class="co" style="color: #5E5E5E;
+<span id="cb9-7"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># wears_hats_frequently: 0 (not associated with outcome nor other exposures)</span></span>
-<span id="cb6-8"><span class="fu" style="color: #4758AB;
+<span id="cb9-8"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">summary</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -991,7 +882,7 @@ font-style: inherit;">+</span> has_good_genes <span class="sc" style="color: #5E
 background-color: null;
 font-style: inherit;">+</span> wears_hats_frequently, <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">data=</span>d))</span></code></pre></div>
+font-style: inherit;">data=</span>d))</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -1016,19 +907,19 @@ Residual standard error: 2.989 on 99995 degrees of freedom
 Multiple R-squared:  0.7975,    Adjusted R-squared:  0.7975 
 F-statistic: 9.847e+04 on 4 and 99995 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># When we run the model in the full data, excluding is_smoker, we get the following associations:</span></span>
-<span id="cb8-2"><span class="co" style="color: #5E5E5E;
+<span id="cb11-2"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># exercises_frequently: +7.2 (biased from association with is_smoker)</span></span>
-<span id="cb8-3"><span class="co" style="color: #5E5E5E;
+<span id="cb11-3"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># has_good_genes: +8 (not biased)</span></span>
-<span id="cb8-4"><span class="co" style="color: #5E5E5E;
+<span id="cb11-4"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># wears_hats_frequently: 0 (not biased)</span></span>
-<span id="cb8-5"><span class="fu" style="color: #4758AB;
+<span id="cb11-5"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">summary</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1040,7 +931,7 @@ font-style: inherit;">+</span> has_good_genes <span class="sc" style="color: #5E
 background-color: null;
 font-style: inherit;">+</span> wears_hats_frequently, <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">data=</span>d))</span></code></pre></div>
+font-style: inherit;">data=</span>d))</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -1064,19 +955,19 @@ Residual standard error: 4.926 on 99996 degrees of freedom
 Multiple R-squared:  0.4502,    Adjusted R-squared:  0.4502 
 F-statistic: 2.73e+04 on 3 and 99996 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># When we run the model in the biased data, with oversampling of smokers (that has also an association with the outcome):</span></span>
-<span id="cb10-2"><span class="co" style="color: #5E5E5E;
+<span id="cb13-2"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># exercises_frequently: +9.8 (biased from association with is_smoker and the biased sampling)</span></span>
-<span id="cb10-3"><span class="co" style="color: #5E5E5E;
+<span id="cb13-3"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># has_good_genes: +7.6 (not biased)</span></span>
-<span id="cb10-4"><span class="co" style="color: #5E5E5E;
+<span id="cb13-4"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># wears_hats_frequently: +0.3 (not biased)</span></span>
-<span id="cb10-5"><span class="fu" style="color: #4758AB;
+<span id="cb13-5"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">summary</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1088,7 +979,7 @@ font-style: inherit;">+</span> has_good_genes <span class="sc" style="color: #5E
 background-color: null;
 font-style: inherit;">+</span> wears_hats_frequently, <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">data=</span>d_oversampled_smokers))</span></code></pre></div>
+font-style: inherit;">data=</span>d_oversampled_smokers))</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -1112,19 +1003,19 @@ Residual standard error: 5.501 on 4996 degrees of freedom
 Multiple R-squared:  0.4221,    Adjusted R-squared:  0.4218 
 F-statistic:  1217 on 3 and 4996 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Run the model in the biased data, with weights:</span></span>
-<span id="cb12-2"><span class="co" style="color: #5E5E5E;
+<span id="cb15-2"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># exercises_frequently: +7.4 (biased from association with is_smoker)</span></span>
-<span id="cb12-3"><span class="co" style="color: #5E5E5E;
+<span id="cb15-3"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># has_good_genes: +7.6 (not biased)</span></span>
-<span id="cb12-4"><span class="co" style="color: #5E5E5E;
+<span id="cb15-4"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># wears_hats_frequently: +0.3 (not biased)</span></span>
-<span id="cb12-5"><span class="fu" style="color: #4758AB;
+<span id="cb15-5"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">summary</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1138,7 +1029,7 @@ font-style: inherit;">+</span> wears_hats_frequently, <span class="at" style="co
 background-color: null;
 font-style: inherit;">data=</span>d_oversampled_smokers, <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">weights =</span> weights))</span></code></pre></div>
+font-style: inherit;">weights =</span> weights))</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -1162,22 +1053,22 @@ Residual standard error: 4.859 on 4996 degrees of freedom
 Multiple R-squared:   0.45, Adjusted R-squared:  0.4497 
 F-statistic:  1363 on 3 and 4996 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Run the model in the biased data, with is_smoker:</span></span>
-<span id="cb14-2"><span class="co" style="color: #5E5E5E;
+<span id="cb17-2"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># is_smoker: -9.9 (not biased)</span></span>
-<span id="cb14-3"><span class="co" style="color: #5E5E5E;
+<span id="cb17-3"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># exercises_frequently: +5.3 (not biased)</span></span>
-<span id="cb14-4"><span class="co" style="color: #5E5E5E;
+<span id="cb17-4"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># has_good_genes: +7.8 (not biased)</span></span>
-<span id="cb14-5"><span class="co" style="color: #5E5E5E;
+<span id="cb17-5"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># wears_hats_frequently: +0.2 (not biased)</span></span>
-<span id="cb14-6"><span class="fu" style="color: #4758AB;
+<span id="cb17-6"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">summary</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1191,7 +1082,7 @@ font-style: inherit;">+</span> has_good_genes <span class="sc" style="color: #5E
 background-color: null;
 font-style: inherit;">+</span> wears_hats_frequently, <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">data=</span>d_oversampled_smokers))</span></code></pre></div>
+font-style: inherit;">data=</span>d_oversampled_smokers))</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:

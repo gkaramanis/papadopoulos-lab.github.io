@@ -1,7 +1,7 @@
 ---
 title: "Publications"
 description: |
-  Publications of scientific articles.
+  Publications of scientific articles
 editor_options: 
   chunk_output_type: console
 ---
@@ -12,7 +12,7 @@ library(data.table)
 ```
 
 ```{r echo=FALSE, warning=FALSE, include=FALSE}
-d <- knitcitations::read.bibtex("publications.bib")
+d <- knitcitations::read.bibtex("publications2.bib")
 ```
 
 ```{r echo=FALSE, warning=FALSE, results = "asis"}

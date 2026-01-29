@@ -1,0 +1,19 @@
+---
+title: Projects
+---
+
+# Projects
+
+Our lab is involved in a variety of research projects spanning multiple disciplines. Below is a selection of our current and past projects.
+
+## Project Alpha
+
+A study on innovative methods in data analysis and modeling.
+
+## Project Beta
+
+Exploring new approaches in computational biology.
+
+## Project Gamma
+
+Developing tools for reproducible research and open science.

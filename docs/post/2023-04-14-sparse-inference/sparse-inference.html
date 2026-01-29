@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -91,14 +91,15 @@ div.csl-indent {
 <link href="../../favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-26cf08260413e3eae9f2fecad33ac35c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-99258d85ffddbd9841977770f8edb96b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -155,6 +156,8 @@ background: #e2ebf0;
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Papadopoulos Lab</span>
     </a>
@@ -177,12 +180,24 @@ background: #e2ebf0;
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../people.html"> 
+<span class="menu-text">People</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../presentations.html"> 
 <span class="menu-text">Presentations</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../funding.html"> 
+<span class="menu-text">Funding</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../blog.html"> 
@@ -255,7 +270,7 @@ background: #e2ebf0;
 <h2 class="anchored" data-anchor-id="simulating-a-dataset">Simulating a Dataset</h2>
 <p>We will simulate a dataset with <code>n = 5000</code> people and <code>p = 50</code> variables, where only three of the 50 variables will have an association with the binary outcome, and they will have odds ratios of 4, 3, and 2. The remaining variables will have no association with the outcome.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -271,14 +286,14 @@ background: #e2ebf0;
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(data) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"y"</span>, <span class="fu">paste0</span>(<span class="st">"x"</span>,<span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(x)))</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">model.matrix</span>(y <span class="sc">~</span> ., <span class="at">data =</span> data)[,<span class="sc">-</span><span class="dv">1</span>]</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> data<span class="sc">$</span>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> data<span class="sc">$</span>y</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="lasso-regression" class="level2">
 <h2 class="anchored" data-anchor-id="lasso-regression">LASSO Regression</h2>
 <p>We will now fit a LASSO regression model using the <code>glmnet</code> package in R. LASSO is a popular method for feature selection in high-dimensional data, where the number of predictors <code>p</code> is much larger than the number of observations <code>n</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get standard deviation of X, because we will need to standardize/scale it outside of glmnet</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get standard deviation of X, because we will need to standardize/scale it outside of glmnet</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>sds <span class="ot">&lt;-</span> <span class="fu">apply</span>(x, <span class="dv">2</span>, sd)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># standardize x</span></span>
@@ -286,62 +301,7 @@ background: #e2ebf0;
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># run glmnet</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>cfit <span class="ot">&lt;-</span> glmnet<span class="sc">::</span><span class="fu">cv.glmnet</span>(x_scaled,y,<span class="at">standardize=</span><span class="cn">FALSE</span>, <span class="at">family=</span><span class="st">"binomial"</span>)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(cfit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>51 x 1 sparse Matrix of class "dgCMatrix"
-                     s1
-(Intercept) 0.008303975
-x1          1.081745656
-x2          0.821477348
-x3          0.452041341
-x4          .          
-x5          .          
-x6          .          
-x7          .          
-x8          .          
-x9          .          
-x10         .          
-x11         .          
-x12         .          
-x13         .          
-x14         .          
-x15         .          
-x16         .          
-x17         .          
-x18         .          
-x19         .          
-x20         .          
-x21         .          
-x22         .          
-x23         .          
-x24         .          
-x25         .          
-x26         .          
-x27         .          
-x28         .          
-x29         .          
-x30         .          
-x31         .          
-x32         .          
-x33         .          
-x34         .          
-x35         .          
-x36         .          
-x37         .          
-x38         .          
-x39         .          
-x40         .          
-x41         .          
-x42         .          
-x43         .          
-x44         .          
-x45         .          
-x46         .          
-x47         .          
-x48         .          
-x49         .          
-x50         .          </code></pre>
-</div>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(cfit)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="no-confidence-intervals" class="level2 callout-info">
@@ -359,7 +319,7 @@ x50         .          </code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Remember to account for decisions taken at all stages of your modelling process.
+<span class="screen-reader-only">Warning</span>Remember to account for decisions taken at all stages of your modelling process.
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -369,39 +329,33 @@ Remember to account for decisions taken at all stages of your modelling process.
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># compute fixed lambda p-values and selection intervals</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>out <span class="ot">&lt;-</span> selectiveInference<span class="sc">::</span><span class="fu">fixedLassoInf</span>(</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> x_scaled,</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> y,</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">beta =</span> <span class="fu">coef</span>(cfit),</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">lambda =</span> cfit<span class="sc">$</span>lambda<span class="fl">.1</span>se,</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> <span class="fl">0.05</span>,</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> <span class="st">"binomial"</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>retval <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">var =</span> <span class="fu">names</span>(out<span class="sc">$</span>vars),</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Odds_Ratio =</span> <span class="fu">exp</span>(out<span class="sc">$</span>coef0<span class="sc">/</span>sds[out<span class="sc">$</span>vars]),</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">LowConf =</span> <span class="fu">exp</span>(out<span class="sc">$</span>ci[,<span class="dv">1</span>]<span class="sc">/</span>sds[out<span class="sc">$</span>vars]),</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">UpperConf =</span> <span class="fu">exp</span>(out<span class="sc">$</span>ci[,<span class="dv">2</span>]<span class="sc">/</span>sds[out<span class="sc">$</span>vars]),</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">pval =</span> out<span class="sc">$</span>pv</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="fu">row.names</span>(retval) <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>retval<span class="sc">$</span>var[retval<span class="sc">$</span>pval <span class="sc">&lt;</span> <span class="fl">0.05</span>] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"*"</span>, retval<span class="sc">$</span>var[retval<span class="sc">$</span>pval <span class="sc">&lt;</span> <span class="fl">0.05</span>])</span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(retval) <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Variable"</span>,</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Odds ratio"</span>,</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Conf int 5%"</span>,</span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Conf int 95%"</span>,</span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Pvalue"</span></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>retval</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  Variable Odds ratio Conf int 5% Conf int 95% Pvalue
-1      *x1   3.761571    3.471404     4.073621      0
-2      *x2   2.793509    2.594666     3.007784      0
-3      *x3   1.848946    1.727840     1.979062      0</code></pre>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># compute fixed lambda p-values and selection intervals</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>out <span class="ot">&lt;-</span> selectiveInference<span class="sc">::</span><span class="fu">fixedLassoInf</span>(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> x_scaled,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> y,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">beta =</span> <span class="fu">coef</span>(cfit),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">lambda =</span> cfit<span class="sc">$</span>lambda<span class="fl">.1</span>se,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> <span class="fl">0.05</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> <span class="st">"binomial"</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>retval <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">var =</span> <span class="fu">names</span>(out<span class="sc">$</span>vars),</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Odds_Ratio =</span> <span class="fu">exp</span>(out<span class="sc">$</span>coef0<span class="sc">/</span>sds[out<span class="sc">$</span>vars]),</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">LowConf =</span> <span class="fu">exp</span>(out<span class="sc">$</span>ci[,<span class="dv">1</span>]<span class="sc">/</span>sds[out<span class="sc">$</span>vars]),</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">UpperConf =</span> <span class="fu">exp</span>(out<span class="sc">$</span>ci[,<span class="dv">2</span>]<span class="sc">/</span>sds[out<span class="sc">$</span>vars]),</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">pval =</span> out<span class="sc">$</span>pv</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="fu">row.names</span>(retval) <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>retval<span class="sc">$</span>var[retval<span class="sc">$</span>pval <span class="sc">&lt;</span> <span class="fl">0.05</span>] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"*"</span>, retval<span class="sc">$</span>var[retval<span class="sc">$</span>pval <span class="sc">&lt;</span> <span class="fl">0.05</span>])</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(retval) <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Variable"</span>,</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Odds ratio"</span>,</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Conf int 5%"</span>,</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Conf int 95%"</span>,</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Pvalue"</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>retval</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="bayesian-logistic-regression-using-rstanarm" class="level2">
@@ -413,88 +367,34 @@ Remember to account for decisions taken at all stages of your modelling process.
 <p>The Laplace prior is used to promote sparsity by assigning a probability distribution to the coefficients that puts more probability mass around zero. It is equivalent to LASSO regression <span class="citation" data-cites="Tibshirani1996">(<a href="#ref-Tibshirani1996" role="doc-biblioref">Tibshirani 1996</a>)</span>.</p>
 </section>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">mc.cores =</span> parallel<span class="sc">::</span><span class="fu">detectCores</span>())</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> rstanarm<span class="sc">::</span><span class="fu">stan_glm</span>(</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">formula =</span> y <span class="sc">~</span> .,</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> data,</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> <span class="fu">binomial</span>(),</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">prior =</span> rstanarm<span class="sc">::</span><span class="fu">laplace</span>(),</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">chains =</span> <span class="dv">4</span>,</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">iter =</span> <span class="dv">5000</span>,</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">refresh=</span><span class="dv">0</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>retval <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">var =</span> <span class="fu">names</span>(<span class="fu">coef</span>(fit)),</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">Odds_Ratio =</span> <span class="fu">round</span>(<span class="fu">exp</span>(<span class="fu">coef</span>(fit)),<span class="dv">3</span>),</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="fu">exp</span>(rstanarm<span class="sc">::</span><span class="fu">posterior_interval</span>(fit, <span class="at">prob =</span> <span class="fl">0.9</span>)),<span class="dv">3</span>),</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">pvalue_equivalent =</span> <span class="fu">round</span>(bayestestR<span class="sc">::</span><span class="fu">pd_to_p</span>(bayestestR<span class="sc">::</span><span class="fu">p_direction</span>(fit)<span class="sc">$</span>pd),<span class="dv">2</span>)</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="fu">row.names</span>(retval) <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>retval<span class="sc">$</span>var[retval<span class="sc">$</span>pvalue_equivalent <span class="sc">&lt;</span> <span class="fl">0.05</span>] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"*"</span>, retval<span class="sc">$</span>var[retval<span class="sc">$</span>pvalue_equivalent <span class="sc">&lt;</span> <span class="fl">0.05</span>])</span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(retval) <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Variable"</span>,</span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Odds ratio"</span>,</span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Cred int 5%"</span>,</span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Cred int 95%"</span>,</span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Pvalue equivalent"</span></span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>retval</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>      Variable Odds ratio Cred int 5% Cred int 95% Pvalue equivalent
-1  (Intercept)      1.009       0.949        1.073              0.81
-2          *x1      4.049       3.744        4.385              0.00
-3          *x2      2.968       2.767        3.193              0.00
-4          *x3      1.932       1.815        2.058              0.00
-5           x4      0.953       0.899        1.011              0.18
-6           x5      1.018       0.961        1.079              0.62
-7           x6      0.999       0.942        1.060              0.98
-8           x7      0.984       0.927        1.044              0.66
-9           x8      0.974       0.918        1.034              0.46
-10          x9      0.961       0.904        1.019              0.26
-11         x10      0.998       0.941        1.058              0.96
-12         x11      1.042       0.983        1.104              0.26
-13         x12      0.962       0.908        1.020              0.29
-14         x13      1.039       0.979        1.103              0.29
-15         x14      1.004       0.944        1.066              0.91
-16         x15      0.998       0.940        1.059              0.96
-17         x16      0.960       0.905        1.018              0.25
-18         x17      1.031       0.972        1.095              0.39
-19         x18      0.958       0.901        1.018              0.25
-20         x19      0.993       0.936        1.054              0.84
-21         x20      1.007       0.949        1.069              0.86
-22         x21      0.984       0.930        1.042              0.65
-23         x22      1.042       0.984        1.106              0.25
-24         x23      0.958       0.902        1.017              0.24
-25         x24      0.996       0.938        1.057              0.92
-26         x25      1.040       0.980        1.105              0.28
-27         x26      0.980       0.925        1.039              0.57
-28         x27      1.038       0.980        1.101              0.29
-29         x28      1.013       0.958        1.072              0.71
-30         x29      1.024       0.964        1.085              0.52
-31         x30      1.007       0.951        1.068              0.84
-32        *x31      0.904       0.851        0.961              0.00
-33         x32      1.026       0.968        1.085              0.47
-34         x33      1.032       0.972        1.097              0.39
-35         x34      1.001       0.943        1.063              0.99
-36         x35      1.007       0.950        1.065              0.85
-37         x36      1.049       0.989        1.113              0.18
-38         x37      1.023       0.965        1.086              0.52
-39         x38      1.060       1.000        1.123              0.10
-40         x39      1.022       0.961        1.085              0.56
-41         x40      1.030       0.969        1.093              0.41
-42         x41      0.985       0.926        1.045              0.67
-43         x42      1.007       0.949        1.067              0.85
-44         x43      1.026       0.967        1.089              0.47
-45         x44      0.947       0.892        1.005              0.13
-46         x45      1.045       0.983        1.109              0.24
-47         x46      1.012       0.953        1.075              0.74
-48         x47      1.005       0.947        1.066              0.90
-49         x48      0.954       0.899        1.011              0.18
-50         x49      0.960       0.904        1.017              0.25
-51         x50      0.969       0.912        1.027              0.38</code></pre>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">mc.cores =</span> parallel<span class="sc">::</span><span class="fu">detectCores</span>())</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> rstanarm<span class="sc">::</span><span class="fu">stan_glm</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">formula =</span> y <span class="sc">~</span> .,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> data,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> <span class="fu">binomial</span>(),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">prior =</span> rstanarm<span class="sc">::</span><span class="fu">laplace</span>(),</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">chains =</span> <span class="dv">4</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">iter =</span> <span class="dv">5000</span>,</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">refresh=</span><span class="dv">0</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>retval <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">var =</span> <span class="fu">names</span>(<span class="fu">coef</span>(fit)),</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">Odds_Ratio =</span> <span class="fu">round</span>(<span class="fu">exp</span>(<span class="fu">coef</span>(fit)),<span class="dv">3</span>),</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="fu">exp</span>(rstanarm<span class="sc">::</span><span class="fu">posterior_interval</span>(fit, <span class="at">prob =</span> <span class="fl">0.9</span>)),<span class="dv">3</span>),</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">pvalue_equivalent =</span> <span class="fu">round</span>(bayestestR<span class="sc">::</span><span class="fu">pd_to_p</span>(bayestestR<span class="sc">::</span><span class="fu">p_direction</span>(fit)<span class="sc">$</span>pd),<span class="dv">2</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="fu">row.names</span>(retval) <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>retval<span class="sc">$</span>var[retval<span class="sc">$</span>pvalue_equivalent <span class="sc">&lt;</span> <span class="fl">0.05</span>] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"*"</span>, retval<span class="sc">$</span>var[retval<span class="sc">$</span>pvalue_equivalent <span class="sc">&lt;</span> <span class="fl">0.05</span>])</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(retval) <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Variable"</span>,</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Odds ratio"</span>,</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Cred int 5%"</span>,</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Cred int 95%"</span>,</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Pvalue equivalent"</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>retval</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="p-value-equivalent" class="level2 callout-info">
 <h2 class="anchored" data-anchor-id="p-value-equivalent">P-value equivalent</h2>
@@ -577,13 +477,14 @@ Tibshirani, Robert. 1996. <span>“Regression Shrinkage and Selection via the La
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
