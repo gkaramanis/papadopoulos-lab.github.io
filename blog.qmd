@@ -9,7 +9,7 @@ listing:
   id: sample-listings
   contents: post
   sort: "date desc"
-  type: grid
+  type: default
   fields: [date, title, description]
   image-height: 350px
   grid-columns: 2

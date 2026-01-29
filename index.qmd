@@ -6,7 +6,7 @@ about:
   template: solana
   image-width: 16em
   image-shape: round
-title-block-banner: false
+title-block-banner: false 
 ---
 
 :::{#hero-heading}
@@ -27,4 +27,4 @@ Our research focuses on several key areas within transgender health:
 
 ## Contact
 
-fotis.papadopoulos@neuro.uu.se
+fotis.papadopoulos@uu.se
