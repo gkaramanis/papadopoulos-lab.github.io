@@ -34,17 +34,14 @@ jobs:
           [ -z "$AUTHOR" ] && AUTHOR="Unknown"
 
           # Slugify the title for folder name
-          SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-\|-$/''/g')
+          SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^[-]*\|[-]*$//g')
           DATE=$(date +%Y-%m-%d)
           POST_DIR="post/$DATE-$SLUG"
           mkdir -p "$POST_DIR"
 
-author:
-date: $DATE
-
           # Create the QMD file with proper YAML front matter
           QMD_FILE="$POST_DIR/$SLUG.qmd"
-          cat <<EOF > "$QMD_FILE"
+          cat > "$QMD_FILE" <<EOF
 ---
 title: "$TITLE"
 description: |
