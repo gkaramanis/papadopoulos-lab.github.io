@@ -1,0 +1,64 @@
+name: Dissemination Issue to QMD
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  create-qmd-from-issue:
+    if: |
+      contains(github.event.issue.labels.*.name, 'dissemination')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Extract issue fields and create QMD
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          # Extract fields from the issue body using grep and sed
+          TITLE=$(echo "$ISSUE_BODY" | awk '/## Title/{flag=1;next}/## Summary/{flag=0}flag' | sed '/^<!--.*-->/d' | xargs)
+          SUMMARY=$(echo "$ISSUE_BODY" | awk '/## Summary/{flag=1;next}/## Main Content/{flag=0}flag' | sed '/^<!--.*-->/d' | xargs)
+          CONTENT=$(echo "$ISSUE_BODY" | awk '/## Main Content/{flag=1;next}/## Author/{flag=0}flag' | sed '/^<!--.*-->/d')
+          AUTHOR=$(echo "$ISSUE_BODY" | awk '/## Author/{flag=1;next}flag' | sed '/^<!--.*-->/d' | xargs)
+
+          # Fallbacks if fields are empty
+          [ -z "$TITLE" ] && TITLE="$ISSUE_TITLE"
+          [ -z "$AUTHOR" ] && AUTHOR="Unknown"
+
+          # Slugify the title for folder name
+          SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-\|-$/''/g')
+          DATE=$(date +%Y-%m-%d)
+          POST_DIR="post/$DATE-$SLUG"
+          mkdir -p "$POST_DIR"
+
+          # Create the QMD file
+          QMD_FILE="$POST_DIR/$SLUG.qmd"
+          cat <<EOF > "$QMD_FILE"
+---
+title: "$TITLE"
+description: |
+  $SUMMARY
+author:
+  - name: "$AUTHOR"
+date: $DATE
+---
+
+$CONTENT
+EOF
+
+          echo "Created $QMD_FILE"
+
+      - name: Commit and push QMD
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add post/
+          git commit -m "Add dissemination post from issue #${ISSUE_NUMBER}" || echo "No changes to commit"
+          git push
