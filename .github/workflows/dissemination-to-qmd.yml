@@ -39,20 +39,34 @@ jobs:
           POST_DIR="post/$DATE-$SLUG"
           mkdir -p "$POST_DIR"
 
-          # Create the QMD file
+author:
+date: $DATE
+
+          # Create the QMD file with proper YAML front matter
           QMD_FILE="$POST_DIR/$SLUG.qmd"
           cat <<EOF > "$QMD_FILE"
+---
 title: "$TITLE"
 description: |
   $SUMMARY
 author:
   - name: "$AUTHOR"
 date: $DATE
+---
 
 $CONTENT
 EOF
 
           echo "Created $QMD_FILE"
+
+
+      - name: Commit and push QMD
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add post/
+          git commit -m "Add dissemination post from issue #${ISSUE_NUMBER}" || echo "No changes to commit"
+          git push
 
       - name: Close the issue
         uses: actions/github-script@v7
