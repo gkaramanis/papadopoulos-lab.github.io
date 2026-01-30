@@ -23,11 +23,11 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
-          # Extract fields from the issue body using grep and sed
-          TITLE=$(echo "$ISSUE_BODY" | awk '/## Title/{flag=1;next}/## Summary/{flag=0}flag' | sed '/^<!--.*-->/d' | xargs)
-          SUMMARY=$(echo "$ISSUE_BODY" | awk '/## Summary/{flag=1;next}/## Main Content/{flag=0}flag' | sed '/^<!--.*-->/d' | xargs)
-          CONTENT=$(echo "$ISSUE_BODY" | awk '/## Main Content/{flag=1;next}/## Author/{flag=0}flag' | sed '/^<!--.*-->/d')
-          AUTHOR=$(echo "$ISSUE_BODY" | awk '/## Author/{flag=1;next}flag' | sed '/^<!--.*-->/d' | xargs)
+          # Extract fields from the issue body (YAML form uses ### headers)
+          TITLE=$(echo "$ISSUE_BODY" | awk '/^### Title$/{flag=1;next}/^### /{flag=0}flag' | sed '/^[[:space:]]*$/d' | xargs)
+          SUMMARY=$(echo "$ISSUE_BODY" | awk '/^### Summary$/{flag=1;next}/^### /{flag=0}flag' | sed '/^[[:space:]]*$/d' | xargs)
+          CONTENT=$(echo "$ISSUE_BODY" | awk '/^### Main Content$/{flag=1;next}/^### /{flag=0}flag')
+          AUTHOR=$(echo "$ISSUE_BODY" | awk '/^### Author$/{flag=1;next}/^### /{flag=0}flag' | sed '/^[[:space:]]*$/d' | xargs)
 
           # Fallbacks if fields are empty
           [ -z "$TITLE" ] && TITLE="$ISSUE_TITLE"
@@ -41,18 +41,25 @@ jobs:
 
           # Create the QMD file with proper YAML front matter
           QMD_FILE="$POST_DIR/$SLUG.qmd"
-          cat > "$QMD_FILE" <<EOF
+          cat > "$QMD_FILE" << 'QMDEOF'
 ---
-title: "$TITLE"
+title: "TITLE_PLACEHOLDER"
 description: |
-  $SUMMARY
+  SUMMARY_PLACEHOLDER
 author:
-  - name: "$AUTHOR"
-date: $DATE
+  - name: "AUTHOR_PLACEHOLDER"
+date: DATE_PLACEHOLDER
 ---
 
-$CONTENT
-EOF
+CONTENT_PLACEHOLDER
+QMDEOF
+
+          # Replace placeholders with actual values
+          sed -i "s|TITLE_PLACEHOLDER|$TITLE|g" "$QMD_FILE"
+          sed -i "s|SUMMARY_PLACEHOLDER|$SUMMARY|g" "$QMD_FILE"
+          sed -i "s|AUTHOR_PLACEHOLDER|$AUTHOR|g" "$QMD_FILE"
+          sed -i "s|DATE_PLACEHOLDER|$DATE|g" "$QMD_FILE"
+          sed -i "s|CONTENT_PLACEHOLDER|$CONTENT|g" "$QMD_FILE"
 
           echo "Created $QMD_FILE"
 
