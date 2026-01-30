@@ -4,6 +4,7 @@ on:
   issues:
     types: [opened, edited]
 
+
 jobs:
   create-qmd-from-issue:
     if: |
@@ -41,19 +42,28 @@ jobs:
           # Create the QMD file
           QMD_FILE="$POST_DIR/$SLUG.qmd"
           cat <<EOF > "$QMD_FILE"
----
 title: "$TITLE"
 description: |
   $SUMMARY
 author:
   - name: "$AUTHOR"
 date: $DATE
----
 
 $CONTENT
 EOF
 
           echo "Created $QMD_FILE"
+
+      - name: Close the issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            })
 
       - name: Commit and push QMD
         run: |
