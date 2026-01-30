@@ -1,23 +1,40 @@
----
+
 name: Dissemination Post
-about: Submit a new dissemination blog post for the website
+description: Submit a new dissemination blog post for the website
 title: "[Dissemination] "
-labels: dissemination, blog
-assignees: ''
----
-
-## Title
-
-<!-- Write the title of your post -->
-
-## Summary
-
-<!-- Brief summary of the post -->
-
-## Main Content
-
-<!-- Write your post content here -->
-
-## Author
-
-<!-- Your name -->
+labels:
+	- dissemination
+	- blog
+body:
+	- type: input
+		id: title
+		attributes:
+			label: Title
+			description: Write the title of your post
+			placeholder: "Enter the post title"
+		validations:
+			required: true
+	- type: textarea
+		id: summary
+		attributes:
+			label: Summary
+			description: Brief summary of the post
+			placeholder: "Enter a short summary"
+		validations:
+			required: true
+	- type: textarea
+		id: main-content
+		attributes:
+			label: Main Content
+			description: Write your post content here
+			placeholder: "Enter the main content of your post"
+		validations:
+			required: true
+	- type: input
+		id: author
+		attributes:
+			label: Author
+			description: Your name
+			placeholder: "Enter your name"
+		validations:
+			required: true
