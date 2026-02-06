@@ -1,0 +1,8 @@
+---
+title: "Past support"
+status: "Updating"
+categories: ["Funding"]
+---
+
+**Status:** <span class="status-badge">Updating</span>  
+Previous funding acknowledgements will be added once they are fully documented.

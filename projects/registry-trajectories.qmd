@@ -1,0 +1,8 @@
+---
+title: "Registry-based health trajectories"
+status: "Ongoing"
+categories: ["Registry studies", "Clinical outcomes"]
+---
+
+<span class="status-badge">Ongoing</span>  
+We examine long-term treatment outcomes and healthcare utilization patterns to inform evidence-based clinical guidance.

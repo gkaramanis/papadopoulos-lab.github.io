@@ -14,17 +14,26 @@ title-block-banner: false
 The Papadopoulos Lab at Uppsala University is dedicated to advancing research in gender dysphoria and transgender health. Our multidisciplinary approach combines epidemiological methods, registry-based research, and innovative data science techniques to better understand transgender health outcomes and improve clinical care.
 
 Our research focuses on several key areas within transgender health:
-
-**Epidemiological Research**: We conduct large-scale population studies using Swedish health registries to investigate prevalence, incidence, and health outcomes in transgender populations. Our work contributes to the global understanding of transgender health through rigorous epidemiological methods.
-
-**Registry-Based Studies**: Leveraging Sweden's comprehensive healthcare registries, we examine long-term health trajectories, treatment outcomes, and healthcare utilization patterns among transgender individuals. Our research helps inform evidence-based clinical guidelines and policy decisions.
-
-**Methodological Innovation**: We develop and maintain the [swereg](https://papadopoulos-lab.github.io/swereg/) R package, a specialized tool for analyzing Swedish healthcare registry data. This open-source software enables researchers worldwide to conduct robust epidemiological studies using registry data.
-
-**Collaborative Research**: We actively collaborate with national and international research teams, contributing to large-scale studies and consortiums focused on transgender health research.
-
 :::
 
-## Contact
+::: {.research-area}
+**Epidemiological research**\
+We conduct large-scale population studies using Swedish health registries to investigate prevalence, incidence, and health outcomes in transgender populations. Our work contributes to the global understanding of transgender health through rigorous epidemiological methods.
+:::
+::: {.research-area}
+**Registry-based studies**\
+Leveraging Sweden's comprehensive healthcare registries, we examine long-term health trajectories, treatment outcomes, and healthcare utilization patterns among transgender individuals. Our research helps inform evidence-based clinical guidelines and policy decisions.
+:::
+::: {.research-area}
+**Methodological innovation**\
+We develop and maintain the [swereg](https://papadopoulos-lab.github.io/swereg/) R package, a specialized tool for analyzing Swedish healthcare registry data. This open-source software enables researchers worldwide to conduct robust epidemiological studies using registry data.
+:::
+::: {.research-area}
+**Collaborative research**\
+We actively collaborate with national and international research teams, contributing to large-scale studies and consortiums focused on transgender health research.
+:::
+
+
+## Contact {#contact}
 
 fotis.papadopoulos@uu.se

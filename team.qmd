@@ -4,56 +4,39 @@ description: |
   Meet the researchers in the Papadopoulos Lab.
 ---
 
+Our team combines registry-based epidemiology, open-source methods, and collaborative research in transgender health.
+
 ## Principal Investigator
 
-### Dr. Fotis Papadopoulos
-**Assistant Professor**  
-Department of Neuroscience, Uppsala University
+::: {.grid}
+::: {.profile-card}
+![](resources/fotis.jpeg){.profile-img width="120px"}<br>
+<span class="profile-title">Dr. Fotis Papadopoulos</span>  
+<span class="profile-role">Assistant Professor</span>  
+Department of Neuroscience, Uppsala University  
+Leads large-scale registry-based studies and methodological innovation in transgender health epidemiology.  
+*Research interests:* Transgender health epidemiology, registry-based research, healthcare outcomes  
+[Email](mailto:fotis.papadopoulos@uu.se)
+:::
+:::
 
-Dr. Papadopoulos leads the lab's research in transgender health and gender dysphoria epidemiology. His work focuses on large-scale registry-based studies and methodological innovation in epidemiological research.
+## Research team
 
-*Research Interests:* Transgender health epidemiology, registry-based research, gender dysphoria, healthcare outcomes
-
----
-
-## Research Team
-
-### [Lab Member Name]
-**[Position - e.g., Postdoctoral Researcher]**
-
-Brief description of research focus and background. Areas of expertise and current projects.
-
-*Research Interests:* [List key areas]
-
-### [Lab Member Name]
-**[Position - e.g., PhD Student]**
-
-Brief description of research focus and background. Areas of expertise and current projects.
-
-*Research Interests:* [List key areas]
-
-### [Lab Member Name]
-**[Position - e.g., Research Assistant]**
-
-Brief description of research focus and background. Areas of expertise and current projects.
-
-*Research Interests:* [List key areas]
-
----
+::: {.grid columns=2}
+::: {.profile-card}
+<span class="profile-title">Positions and collaborators</span>  
+<span class="profile-role">Updates forthcoming</span>  
+Please reach out if you are interested in research opportunities.
+:::
+:::
 
 ## Collaborators
 
-We maintain active collaborations with researchers at:
+- **Uppsala University** — Department of Neuroscience
+- **Karolinska Institutet** — Department of Medical Epidemiology and Biostatistics
+- **University of Gothenburg** — Sahlgrenska Academy
+- **International research networks** — Transgender health research consortiums
 
-- **Uppsala University** - Department of Neuroscience
-- **Karolinska Institutet** - Department of Medical Epidemiology and Biostatistics
-- **University of Gothenburg** - Sahlgrenska Academy
-- **International research networks** - Transgender health research consortiums
+## Join our team
 
----
-
-## Join Our Team
-
-We are always interested in hearing from motivated researchers at all career stages. If you are interested in transgender health research, registry-based epidemiology, or methodological development, please reach out to discuss potential opportunities.
-
-Current opportunities and application instructions will be posted here as they become available.
+We welcome inquiries from researchers at all career stages. If you are interested in transgender health, registry-based epidemiology, or methodological development, contact us to discuss potential opportunities.

@@ -1,19 +1,48 @@
 ---
 title: Projects
+description: |
+    Research projects spanning registry-based epidemiology, methodological innovation, and open-source tools
 ---
-
-# Projects
 
 Our lab is involved in a variety of research projects spanning multiple disciplines. Below is a selection of our current and past projects.
 
-## Project Alpha
+## Current Projects
 
-A study on innovative methods in data analysis and modeling.
+::: {.project-card}
 
-## Project Beta
+```{=html}
+<h3 style="margin-bottom: 0.5rem;">swereg R package</h3>
+<span class="status-badge">Ongoing</span>
+```
 
-Exploring new approaches in computational biology.
+We develop and maintain [swereg](https://papadopoulos-lab.github.io/swereg/), an R package for analyzing Swedish healthcare registry data.
 
-## Project Gamma
+<span class="listing-tags">Methods</span> <span class="listing-tags">Open-source tools</span>
 
-Developing tools for reproducible research and open science.
+:::
+
+::: {.project-card}
+
+```{=html}
+<h3 style="margin-bottom: 0.5rem;">Population Studies</h3>
+<span class="status-badge">Ongoing</span>
+```
+
+Registry-based studies examining population dynamics and epidemiological patterns in Swedish healthcare data.
+
+<span class="listing-tags">Epidemiology</span> <span class="listing-tags">Registry-based methods</span>
+
+:::
+
+::: {.project-card}
+
+```{=html}
+<h3 style="margin-bottom: 0.5rem;">Registry Trajectories</h3>
+<span class="status-badge">Ongoing</span>
+```
+
+Developing novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries.
+
+<span class="listing-tags">Methods</span> <span class="listing-tags">Epidemiology</span>
+
+:::

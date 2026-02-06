@@ -1,0 +1,10 @@
+---
+title: "Practical data management for modern open science"
+date: 2024-10-01
+location: "Uppsala University"
+categories: ["Open science", "Data management"]
+---
+
+**Date:** 2024-10-01  
+**Location:** Uppsala University  
+A practical overview of data management workflows for reproducible research. [PDF](presentations/2024-10-practical-data-management-for-modern-open-science.pdf)

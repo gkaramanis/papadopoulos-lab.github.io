@@ -11,28 +11,21 @@
     "href": "people.html",
     "title": "People",
     "section": "",
-    "text": "Dr. Alex Papadopoulos\nPrincipal Investigator\nShort bio goes here. Research interests, background, and a fun fact.\nORCID | Website | Email"
+    "text": "The lab brings together expertise in epidemiology, registry-based methods, and data science. Member profiles are updated as new roles are confirmed."
   },
   {
     "objectID": "people.html#principal-investigator",
     "href": "people.html#principal-investigator",
     "title": "People",
-    "section": "",
-    "text": "Dr. Alex Papadopoulos\nPrincipal Investigator\nShort bio goes here. Research interests, background, and a fun fact.\nORCID | Website | Email"
+    "section": "Principal Investigator",
+    "text": "Principal Investigator\n\n\n Dr. Fotis Papadopoulos\nAssistant Professor\nDepartment of Neuroscience, Uppsala University\nEmail"
   },
   {
-    "objectID": "people.html#researchers",
-    "href": "people.html#researchers",
+    "objectID": "people.html#lab-members",
+    "href": "people.html#lab-members",
     "title": "People",
-    "section": "Researchers",
-    "text": "Researchers\n\n\n Dr. Maria Smith\nResearcher\nShort bio for Maria. Main research focus and background.\nORCID | Email\n\n\n Dr. John Doe\nResearcher\nShort bio for John. Main research focus and background.\nORCID | Email"
-  },
-  {
-    "objectID": "people.html#students",
-    "href": "people.html#students",
-    "title": "People",
-    "section": "Students",
-    "text": "Students\n\n\n Jane Roe\nPhD Student\nShort bio for Jane. Research interests and background.\nEmail\n\n\n Mark Lee\nMSc Student\nShort bio for Mark. Research interests and background.\nEmail"
+    "section": "Lab members",
+    "text": "Lab members\n\n\n Lab Member A\nPostdoctoral Researcher\nPlaceholder bio and research focus.\n\n\n Lab Member B\nPhD Student\nPlaceholder bio and research focus.\n\n\n Lab Member C\nResearch Assistant\nPlaceholder bio and research focus.\n\n\n Lab Member D\nVisiting Scholar\nPlaceholder bio and research focus."
   },
   {
     "objectID": "publications.html",
@@ -74,28 +67,35 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Our lab is involved in a variety of research projects spanning multiple disciplines. Below is a selection of our current and past projects.\n\n\nA study on innovative methods in data analysis and modeling.\n\n\n\nExploring new approaches in computational biology.\n\n\n\nDeveloping tools for reproducible research and open science."
+    "text": "Our lab is involved in a variety of research projects spanning multiple disciplines. Below is a selection of our current and past projects."
   },
   {
-    "objectID": "projects.html#project-alpha",
-    "href": "projects.html#project-alpha",
+    "objectID": "projects.html#current-projects",
+    "href": "projects.html#current-projects",
     "title": "Projects",
-    "section": "",
-    "text": "A study on innovative methods in data analysis and modeling."
+    "section": "Current Projects",
+    "text": "Current Projects\n\nswereg R package\nOngoing\nWe develop and maintain swereg, an R package for analyzing Swedish healthcare registry data.\nMethods Open-source tools\n\n\nPopulation Studies\nOngoing\nRegistry-based studies examining population dynamics and epidemiological patterns in Swedish healthcare data.\nEpidemiology Registry-based methods\n\n\nRegistry Trajectories\nOngoing\nDeveloping novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries.\nMethods Epidemiology"
   },
   {
-    "objectID": "projects.html#project-beta",
-    "href": "projects.html#project-beta",
-    "title": "Projects",
+    "objectID": "funding-items/current-portfolio.html",
+    "href": "funding-items/current-portfolio.html",
+    "title": "Current funding portfolio",
     "section": "",
-    "text": "Exploring new approaches in computational biology."
+    "text": "Status: Updating\nA summary of active funding sources will be posted here as awards are confirmed."
   },
   {
-    "objectID": "projects.html#project-gamma",
-    "href": "projects.html#project-gamma",
-    "title": "Projects",
+    "objectID": "presentations-items/2024-10-practical-data-management.html",
+    "href": "presentations-items/2024-10-practical-data-management.html",
+    "title": "Practical data management for modern open science",
     "section": "",
-    "text": "Developing tools for reproducible research and open science."
+    "text": "Date: 2024-10-01\nLocation: Uppsala University\nA practical overview of data management workflows for reproducible research. PDF"
+  },
+  {
+    "objectID": "projects/registry-trajectories.html",
+    "href": "projects/registry-trajectories.html",
+    "title": "Registry-based health trajectories",
+    "section": "",
+    "text": "Ongoing\nWe examine long-term treatment outcomes and healthcare utilization patterns to inform evidence-based clinical guidance."
   },
   {
     "objectID": "post/2023-02-23-sampling-bias/sampling-bias.html",
@@ -196,46 +196,67 @@
     "text": "Conclusion\nThe blog article discusses the limitations of using LASSO (Least Absolute Shrinkage and Selection Operator) models for statistical inference, particularly in situations where the number of predictors (i.e. independent variables) is much larger than the sample size. In these cases, LASSO models can suffer from high variability in the estimated coefficients, which can lead to incorrect or unreliable conclusions.\nOne proposed solution to this problem is to use a two-stage inference approach, where LASSO is first used to select a subset of predictors, and then a separate statistical method (such as ordinary least squares) is used to estimate the coefficients for the selected predictors. However, this two-stage approach can also have limitations, such as a loss of power in the second stage and increased computational complexity.\nIn contrast, Bayesian statistics offer a one-stage inference approach that can provide more reliable and interpretable results in complex modeling situations. Bayesian statistics allow for the incorporation of prior knowledge and uncertainty in the model, which can help to reduce variability and improve accuracy. Bayesian methods also provide a framework for model comparison and selection, which can help to identify the most appropriate model for a given dataset.\nOverall, while LASSO models can be useful in certain situations, their limitations in high-dimensional data settings highlight the advantages of Bayesian statistics for reliable and interpretable statistical inference."
   },
   {
+    "objectID": "projects/population-studies.html",
+    "href": "projects/population-studies.html",
+    "title": "Population-based studies in transgender health",
+    "section": "",
+    "text": "Ongoing\nWe conduct large-scale population studies using Swedish health registries to investigate prevalence, incidence, and health outcomes."
+  },
+  {
+    "objectID": "projects/swereg.html",
+    "href": "projects/swereg.html",
+    "title": "swereg R package",
+    "section": "",
+    "text": "Ongoing\nWe develop and maintain swereg, an R package for analyzing Swedish healthcare registry data."
+  },
+  {
+    "objectID": "funding-items/past-support.html",
+    "href": "funding-items/past-support.html",
+    "title": "Past support",
+    "section": "",
+    "text": "Status: Updating\nPrevious funding acknowledgements will be added once they are fully documented."
+  },
+  {
     "objectID": "team.html",
     "href": "team.html",
     "title": "Team",
     "section": "",
-    "text": "Assistant Professor\nDepartment of Neuroscience, Uppsala University\nDr. Papadopoulos leads the lab’s research in transgender health and gender dysphoria epidemiology. His work focuses on large-scale registry-based studies and methodological innovation in epidemiological research.\nResearch Interests: Transgender health epidemiology, registry-based research, gender dysphoria, healthcare outcomes"
+    "text": "Our team combines registry-based epidemiology, open-source methods, and collaborative research in transgender health."
   },
   {
     "objectID": "team.html#principal-investigator",
     "href": "team.html#principal-investigator",
     "title": "Team",
-    "section": "",
-    "text": "Assistant Professor\nDepartment of Neuroscience, Uppsala University\nDr. Papadopoulos leads the lab’s research in transgender health and gender dysphoria epidemiology. His work focuses on large-scale registry-based studies and methodological innovation in epidemiological research.\nResearch Interests: Transgender health epidemiology, registry-based research, gender dysphoria, healthcare outcomes"
+    "section": "Principal Investigator",
+    "text": "Principal Investigator\n\n\n Dr. Fotis Papadopoulos\nAssistant Professor\nDepartment of Neuroscience, Uppsala University\nLeads large-scale registry-based studies and methodological innovation in transgender health epidemiology.\nResearch interests: Transgender health epidemiology, registry-based research, healthcare outcomes\nEmail"
   },
   {
     "objectID": "team.html#research-team",
     "href": "team.html#research-team",
     "title": "Team",
-    "section": "Research Team",
-    "text": "Research Team\n\n[Lab Member Name]\n[Position - e.g., Postdoctoral Researcher]\nBrief description of research focus and background. Areas of expertise and current projects.\nResearch Interests: [List key areas]\n\n\n[Lab Member Name]\n[Position - e.g., PhD Student]\nBrief description of research focus and background. Areas of expertise and current projects.\nResearch Interests: [List key areas]\n\n\n[Lab Member Name]\n[Position - e.g., Research Assistant]\nBrief description of research focus and background. Areas of expertise and current projects.\nResearch Interests: [List key areas]"
+    "section": "Research team",
+    "text": "Research team\n\n\nPositions and collaborators\nUpdates forthcoming\nPlease reach out if you are interested in research opportunities."
   },
   {
     "objectID": "team.html#collaborators",
     "href": "team.html#collaborators",
     "title": "Team",
     "section": "Collaborators",
-    "text": "Collaborators\nWe maintain active collaborations with researchers at:\n\nUppsala University - Department of Neuroscience\nKarolinska Institutet - Department of Medical Epidemiology and Biostatistics\nUniversity of Gothenburg - Sahlgrenska Academy\nInternational research networks - Transgender health research consortiums"
+    "text": "Collaborators\n\nUppsala University — Department of Neuroscience\nKarolinska Institutet — Department of Medical Epidemiology and Biostatistics\nUniversity of Gothenburg — Sahlgrenska Academy\nInternational research networks — Transgender health research consortiums"
   },
   {
     "objectID": "team.html#join-our-team",
     "href": "team.html#join-our-team",
     "title": "Team",
-    "section": "Join Our Team",
-    "text": "Join Our Team\nWe are always interested in hearing from motivated researchers at all career stages. If you are interested in transgender health research, registry-based epidemiology, or methodological development, please reach out to discuss potential opportunities.\nCurrent opportunities and application instructions will be posted here as they become available."
+    "section": "Join our team",
+    "text": "Join our team\nWe welcome inquiries from researchers at all career stages. If you are interested in transgender health, registry-based epidemiology, or methodological development, contact us to discuss potential opportunities."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Papadopoulos Lab",
     "section": "",
-    "text": "The Papadopoulos Lab at Uppsala University is dedicated to advancing research in gender dysphoria and transgender health. Our multidisciplinary approach combines epidemiological methods, registry-based research, and innovative data science techniques to better understand transgender health outcomes and improve clinical care.\nOur research focuses on several key areas within transgender health:\nEpidemiological Research: We conduct large-scale population studies using Swedish health registries to investigate prevalence, incidence, and health outcomes in transgender populations. Our work contributes to the global understanding of transgender health through rigorous epidemiological methods.\nRegistry-Based Studies: Leveraging Sweden’s comprehensive healthcare registries, we examine long-term health trajectories, treatment outcomes, and healthcare utilization patterns among transgender individuals. Our research helps inform evidence-based clinical guidelines and policy decisions.\nMethodological Innovation: We develop and maintain the swereg R package, a specialized tool for analyzing Swedish healthcare registry data. This open-source software enables researchers worldwide to conduct robust epidemiological studies using registry data.\nCollaborative Research: We actively collaborate with national and international research teams, contributing to large-scale studies and consortiums focused on transgender health research."
+    "text": "The Papadopoulos Lab at Uppsala University is dedicated to advancing research in gender dysphoria and transgender health. Our multidisciplinary approach combines epidemiological methods, registry-based research, and innovative data science techniques to better understand transgender health outcomes and improve clinical care.\nOur research focuses on several key areas within transgender health:"
   },
   {
     "objectID": "index.html#contact",
@@ -249,20 +270,13 @@
     "href": "funding.html",
     "title": "Funding",
     "section": "",
-    "text": "Funding\nOur research is supported by generous funding from various organizations.\n\nNational Science Foundation (NSF)\nEuropean Research Council (ERC)\nLocal University Grants\nPrivate Foundations"
+    "text": "Our funding portfolio supports registry-based research, methodological innovation, and open-source tool development. Details are updated as awards are confirmed.\n\nNational Science Foundation (NSF)\nEuropean Research Council (ERC)\nLocal university grants\nPrivate foundations"
   },
   {
     "objectID": "presentations.html",
     "href": "presentations.html",
     "title": "Presentations",
     "section": "",
-    "text": "Practical data management for modern open science. [pdf]"
-  },
-  {
-    "objectID": "presentations.html#section",
-    "href": "presentations.html#section",
-    "title": "Presentations",
-    "section": "",
-    "text": "Practical data management for modern open science. [pdf]"
+    "text": "Below is a curated list of recent talks and invited presentations.\n\n\n\n\n\n\n\n\n\n\n\n\nPractical data management for modern open science\n\n\n\n\n\n\n\n\n\nOct 1, 2024\n\n\n\n\n\n\nNo matching items"
   }
 ]

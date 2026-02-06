@@ -2,10 +2,11 @@
 title: "Presentations"
 description: |
   Selected presentations by lab members
+listing:
+  contents: presentations-items
+  type: grid
+  grid-columns: 2
+  sort: date
+  filter-ui: false
 ---
-
-## 2024
-
-### Uppsala University
-
-Practical data management for modern open science. [\[pdf\]](presentations/2024-10-practical-data-management-for-modern-open-science.pdf)
+Below is a curated list of recent talks and invited presentations.

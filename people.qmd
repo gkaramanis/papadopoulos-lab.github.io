@@ -4,53 +4,45 @@ description: |
     Meet the members of our research group
 ---
 
+The lab brings together expertise in epidemiology, registry-based methods, and data science. Member profiles are updated as new roles are confirmed.
 
 ## Principal Investigator
 
 ::: {.grid}
 ::: {.profile-card}
-![](https://randomuser.me/api/portraits/men/1.jpg){.profile-img width="120px"}<br>
-**Dr. Alex Papadopoulos**  
-*Principal Investigator*  
-Short bio goes here. Research interests, background, and a fun fact.  
-[ORCID](https://orcid.org/0000-0000-0000-0000) | [Website](#) | [Email](mailto:alex@example.com)
+![](resources/fotis.jpeg){.profile-img width="120px"}<br>
+<span class="profile-title">Dr. Fotis Papadopoulos</span>  
+<span class="profile-role">Assistant Professor</span>  
+Department of Neuroscience, Uppsala University  
+[Email](mailto:fotis.papadopoulos@uu.se)
 :::
 :::
 
-## Researchers
-
-::: {.grid columns=2}
-::: {.profile-card}
-![](https://randomuser.me/api/portraits/women/2.jpg){.profile-img width="120px"}<br>
-**Dr. Maria Smith**  
-*Researcher*  
-Short bio for Maria. Main research focus and background.  
-[ORCID](https://orcid.org/0000-0000-0000-0001) | [Email](mailto:maria@example.com)
-:::
-::: {.profile-card}
-![](https://randomuser.me/api/portraits/men/3.jpg){.profile-img width="120px"}<br>
-**Dr. John Doe**  
-*Researcher*  
-Short bio for John. Main research focus and background.  
-[ORCID](https://orcid.org/0000-0000-0000-0002) | [Email](mailto:john@example.com)
-:::
-:::
-
-## Students
+## Lab members
 
 ::: {.grid columns=2}
 ::: {.profile-card}
-![](https://randomuser.me/api/portraits/women/4.jpg){.profile-img width="120px"}<br>
-**Jane Roe**  
-*PhD Student*  
-Short bio for Jane. Research interests and background.  
-[Email](mailto:jane@example.com)
+![](https://api.dicebear.com/9.x/pixel-art/png?seed=one){.profile-img width="120px"}<br>
+<span class="profile-title">Lab Member A</span>  
+<span class="profile-role">Postdoctoral Researcher</span>  
+Placeholder bio and research focus.
 :::
 ::: {.profile-card}
-![](https://randomuser.me/api/portraits/men/5.jpg){.profile-img width="120px"}<br>
-**Mark Lee**  
-*MSc Student*  
-Short bio for Mark. Research interests and background.  
-[Email](mailto:mark@example.com)
+![](https://api.dicebear.com/9.x/pixel-art/png?seed=two){.profile-img width="120px"}<br>
+<span class="profile-title">Lab Member B</span>  
+<span class="profile-role">PhD Student</span>  
+Placeholder bio and research focus.
+:::
+::: {.profile-card}
+![](https://api.dicebear.com/9.x/pixel-art/png?seed=three){.profile-img width="120px"}<br>
+<span class="profile-title">Lab Member C</span>  
+<span class="profile-role">Research Assistant</span>  
+Placeholder bio and research focus.
+:::
+::: {.profile-card}
+![](https://api.dicebear.com/9.x/pixel-art/png?seed=four){.profile-img width="120px"}<br>
+<span class="profile-title">Lab Member D</span>  
+<span class="profile-role">Visiting Scholar</span>  
+Placeholder bio and research focus.
 :::
 :::

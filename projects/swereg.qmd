@@ -1,0 +1,8 @@
+---
+title: "swereg R package"
+status: "Ongoing"
+categories: ["Methods", "Open-source tools"]
+---
+
+<span class="status-badge">Ongoing</span>  
+We develop and maintain [swereg](https://papadopoulos-lab.github.io/swereg/), an R package for analyzing Swedish healthcare registry data.

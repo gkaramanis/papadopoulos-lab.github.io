@@ -1,0 +1,8 @@
+---
+title: "Current funding portfolio"
+status: "Updating"
+categories: ["Funding"]
+---
+
+**Status:** <span class="status-badge">Updating</span>  
+A summary of active funding sources will be posted here as awards are confirmed.

@@ -1,0 +1,8 @@
+---
+title: "Population-based studies in transgender health"
+status: "Ongoing"
+categories: ["Registry studies", "Epidemiology"]
+---
+
+<span class="status-badge">Ongoing</span>  
+We conduct large-scale population studies using Swedish health registries to investigate prevalence, incidence, and health outcomes.

@@ -2,11 +2,9 @@
 title: Funding
 ---
 
-# Funding
-
-Our research is supported by generous funding from various organizations.
+Our funding portfolio supports registry-based research, methodological innovation, and open-source tool development. Details are updated as awards are confirmed.
 
 - National Science Foundation (NSF)
 - European Research Council (ERC)
-- Local University Grants
-- Private Foundations
+- Local university grants
+- Private foundations

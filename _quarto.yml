@@ -28,11 +28,12 @@ website:
       - blog.qmd
       - icon: github
         href: https://github.com/papadopoulos-lab
+  page-footer:
+    center: "Papadopoulos Lab<br>Department of Neuroscience, Uppsala University<br>Uppsala, Sweden<br>Contact: [fotis.papadopoulos@uu.se](mailto:fotis.papadopoulos@uu.se)<br>[GitHub](https://github.com/papadopoulos-lab) · [Swereg](https://papadopoulos-lab.github.io/swereg/)"
 format:
   html:
     theme: litera
     css: styles.css
-    title-block-banner: "#f8f8f8"
-    title-block-banner-color: "#000000"
+    title-block-banner: false
 
 
