@@ -41,25 +41,20 @@ jobs:
 
           # Create the QMD file with proper YAML front matter
           QMD_FILE="$POST_DIR/$SLUG.qmd"
-          cat > "$QMD_FILE" << 'QMDEOF'
----
-title: "TITLE_PLACEHOLDER"
-description: |
-  SUMMARY_PLACEHOLDER
-author:
-  - name: "AUTHOR_PLACEHOLDER"
-date: DATE_PLACEHOLDER
----
-
-CONTENT_PLACEHOLDER
-QMDEOF
-
-          # Replace placeholders with actual values
-          sed -i "s|TITLE_PLACEHOLDER|$TITLE|g" "$QMD_FILE"
-          sed -i "s|SUMMARY_PLACEHOLDER|$SUMMARY|g" "$QMD_FILE"
-          sed -i "s|AUTHOR_PLACEHOLDER|$AUTHOR|g" "$QMD_FILE"
-          sed -i "s|DATE_PLACEHOLDER|$DATE|g" "$QMD_FILE"
-          sed -i "s|CONTENT_PLACEHOLDER|$CONTENT|g" "$QMD_FILE"
+          SAFE_TITLE=$(printf '%s' "$TITLE" | sed 's/"/\\"/g')
+          SAFE_SUMMARY=$(printf '%s' "$SUMMARY" | sed 's/"/\\"/g')
+          SAFE_AUTHOR=$(printf '%s' "$AUTHOR" | sed 's/"/\\"/g')
+          {
+            printf '%s\n' '---'
+            printf 'title: "%s"\n' "$SAFE_TITLE"
+            printf '%s\n' 'description: |'
+            printf '  %s\n' "$SAFE_SUMMARY"
+            printf '%s\n' 'author:'
+            printf '  - name: "%s"\n' "$SAFE_AUTHOR"
+            printf 'date: %s\n' "$DATE"
+            printf '%s\n\n' '---'
+            printf '%s\n' "$CONTENT"
+          } > "$QMD_FILE"
 
           echo "Created $QMD_FILE"
 
@@ -82,11 +77,3 @@ QMDEOF
               issue_number: context.issue.number,
               state: 'closed'
             })
-
-      - name: Commit and push QMD
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add post/
-          git commit -m "Add dissemination post from issue #${ISSUE_NUMBER}" || echo "No changes to commit"
-          git push
