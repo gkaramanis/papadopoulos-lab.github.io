@@ -17,6 +17,9 @@ jobs:
       - name: Set up jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
       - name: Extract issue fields and create QMD
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
