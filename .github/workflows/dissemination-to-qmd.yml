@@ -67,6 +67,17 @@ jobs:
           git commit -m "Add dissemination post from issue #${ISSUE_NUMBER}" || echo "No changes to commit"
           git push
 
+      - name: Render site with Quarto
+        run: quarto render
+
+      - name: Commit and push rendered site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git commit -m "Render site for issue #${ISSUE_NUMBER}" || echo "No changes to commit"
+          git push
+
       - name: Close the issue
         uses: actions/github-script@v7
         with:
