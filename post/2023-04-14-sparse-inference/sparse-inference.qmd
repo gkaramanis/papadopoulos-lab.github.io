@@ -13,6 +13,7 @@ editor_options:
   chunk_output_type: console
 execute:
   eval: false
+freeze: true # do not re-run code chunks on render, use cached results
 ---
 
 ## Introduction

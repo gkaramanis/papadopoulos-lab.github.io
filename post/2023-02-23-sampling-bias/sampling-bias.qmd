@@ -10,6 +10,7 @@ date: 2023-02-23
 title-block-banner: "#e2ebf0"
 editor_options: 
   chunk_output_type: console
+freeze: true # do not re-run code chunks on render, use cached results
 ---
 
 ```{r}
