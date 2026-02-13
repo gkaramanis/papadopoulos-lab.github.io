@@ -1,35 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://papadopoulos-lab.github.io/index.html</loc>
-    <lastmod>2026-02-13T10:30:34.302Z</lastmod>
+    <loc>https://papadopoulos-lab.github.io/blog.html</loc>
+    <lastmod>2026-01-30T08:09:27.828Z</lastmod>
   </url>
   <url>
     <loc>https://papadopoulos-lab.github.io/people.html</loc>
     <lastmod>2026-02-13T10:19:27.637Z</lastmod>
   </url>
   <url>
-    <loc>https://papadopoulos-lab.github.io/blog.html</loc>
-    <lastmod>2026-01-30T08:09:27.828Z</lastmod>
-  </url>
-  <url>
-    <loc>https://papadopoulos-lab.github.io/post/2023-04-14-sparse-inference/sparse-inference.html</loc>
-    <lastmod>2026-02-07T08:45:04.219Z</lastmod>
-  </url>
-  <url>
-    <loc>https://papadopoulos-lab.github.io/post/2023-02-23-sampling-bias/sampling-bias.html</loc>
-    <lastmod>2026-02-07T08:45:04.219Z</lastmod>
+    <loc>https://papadopoulos-lab.github.io/publications.html</loc>
+    <lastmod>2026-01-30T13:47:27.330Z</lastmod>
   </url>
   <url>
     <loc>https://papadopoulos-lab.github.io/projects.html</loc>
     <lastmod>2026-02-06T09:26:46.133Z</lastmod>
   </url>
   <url>
-    <loc>https://papadopoulos-lab.github.io/presentations.html</loc>
+    <loc>https://papadopoulos-lab.github.io/funding-items/current-portfolio.html</loc>
+    <lastmod>2026-02-05T11:33:22.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/presentations-items/2024-10-practical-data-management.html</loc>
+    <lastmod>2026-02-05T11:33:22.638Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/projects/registry-trajectories.html</loc>
+    <lastmod>2026-02-05T11:41:42.979Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/post/2023-02-23-sampling-bias/sampling-bias.html</loc>
+    <lastmod>2026-02-07T08:45:04.219Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/post/2023-04-14-sparse-inference/sparse-inference.html</loc>
+    <lastmod>2026-02-07T08:45:04.219Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/projects/population-studies.html</loc>
+    <lastmod>2026-02-05T11:41:42.979Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/projects/swereg.html</loc>
+    <lastmod>2026-02-05T11:41:42.979Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/funding-items/past-support.html</loc>
+    <lastmod>2026-02-05T11:33:22.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/team.html</loc>
     <lastmod>2026-02-05T11:37:33.077Z</lastmod>
   </url>
   <url>
-    <loc>https://papadopoulos-lab.github.io/publications.html</loc>
-    <lastmod>2026-01-30T13:47:27.330Z</lastmod>
+    <loc>https://papadopoulos-lab.github.io/index.html</loc>
+    <lastmod>2026-02-13T13:05:03.508Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/funding.html</loc>
+    <lastmod>2026-02-05T11:41:42.979Z</lastmod>
+  </url>
+  <url>
+    <loc>https://papadopoulos-lab.github.io/presentations.html</loc>
+    <lastmod>2026-02-05T11:37:33.077Z</lastmod>
   </url>
 </urlset>

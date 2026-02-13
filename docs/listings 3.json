@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/post/2023-04-14-sparse-inference/sparse-inference.html",
+      "/post/2023-02-23-sampling-bias/sampling-bias.html"
+    ]
+  },
+  {
+    "listing": "/presentations.html",
+    "items": [
+      "/presentations-items/2024-10-practical-data-management.html"
+    ]
+  }
+]

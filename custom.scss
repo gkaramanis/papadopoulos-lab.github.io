@@ -1,5 +1,14 @@
 /*-- scss:defaults --*/
 
+// Bootstrap font size overrides
+$font-size-root: 18px;
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
 // Component-specific spacing defaults
 $component-border-radius: 12px;
 $component-border-radius-sm: 8px;
@@ -23,6 +32,8 @@ body {
   background-color: #ffffff;
   border-bottom: 3px solid #22863a;
   padding: 0.25rem 0 !important;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: larger;
 }
 
 .navbar .nav-link {
@@ -31,22 +42,23 @@ body {
 
 .navbar-brand {
   color: #ff8c42 !important;
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  font-family: "Space Grotesk", sans-serif;
 }
 
-.navbar-logo {
-  max-height: 50px;
+.navbar-brand img {
+  max-height: 60px !important;
+}
+
+.navbar-title {
+  font-size: xx-large;
+  line-height: 1.8rem;
 }
 
 .navbar .nav-link.active {
   color: #ff8c42 !important;
-}
-
-.navbar-brand img {
-  height: 80px !important;
-  width: auto !important;
-  max-width: 100% !important;
 }
 
 // Enhanced link styling
@@ -183,7 +195,7 @@ h2 {
 
 // Research area highlighting
 .research-area {
-  background: linear-gradient(135deg, #fef6f2 0%, #ffffff 100%);
+  background: linear-gradient(150deg, #fef6f2 0%, #ffffff 100%);
   border: 1px solid rgba(231, 111, 81, 0.2);
   border-radius: $component-border-radius-sm;
   padding: 0.5rem;

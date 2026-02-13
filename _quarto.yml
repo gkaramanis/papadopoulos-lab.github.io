@@ -10,7 +10,8 @@ resources:
   - "presentations/*"
 
 website:
-  title: "Uppsala Transgender Health Research Group"
+  title: "Uppsala Transgender  \n
+          Health Research Group"
   site-url: "https://papadopoulos-lab.github.io"
   favicon: favicon.png
   navbar:

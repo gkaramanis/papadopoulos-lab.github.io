@@ -60,6 +60,12 @@ typography:
           weight: 700
         - path: resources/fonts/Inter-Italic.otf
           style: italic
+    - family: Space Grotesk
+      source: file
+      files:
+        - path: resources/fonts/SpaceGrotesk-Regular.ttf
+        - path: resources/fonts/SpaceGrotesk-Bold.ttf
+          weight: 700
   
   base:
     family: Inter
@@ -67,7 +73,7 @@ typography:
     line-height: 1.6
   
   headings:
-    family: Inter
+    family: Space Grotesk
     weight: 600
     color: black
   

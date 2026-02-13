@@ -9,9 +9,9 @@
   {
     "objectID": "people.html",
     "href": "people.html",
-    "title": "People",
+    "title": "Papadopoulos Lab",
     "section": "",
-    "text": "The lab brings together expertise in epidemiology, registry-based methods, and data science. Member profiles are updated as new roles are confirmed."
+    "text": "title: People description: | Meet the members of our research group\nThe lab brings together expertise in epidemiology, registry-based methods, and data science. Member profiles are updated as new roles are confirmed."
   },
   {
     "objectID": "people.html#principal-investigator",
@@ -23,7 +23,7 @@
   {
     "objectID": "people.html#lab-members",
     "href": "people.html#lab-members",
-    "title": "People",
+    "title": "Papadopoulos Lab",
     "section": "Lab members",
     "text": "Lab members\n\n\n Dr. Fotis Papadopoulos\nAssistant Professor\nDepartment of Neuroscience, Uppsala University\nEmail\n\n\n Lab Member A\nPostdoctoral Researcher\nPlaceholder bio and research focus.\n\n\n Lab Member B\nPhD Student\nPlaceholder bio and research focus.\n\n\n Lab Member C\nResearch Assistant\nPlaceholder bio and research focus.\n\n\n Lab Member D\nVisiting Scholar\nPlaceholder bio and research focus."
   },
