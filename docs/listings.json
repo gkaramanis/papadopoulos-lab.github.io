@@ -1,21 +1,15 @@
 [
   {
-    "listing": "/presentations.html",
+    "listing": "/blog.html",
     "items": [
-      "/presentations-items/2024-10-practical-data-management.html"
+      "/post/2023-04-14-sparse-inference/sparse-inference.html",
+      "/post/2023-02-23-sampling-bias/sampling-bias.html"
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/presentations.html",
     "items": [
-      "/post/2026-02-13-good-study-trying-again/good-study-trying-again.html",
-      "/post/2026-02-13-good-study/good-study.html",
-      "/post/2026-02-07-new-groundbreaking-study-by-gd-lab/new-groundbreaking-study-by-gd-lab.html",
-      "/post/2026-02-06-best-study-ever/best-study-ever.html",
-      "/post/2026-02-06-test/test.html",
-      "/post/2026-02-06-study/study.html",
-      "/post/2023-04-14-sparse-inference/sparse-inference.html",
-      "/post/2023-02-23-sampling-bias/sampling-bias.html"
+      "/presentations-items/2024-10-practical-data-management.html"
     ]
   }
 ]
