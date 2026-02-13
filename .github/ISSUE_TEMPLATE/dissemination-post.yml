@@ -19,7 +19,7 @@ body:
     id: summary
     attributes:
       label: Summary
-      description: Brief summary of the post
+      description: Brief summary of the post shown on the blog summary page
       placeholder: "Enter a short summary"
     validations:
       required: true
@@ -27,7 +27,7 @@ body:
     id: main-content
     attributes:
       label: Main Content
-      description: Write your post content here
+      description: Write your post content here. This will be the main text of your blog post.
       placeholder: "Enter the main content of your post"
     validations:
       required: true
@@ -35,7 +35,7 @@ body:
     id: author
     attributes:
       label: Author
-      description: Your name
+      description: Your name, shown as the author of the post
       placeholder: "Enter your name"
     validations:
       required: true
