@@ -1,0 +1,397 @@
+/*-- scss:defaults --*/
+
+// Component-specific spacing defaults
+$component-border-radius: 12px;
+$component-border-radius-sm: 8px;
+$card-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+$card-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+/*-- scss:rules --*/
+
+// Body styling
+body {
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+// Navigation styling
+.navbar {
+  box-shadow: none;
+  background-color: #ffffff;
+  border-bottom: 3px solid #22863a;
+  padding: 0.25rem 0 !important;
+}
+
+.navbar .nav-link {
+  color: #1f2d3d;
+}
+
+.navbar-brand {
+  color: #ff8c42 !important;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  max-height: 50px;
+}
+
+.navbar .nav-link.active {
+  color: #ff8c42 !important;
+}
+
+.navbar-brand img {
+  height: 80px !important;
+  width: auto !important;
+  max-width: 100% !important;
+}
+
+// Enhanced link styling
+a {
+  color: #2f6f9f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1f4f73;
+  text-decoration: underline;
+}
+
+// Hero section styling
+#hero-heading {
+  padding: 2rem 0;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.quarto-about-solana .about-contents {
+  max-width: 640px;
+  margin: 0 auto;
+  flex: 1 1 520px;
+  min-width: 0;
+}
+
+.quarto-about-solana .about-entity {
+  display: flex;
+  width: min(100%, 980px);
+  max-width: 980px;
+  margin: 0 auto;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.quarto-about-solana .about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-grid {
+  max-width: 980px;
+  margin: 0 auto;
+  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#hero-heading h1 {
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+// Section headers
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  border-bottom: 2px solid #e76f51;
+  padding-bottom: 0.5rem;
+}
+
+// Button styling
+.btn-primary {
+  background-color: #e76f51;
+  border-color: #e76f51;
+
+  &:hover {
+    background-color: #c85f45;
+    border-color: #c85f45;
+  }
+}
+
+.btn-secondary {
+  background-color: #2a9d8f;
+  border-color: #2a9d8f;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #1f7c71;
+    border-color: #1f7c71;
+    color: #ffffff;
+  }
+}
+
+.btn-outline-primary {
+  color: #2a9d8f;
+  border-color: #2a9d8f;
+
+  &:hover {
+    background-color: #2a9d8f;
+    border-color: #2a9d8f;
+    color: #ffffff;
+  }
+}
+
+// Card styling for team members
+.team-member {
+  background: #f8f9fa;
+  border-radius: $component-border-radius-sm;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+// Card styling for projects
+.project-card {
+  border: 1px solid #ededed;
+  background: #ffffff;
+  border-radius: $component-border-radius;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: $card-shadow;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    box-shadow: $card-shadow-hover;
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    margin-top: 0;
+    color: #000000;
+  }
+}
+
+// Research area highlighting
+.research-area {
+  background: linear-gradient(135deg, #fef6f2 0%, #ffffff 100%);
+  border: 1px solid rgba(231, 111, 81, 0.2);
+  border-radius: $component-border-radius-sm;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  min-width: 280px;
+}
+
+// Page layout
+.page-columns .content,
+.page-columns .content > * {
+  max-width: 100%;
+}
+
+.page-columns {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.quarto-container.page-columns {
+  overflow-x: hidden;
+}
+
+.content.page-full {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+#quarto-content {
+  padding-top: 1.5rem;
+}
+
+.quarto-title-block {
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+}
+
+// Responsive layout
+@media (max-width: 900px) {
+  .quarto-about-solana .about-entity {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+// Footer styling
+.page-footer {
+  background-color: #f7f7f7;
+  color: #000000;
+  border-top: 3px solid #2a9d8f;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  text-align: center;
+
+  .nav-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 1.5rem;
+  }
+
+  a {
+    color: #2f6f9f;
+
+    &:hover {
+      color: #1f4f73;
+    }
+  }
+}
+
+// Utility classes
+.accent-orange {
+  color: #e76f51;
+}
+
+.accent-green {
+  color: #2a9d8f;
+}
+
+// Status badges and tags
+.status-badge,
+.listing-status {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #2a9d8f;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.listing-tags,
+.listing-categories {
+  font-size: 0.85rem;
+  color: #707070;
+  background-color: #e76f51;
+  border-radius: 999px;
+  color: #ffffff;
+  padding: 0.2rem 0.55rem;
+}
+
+// Profile cards
+.profile-card {
+  border: 1px solid #ededed;
+  background: #ffffff;
+  border-radius: $component-border-radius;
+  padding: 1.5rem;
+  box-shadow: $card-shadow;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .profile-img {
+    border-radius: 50%;
+    margin-bottom: 0.7em;
+  }
+
+  .profile-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+  }
+
+  .profile-role {
+    color: #707070;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    font-weight: normal;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Grid layouts
+.grid {
+  gap: 1.5rem;
+  display: grid;
+
+  &[data-columns="2"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid[data-columns="2"] {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Quarto listing cards
+.quarto-listing .card {
+  border: 1px solid #ededed;
+  border-radius: $component-border-radius;
+  box-shadow: $card-shadow;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .card-title {
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    font-weight: normal;
+    flex-grow: 1;
+  }
+
+  .card-attribution {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #707070;
+    margin-top: auto;
+    padding-top: 0.75rem;
+  }
+}
+
+// Distill article styles (preserved for compatibility)
+d-byline {
+  --heading-size: 0.6rem;
+  --heading-color: rgba(0, 0, 0, 0.5);
+  --body-size: 0.8rem;
+  --body-color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents {
+  --heading-size: 18px;
+  --contents-size: 13px;
+}
+
+d-appendix {
+  --heading-size: 15px;
+  --heading-color: rgba(0, 0, 0, 0.65);
+  --text-size: 0.8em;
+  --text-color: rgba(0, 0, 0, 0.5);
+}
+
+// Cite styling
+cite {
+  font-style: normal;
+}

@@ -1,0 +1,75 @@
+logo:
+  small: resources/logo.png
+  medium: resources/logo.png
+  large: resources/logo.png
+
+color:
+  palette:
+    # Primary brand colors
+    pale-gray: "#f0f0f0"
+    dark-gray: "#e0e0e0"
+    
+    # Text colors
+    black: "#000000"
+    light-black: "#333333"
+    medium-gray: "#707070"
+    
+    # Accent colors
+    orange: "#e76f51"      # Orange (primary action)
+    teal: "#2a9d8f"        # Teal/green (secondary action)
+    
+    # Interactive colors
+    blue: "#2f6f9f"        # Link color
+    dark-blue: "#1f4f73"   # Link hover
+    
+    # Navigation & header colors
+    header-green: "#22863a"
+    bright-orange: "#ff8c42"
+    nav-gray: "#1f2d3d"
+    
+    # Component colors
+    border-gray: "#ededed"
+    light-bg: "#f8f9fa"
+    footer-bg: "#f7f7f7"
+    research-bg: "#fef6f2"
+    
+    # Button hover states
+    orange-hover: "#c85f45"
+    teal-hover: "#1f7c71"
+  
+  # Semantic theme colors (Bootstrap standard names)
+  foreground: black
+  background: "#ffffff"
+  primary: orange
+  secondary: medium-gray
+  tertiary: teal
+  success: teal
+  warning: orange
+  danger: orange
+  info: blue
+  light: "#ffffff"
+  dark: black
+
+typography:
+  fonts:
+    - family: Inter
+      source: file
+      files:
+        - path: resources/fonts/Inter-Regular.otf
+        - path: resources/fonts/Inter-Bold.otf
+          weight: 700
+        - path: resources/fonts/Inter-Italic.otf
+          style: italic
+  
+  base:
+    family: Inter
+    size: 16px
+    line-height: 1.6
+  
+  headings:
+    family: Inter
+    weight: 600
+    color: black
+  
+  monospace:
+    family: "SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace"

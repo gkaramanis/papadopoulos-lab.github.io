@@ -10,7 +10,7 @@ resources:
   - "presentations/*"
 
 website:
-  title: "Papadopoulos Lab"
+  title: "Uppsala Transgender Health Research Group"
   site-url: "https://papadopoulos-lab.github.io"
   favicon: favicon.png
   navbar:
@@ -29,11 +29,10 @@ website:
       - icon: github
         href: https://github.com/papadopoulos-lab
   page-footer:
-    center: "Papadopoulos Lab<br>Department of Neuroscience, Uppsala University<br>Uppsala, Sweden<br>Contact: [fotis.papadopoulos@uu.se](mailto:fotis.papadopoulos@uu.se)<br>[GitHub](https://github.com/papadopoulos-lab) · [Swereg](https://papadopoulos-lab.github.io/swereg/)"
+    center: "Uppsala Transgender Health Research Group<br>Department of Neuroscience, Uppsala University<br>Uppsala, Sweden<br>Contact: [fotis.papadopoulos@uu.se](mailto:fotis.papadopoulos@uu.se)<br>[GitHub](https://github.com/papadopoulos-lab) · [Swereg](https://papadopoulos-lab.github.io/swereg/)"
 format:
   html:
-    theme: litera
-    css: styles.css
+    theme: [litera, custom.scss, brand]
     title-block-banner: false
 
 

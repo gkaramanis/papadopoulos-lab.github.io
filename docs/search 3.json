@@ -1,0 +1,191 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Uppsala Transgender Health Research Group",
+    "section": "",
+    "text": "The Uppsala Transgender Health Research Group at Uppsala University is dedicated to advancing research in gender dysphoria and transgender health. Our multidisciplinary approach combines epidemiological methods, registry-based research, and innovative data science techniques to better understand transgender health outcomes and improve clinical care.\nOur research focuses on several key areas within transgender health:"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Uppsala Transgender Health Research Group",
+    "section": "Contact",
+    "text": "Contact\nfotis.papadopoulos@uu.se"
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
+    "section": "",
+    "text": "The lab brings together expertise in epidemiology, registry-based methods, and data science. Member profiles are updated as new roles are confirmed."
+  },
+  {
+    "objectID": "people.html#lab-members",
+    "href": "people.html#lab-members",
+    "title": "People",
+    "section": "Lab members",
+    "text": "Lab members\n\n\n Dr. Fotis Papadopoulos\nAssistant Professor\nDepartment of Neuroscience, Uppsala University\nEmail\n\n\n Lab Member A\nPostdoctoral Researcher\nPlaceholder bio and research focus.\n\n\n Lab Member B\nPhD Student\nPlaceholder bio and research focus.\n\n\n Lab Member C\nResearch Assistant\nPlaceholder bio and research focus.\n\n\n Lab Member D\nVisiting Scholar\nPlaceholder bio and research focus."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Sparse Inference\n\n\nExamining sparse inference using both frequentist and bayesian methodology.\n\n\n\n\n\nApr 14, 2023\n\n\n\n\n\n\n\nSampling Bias\n\n\nExamining sampling bias in simulated data.\n\n\n\n\n\nFeb 23, 2023\n\n\n\n\n\nNo matching items\n\nRSS Feed"
+  },
+  {
+    "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html",
+    "href": "post/2023-04-14-sparse-inference/sparse-inference.html",
+    "title": "Sparse Inference",
+    "section": "",
+    "text": "Machine learning and statistical modeling are two important tools in data science that are used to make predictions and infer relationships between variables, respectively. Models for prediction aim to estimate the relationship between inputs and outputs in order to make accurate predictions about new, unseen data. In contrast, models for inference aim to understand the underlying relationships between variables in the data, often in the form of identifying causal relationships.\nIn this blog post, we will explore using models for inference using a simulated dataset, and we will apply penalized regression to perform feature selection on a binary outcome. Penalized regression is particularly useful in situations where the number of predictors (i.e. independent variables) is much larger than the sample size.\nWe will investigate the frequentist solution of using a two-stage solution with LASSO regression via glmnet and then using the selectiveInference package to perform post inference and adjust for the bias introduced by the selection process. We will also investigate a Bayesian solution that approximates a LASSO regression via a Laplace prior.\noptions(mc.cores = parallel::detectCores())\n\nfit &lt;- rstanarm::stan_glm(\n  formula = y ~ .,\n  data = data,\n  family = binomial(),\n  prior = rstanarm::laplace(),\n  chains = 4,\n  iter = 5000,\n  refresh=0\n)\n\nretval &lt;- data.frame(\n  var = names(coef(fit)),\n  Odds_Ratio = round(exp(coef(fit)),3),\n  round(exp(rstanarm::posterior_interval(fit, prob = 0.9)),3),\n  pvalue_equivalent = round(bayestestR::pd_to_p(bayestestR::p_direction(fit)$pd),2)\n)\nrow.names(retval) &lt;- NULL\nretval$var[retval$pvalue_equivalent &lt; 0.05] &lt;- paste0(\"*\", retval$var[retval$pvalue_equivalent &lt; 0.05])\nnames(retval) &lt;- c(\n  \"Variable\",\n  \"Odds ratio\",\n  \"Cred int 5%\",\n  \"Cred int 95%\",\n  \"Pvalue equivalent\"\n)\nretval"
+  },
+  {
+    "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html#introduction",
+    "href": "post/2023-04-14-sparse-inference/sparse-inference.html#introduction",
+    "title": "Sparse Inference",
+    "section": "",
+    "text": "Machine learning and statistical modeling are two important tools in data science that are used to make predictions and infer relationships between variables, respectively. Models for prediction aim to estimate the relationship between inputs and outputs in order to make accurate predictions about new, unseen data. In contrast, models for inference aim to understand the underlying relationships between variables in the data, often in the form of identifying causal relationships.\nIn this blog post, we will explore using models for inference using a simulated dataset, and we will apply penalized regression to perform feature selection on a binary outcome. Penalized regression is particularly useful in situations where the number of predictors (i.e. independent variables) is much larger than the sample size.\nWe will investigate the frequentist solution of using a two-stage solution with LASSO regression via glmnet and then using the selectiveInference package to perform post inference and adjust for the bias introduced by the selection process. We will also investigate a Bayesian solution that approximates a LASSO regression via a Laplace prior."
+  },
+  {
+    "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html#simulating-a-dataset",
+    "href": "post/2023-04-14-sparse-inference/sparse-inference.html#simulating-a-dataset",
+    "title": "Sparse Inference",
+    "section": "Simulating a Dataset",
+    "text": "Simulating a Dataset\nWe will simulate a dataset with n = 5000 people and p = 50 variables, where only three of the 50 variables will have an association with the binary outcome, and they will have odds ratios of 4, 3, and 2. The remaining variables will have no association with the outcome.\n\nlibrary(data.table)\nlibrary(magrittr)\nlibrary(ggplot2)\n\nset.seed(123)\nn &lt;- 5000\np &lt;- 50\nx &lt;- matrix(rnorm(n * p), nrow = n)\nbeta &lt;- c(log(4), log(3), log(2), rep(0, 47))\nprob &lt;- plogis(x %*% beta)\ny &lt;- rbinom(n, 1, prob)\n\ndata &lt;- data.frame(cbind(y,x))\ncolnames(data) &lt;- c(\"y\", paste0(\"x\",1:ncol(x)))\n\nx &lt;- model.matrix(y ~ ., data = data)[,-1]\ny &lt;- data$y"
+  },
+  {
+    "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html#lasso-regression",
+    "href": "post/2023-04-14-sparse-inference/sparse-inference.html#lasso-regression",
+    "title": "Sparse Inference",
+    "section": "LASSO Regression",
+    "text": "LASSO Regression\nWe will now fit a LASSO regression model using the glmnet package in R. LASSO is a popular method for feature selection in high-dimensional data, where the number of predictors p is much larger than the number of observations n.\n\n# get standard deviation of X, because we will need to standardize/scale it outside of glmnet\nsds &lt;- apply(x, 2, sd)\n\n# standardize x\nx_scaled &lt;- scale(x,TRUE,TRUE)\n\n# run glmnet\ncfit &lt;- glmnet::cv.glmnet(x_scaled,y,standardize=FALSE, family=\"binomial\")\ncoef(cfit)"
+  },
+  {
+    "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html#no-confidence-intervals",
+    "href": "post/2023-04-14-sparse-inference/sparse-inference.html#no-confidence-intervals",
+    "title": "Sparse Inference",
+    "section": "No confidence intervals",
+    "text": "No confidence intervals\nNote that LASSO regression does not provide any confidence intervals or p-values, only coeficient estimates."
+  },
+  {
+    "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html#bayesian-logistic-regression-using-rstanarm",
+    "href": "post/2023-04-14-sparse-inference/sparse-inference.html#bayesian-logistic-regression-using-rstanarm",
+    "title": "Sparse Inference",
+    "section": "Bayesian Logistic Regression using rstanarm",
+    "text": "Bayesian Logistic Regression using rstanarm\nAnother way to perform inference on a logistic regression model with feature selection is through Bayesian methods. In particular, we can use the rstanarm R package to fit a Bayesian logistic regression model with a Laplace prior."
+  },
+  {
+    "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html#laplace-prior",
+    "href": "post/2023-04-14-sparse-inference/sparse-inference.html#laplace-prior",
+    "title": "Sparse Inference",
+    "section": "Laplace prior",
+    "text": "Laplace prior\nThe Laplace prior is used to promote sparsity by assigning a probability distribution to the coefficients that puts more probability mass around zero. It is equivalent to LASSO regression (Tibshirani 1996)."
+  },
+  {
+    "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html#p-value-equivalent",
+    "href": "post/2023-04-14-sparse-inference/sparse-inference.html#p-value-equivalent",
+    "title": "Sparse Inference",
+    "section": "P-value equivalent",
+    "text": "P-value equivalent\nProbability of Direction (PoD) and p-values are both statistical measures used in hypothesis testing Makowski et al. (2019). They are similar in that they both provide evidence for or against a null hypothesis. PoD measures the proportion of posterior draws from a Bayesian model that are in the direction of the alternative hypothesis. It provides a measure of the strength of evidence for the alternative hypothesis relative to the null hypothesis. A high PoD value indicates strong evidence in favor of the alternative hypothesis, while a low PoD value indicates weak evidence in favor of the alternative hypothesis.\nSimilarly, a p-value measures the probability of obtaining a test statistic as extreme as or more extreme than the observed value, assuming that the null hypothesis is true. A low p-value indicates that the observed result is unlikely to have occurred by chance alone, providing evidence against the null hypothesis.\nTo convert PoD to a p-value equivalent, one approach is to use the following formula:\np-value = 2 * min(PoD, 1-PoD)\nThis formula assumes a two-tailed test and converts the PoD to a p-value for a test of the null hypothesis that the effect size is equal to zero. The resulting p-value can be interpreted as the probability of obtaining the observed result or a more extreme result under the null hypothesis."
+  },
+  {
+    "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html#conclusion",
+    "href": "post/2023-04-14-sparse-inference/sparse-inference.html#conclusion",
+    "title": "Sparse Inference",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe blog article discusses the limitations of using LASSO (Least Absolute Shrinkage and Selection Operator) models for statistical inference, particularly in situations where the number of predictors (i.e. independent variables) is much larger than the sample size. In these cases, LASSO models can suffer from high variability in the estimated coefficients, which can lead to incorrect or unreliable conclusions.\nOne proposed solution to this problem is to use a two-stage inference approach, where LASSO is first used to select a subset of predictors, and then a separate statistical method (such as ordinary least squares) is used to estimate the coefficients for the selected predictors. However, this two-stage approach can also have limitations, such as a loss of power in the second stage and increased computational complexity.\nIn contrast, Bayesian statistics offer a one-stage inference approach that can provide more reliable and interpretable results in complex modeling situations. Bayesian statistics allow for the incorporation of prior knowledge and uncertainty in the model, which can help to reduce variability and improve accuracy. Bayesian methods also provide a framework for model comparison and selection, which can help to identify the most appropriate model for a given dataset.\nOverall, while LASSO models can be useful in certain situations, their limitations in high-dimensional data settings highlight the advantages of Bayesian statistics for reliable and interpretable statistical inference."
+  },
+  {
+    "objectID": "post/2023-02-23-sampling-bias/sampling-bias.html",
+    "href": "post/2023-02-23-sampling-bias/sampling-bias.html",
+    "title": "Sampling Bias",
+    "section": "",
+    "text": "library(data.table)\n\nWarning: package 'data.table' was built under R version 4.5.2\n\nlibrary(magrittr)\nlibrary(ggplot2)\n\nWarning: package 'ggplot2' was built under R version 4.5.2"
+  },
+  {
+    "objectID": "post/2023-02-23-sampling-bias/sampling-bias.html#what-is-sampling-bias",
+    "href": "post/2023-02-23-sampling-bias/sampling-bias.html#what-is-sampling-bias",
+    "title": "Sampling Bias",
+    "section": "What is Sampling Bias?",
+    "text": "What is Sampling Bias?\nSampling bias refers to the phenomenon of a biased sample being used in a study that does not accurately represent the population being studied. This can happen in a number of ways, such as through selection bias, survivorship bias, or measurement bias. When sampling bias is present, it can lead to inaccurate results, incorrect estimates of associations between variables, and incorrect conclusions. This, in turn, can have an impact on public policy decisions, research funding, and clinical practice."
+  },
+  {
+    "objectID": "post/2023-02-23-sampling-bias/sampling-bias.html#types-of-sampling-bias",
+    "href": "post/2023-02-23-sampling-bias/sampling-bias.html#types-of-sampling-bias",
+    "title": "Sampling Bias",
+    "section": "Types of Sampling Bias",
+    "text": "Types of Sampling Bias\nThere are several types of sampling bias, including:\n\n1. Selection Bias\nSelection bias occurs when the selection of study participants is not random or representative of the larger population. This can happen when certain groups are excluded or overrepresented, leading to inaccurate conclusions about the study population.\nFor example, if a study only recruits participants from a single geographic region, the results may not be generalizable to the larger population. Similarly, if a study only recruits individuals with a certain health condition, the results may not accurately reflect the general population.\n\n\n2. Survivorship Bias\nSurvivorship bias occurs when only the surviving members of a population are included in a study. This can lead to inaccurate conclusions about the population, as those who did not survive may have had different characteristics or experiences.\nFor example, if a study only includes individuals who survived a specific disease, the results may not be generalizable to the larger population of individuals who did not survive.\n\n\n3. Measurement Bias\nMeasurement bias occurs when the measurement instruments or techniques used in a study are inaccurate or unreliable. This can result in inaccurate data and misinterpretation of results.\nFor example, if a study relies on self-reported data, individuals may underreport or overreport certain behaviors, leading to inaccurate conclusions about the study population. Similarly, if a study uses different measurement techniques for different groups, the results may not be comparable and may lead to inaccurate conclusions."
+  },
+  {
+    "objectID": "post/2023-02-23-sampling-bias/sampling-bias.html#example-of-sampling-bias-in-a-study",
+    "href": "post/2023-02-23-sampling-bias/sampling-bias.html#example-of-sampling-bias-in-a-study",
+    "title": "Sampling Bias",
+    "section": "Example of Sampling Bias in a Study",
+    "text": "Example of Sampling Bias in a Study\nTo better understand the impact of sampling bias on study results, let’s take a look at an example.\nSuppose we want to study the relationship between smoking and lung function. We know that in our city there are 100,000 people, 20,000 of whom are smokers. To our study we recruit 5,000 smokers and 5,000 non-smokers (oversampling the smokers, a type of selection bias). We also collect data on how frequently they exercise, whether they have good genes for lung function, and whether they frequently wear hats.\nWe now want to overcome our selection bias when assessing the association between the outcome of lung function and the exposures of exercise, good genes, and the frequency of hat wearing.\n\nset.seed(4)\n\nd &lt;- data.table(id = 1:100000)\nd[, is_smoker := rbinom(.N, 1, 0.2)]\nd[, probability_of_exercises_frequently := ifelse(is_smoker==T, 0.05, 0.3)]\nd[, exercises_frequently := rbinom(.N, 1, probability_of_exercises_frequently)]\nd[, has_good_genes := rbinom(.N, 1, 0.2)]\nd[, wears_hats_frequently := rbinom(.N, 1, 0.2)]\n\nd[, lung_function := 30 - 10 * is_smoker + 5 * exercises_frequently + 8 * has_good_genes + rnorm(.N, mean = 0, sd = 3)]\n\nd[, probability_of_selection_uniform := 1/.N]\n\nd[, probability_of_selection_oversample_smoker := ifelse(is_smoker==T, 5, 1)]\nd[, probability_of_selection_oversample_smoker := probability_of_selection_oversample_smoker/sum(probability_of_selection_oversample_smoker)]\n\n# We have a dataset with oversampled smokers\nd_oversampled_smokers &lt;- d[sample(1:.N, size = 5000, prob = probability_of_selection_oversample_smoker)]\n(weight_smoker &lt;- mean(d$is_smoker)/mean(d_oversampled_smokers$is_smoker))\n\n[1] 0.3700516\n\n(weight_non_smoker &lt;- mean(!d$is_smoker)/mean(!d_oversampled_smokers$is_smoker))\n\n[1] 1.747289\n\nd_oversampled_smokers[, weights := ifelse(is_smoker==T, weight_smoker, weight_non_smoker)]\n\n# The real associations:\n# is_smoker: -10 (also associated with exercises_frequently!)\n# exercises_frequently: +5 (also associated with is_smoker!)\n# has_good_genes: +8 (only associated with outcome, not with other exposures)\n# wears_hats_frequently: 0 (not associated with outcome nor other exposures)\nsummary(lm(lung_function ~ is_smoker + exercises_frequently + has_good_genes + wears_hats_frequently, data=d))\n\n\nCall:\nlm(formula = lung_function ~ is_smoker + exercises_frequently + \n    has_good_genes + wears_hats_frequently, data = d)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-12.6549  -2.0112   0.0055   2.0045  12.1835 \n\nCoefficients:\n                       Estimate Std. Error  t value Pr(&gt;|t|)    \n(Intercept)            30.02288    0.01421 2112.751   &lt;2e-16 ***\nis_smoker             -10.05071    0.02427 -414.150   &lt;2e-16 ***\nexercises_frequently    4.99532    0.02250  221.992   &lt;2e-16 ***\nhas_good_genes          7.98073    0.02355  338.831   &lt;2e-16 ***\nwears_hats_frequently  -0.01537    0.02360   -0.651    0.515    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 2.989 on 99995 degrees of freedom\nMultiple R-squared:  0.7975,    Adjusted R-squared:  0.7975 \nF-statistic: 9.847e+04 on 4 and 99995 DF,  p-value: &lt; 2.2e-16\n\n# When we run the model in the full data, excluding is_smoker, we get the following associations:\n# exercises_frequently: +7.2 (biased from association with is_smoker)\n# has_good_genes: +8 (not biased)\n# wears_hats_frequently: 0 (not biased)\nsummary(lm(lung_function ~ exercises_frequently + has_good_genes + wears_hats_frequently, data=d))\n\n\nCall:\nlm(formula = lung_function ~ exercises_frequently + has_good_genes + \n    wears_hats_frequently, data = d)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-21.056  -2.670   0.928   3.445  14.532 \n\nCoefficients:\n                       Estimate Std. Error  t value Pr(&gt;|t|)    \n(Intercept)           2.747e+01  2.109e-02 1302.327   &lt;2e-16 ***\nexercises_frequently  7.172e+00  3.605e-02  198.941   &lt;2e-16 ***\nhas_good_genes        7.958e+00  3.881e-02  205.044   &lt;2e-16 ***\nwears_hats_frequently 4.393e-04  3.888e-02    0.011    0.991    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 4.926 on 99996 degrees of freedom\nMultiple R-squared:  0.4502,    Adjusted R-squared:  0.4502 \nF-statistic: 2.73e+04 on 3 and 99996 DF,  p-value: &lt; 2.2e-16\n\n# When we run the model in the biased data, with oversampling of smokers (that has also an association with the outcome):\n# exercises_frequently: +9.8 (biased from association with is_smoker and the biased sampling)\n# has_good_genes: +7.6 (not biased)\n# wears_hats_frequently: +0.3 (not biased)\nsummary(lm(lung_function ~ exercises_frequently + has_good_genes + wears_hats_frequently, data=d_oversampled_smokers))\n\n\nCall:\nlm(formula = lung_function ~ exercises_frequently + has_good_genes + \n    wears_hats_frequently, data = d_oversampled_smokers)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-14.4131  -4.3613  -0.6571   4.4586  17.3734 \n\nCoefficients:\n                      Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)            23.7436     0.1014 234.191   &lt;2e-16 ***\nexercises_frequently    9.8631     0.2140  46.095   &lt;2e-16 ***\nhas_good_genes          7.6164     0.1967  38.726   &lt;2e-16 ***\nwears_hats_frequently   0.3363     0.1905   1.765   0.0776 .  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 5.501 on 4996 degrees of freedom\nMultiple R-squared:  0.4221,    Adjusted R-squared:  0.4218 \nF-statistic:  1217 on 3 and 4996 DF,  p-value: &lt; 2.2e-16\n\n# Run the model in the biased data, with weights:\n# exercises_frequently: +7.4 (biased from association with is_smoker)\n# has_good_genes: +7.6 (not biased)\n# wears_hats_frequently: +0.3 (not biased)\nsummary(lm(lung_function ~ exercises_frequently + has_good_genes + wears_hats_frequently, data=d_oversampled_smokers, weights = weights))\n\n\nCall:\nlm(formula = lung_function ~ exercises_frequently + has_good_genes + \n    wears_hats_frequently, data = d_oversampled_smokers, weights = weights)\n\nWeighted Residuals:\n    Min      1Q  Median      3Q     Max \n-12.537  -4.885  -2.767   2.077  18.233 \n\nCoefficients:\n                      Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)           27.33919    0.09322 293.291   &lt;2e-16 ***\nexercises_frequently   7.40799    0.16055  46.140   &lt;2e-16 ***\nhas_good_genes         7.60104    0.17490  43.459   &lt;2e-16 ***\nwears_hats_frequently  0.26672    0.16734   1.594    0.111    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 4.859 on 4996 degrees of freedom\nMultiple R-squared:   0.45, Adjusted R-squared:  0.4497 \nF-statistic:  1363 on 3 and 4996 DF,  p-value: &lt; 2.2e-16\n\n# Run the model in the biased data, with is_smoker:\n# is_smoker: -9.9 (not biased)\n# exercises_frequently: +5.3 (not biased)\n# has_good_genes: +7.8 (not biased)\n# wears_hats_frequently: +0.2 (not biased)\nsummary(lm(lung_function ~ is_smoker + exercises_frequently + has_good_genes + wears_hats_frequently, data=d_oversampled_smokers))\n\n\nCall:\nlm(formula = lung_function ~ is_smoker + exercises_frequently + \n    has_good_genes + wears_hats_frequently, data = d_oversampled_smokers)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-10.6202  -1.9903  -0.0699   1.9855  11.1052 \n\nCoefficients:\n                      Estimate Std. Error  t value Pr(&gt;|t|)    \n(Intercept)           29.83110    0.07786  383.149   &lt;2e-16 ***\nis_smoker             -9.88043    0.08978 -110.051   &lt;2e-16 ***\nexercises_frequently   5.25052    0.12300   42.688   &lt;2e-16 ***\nhas_good_genes         7.79706    0.10630   73.350   &lt;2e-16 ***\nwears_hats_frequently  0.15569    0.10296    1.512    0.131    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 2.973 on 4995 degrees of freedom\nMultiple R-squared:  0.8313,    Adjusted R-squared:  0.8311 \nF-statistic:  6152 on 4 and 4995 DF,  p-value: &lt; 2.2e-16"
+  },
+  {
+    "objectID": "post/2023-02-23-sampling-bias/sampling-bias.html#conclusion",
+    "href": "post/2023-02-23-sampling-bias/sampling-bias.html#conclusion",
+    "title": "Sampling Bias",
+    "section": "Conclusion",
+    "text": "Conclusion\nConclusion: Biased datasets can be corrected for by either:\n\nSample weights\nIncluding the sampling variables as covariates in the regression model"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Our lab is involved in a variety of research projects spanning multiple disciplines. Below is a selection of our current and past projects."
+  },
+  {
+    "objectID": "projects.html#current-projects",
+    "href": "projects.html#current-projects",
+    "title": "Projects",
+    "section": "Current Projects",
+    "text": "Current Projects\n\nswereg R package\nOngoing\nWe develop and maintain swereg, an R package for analyzing Swedish healthcare registry data.\nMethods Open-source tools\n\n\nPopulation Studies\nOngoing\nRegistry-based studies examining population dynamics and epidemiological patterns in Swedish healthcare data.\nEpidemiology Registry-based methods\n\n\nRegistry Trajectories\nOngoing\nDeveloping novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries.\nMethods Epidemiology"
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Below is a curated list of recent talks and invited presentations.\n\n\n\n\n\n\n\n\n\n\n\n\nPractical data management for modern open science\n\n\n\n\n\n\n\n\n\nOct 1, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "[5] Clark, K. D. et al.  (2025). “Stability After Legal Gender Change Among Adults With Gender Dysphoria”. In: JAMA Network Open 8.9, p. e2527780. ISSN: 2574-3805. DOI: 10.1001/jamanetworkopen.2025.27780. URL: http://dx.doi.org/10.1001/jamanetworkopen.2025.27780."
+  },
+  {
+    "objectID": "publications.html#section",
+    "href": "publications.html#section",
+    "title": "Publications",
+    "section": "",
+    "text": "[5] Clark, K. D. et al.  (2025). “Stability After Legal Gender Change Among Adults With Gender Dysphoria”. In: JAMA Network Open 8.9, p. e2527780. ISSN: 2574-3805. DOI: 10.1001/jamanetworkopen.2025.27780. URL: http://dx.doi.org/10.1001/jamanetworkopen.2025.27780."
+  },
+  {
+    "objectID": "publications.html#section-1",
+    "href": "publications.html#section-1",
+    "title": "Publications",
+    "section": "2023",
+    "text": "2023\n\n[4] Karamanis, G. et al.  (2023). “Incidence of Idiopathic Intracranial Hypertension in Individuals With Gonadotropin-Releasing Hormone Analogue Treatment for Gender Dysphoria in Sweden”. In: JAMA Pediatrics 177.7, p. 726. ISSN: 2168-6203. DOI: 10.1001/jamapediatrics.2023.0656. URL: http://dx.doi.org/10.1001/jamapediatrics.2023.0656.\n\n\n[3] Özel, F. et al.  (2023). “Exploring gender dysphoria and related outcomes in a prospective cohort study: protocol for the Swedish Gender Dysphoria Study (SKDS)”. In: BMJ Open 13.4, p. e066571. ISSN: 2044-6055. DOI: 10.1136/bmjopen-2022-066571. URL: http://dx.doi.org/10.1136/bmjopen-2022-066571."
+  },
+  {
+    "objectID": "publications.html#section-2",
+    "href": "publications.html#section-2",
+    "title": "Publications",
+    "section": "2022",
+    "text": "2022\n\n[2] Karamanis, G. et al.  (2022). “Gender dysphoria in twins: a register-based population study”. In: Scientific Reports 12.1. ISSN: 2045-2322. DOI: 10.1038/s41598-022-17749-0. URL: http://dx.doi.org/10.1038/s41598-022-17749-0."
+  },
+  {
+    "objectID": "publications.html#section-3",
+    "href": "publications.html#section-3",
+    "title": "Publications",
+    "section": "2013",
+    "text": "2013\n\n[1] Karamanis, G. et al.  (2013). “Cancer incidence and mortality patterns in women with anorexia nervosa”. In: International Journal of Cancer 134.7, p. 1751–1757. ISSN: 1097-0215. DOI: 10.1002/ijc.28495. URL: http://dx.doi.org/10.1002/ijc.28495."
+  }
+]

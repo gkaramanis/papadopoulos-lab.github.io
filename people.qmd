@@ -6,9 +6,10 @@ description: |
 
 The lab brings together expertise in epidemiology, registry-based methods, and data science. Member profiles are updated as new roles are confirmed.
 
-## Principal Investigator
 
-::: {.grid}
+## Lab members
+
+::: {.grid columns=2}
 ::: {.profile-card}
 ![](resources/fotis.jpeg){.profile-img width="120px"}<br>
 <span class="profile-title">Dr. Fotis Papadopoulos</span>  
@@ -16,11 +17,6 @@ The lab brings together expertise in epidemiology, registry-based methods, and d
 Department of Neuroscience, Uppsala University  
 [Email](mailto:fotis.papadopoulos@uu.se)
 :::
-:::
-
-## Lab members
-
-::: {.grid columns=2}
 ::: {.profile-card}
 ![](https://api.dicebear.com/9.x/pixel-art/png?seed=one){.profile-img width="120px"}<br>
 <span class="profile-title">Lab Member A</span>  

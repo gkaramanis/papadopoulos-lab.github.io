@@ -13,11 +13,11 @@
   border-radius: 50%;
   margin-bottom: 0.7em;
 }
-/* Papadopoulos Lab Custom Styles */
+/* UTHRG Custom Styles */
 /* Professional typography and spacing */
 
 body {
-  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Space Grotesk', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
@@ -438,6 +438,20 @@ d-appendix {
   src: url('resources/fonts/Inter-Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('resources/fonts/SpaceGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('resources/fonts/SpaceGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 cite {

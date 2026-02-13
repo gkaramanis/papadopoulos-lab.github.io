@@ -1,6 +1,6 @@
 ---
-title: "Papadopoulos Lab"
-image: resources/fotis.jpeg
+title: "Uppsala Transgender Health Research Group"
+image: resources/epath.jpeg
 about:
   id: hero-heading
   template: solana
@@ -11,7 +11,7 @@ title-block-banner: false
 
 :::{#hero-heading}
 
-The Papadopoulos Lab at Uppsala University is dedicated to advancing research in gender dysphoria and transgender health. Our multidisciplinary approach combines epidemiological methods, registry-based research, and innovative data science techniques to better understand transgender health outcomes and improve clinical care.
+The Uppsala Transgender Health Research Group at Uppsala University is dedicated to advancing research in gender dysphoria and transgender health. Our multidisciplinary approach combines epidemiological methods, registry-based research, and innovative data science techniques to better understand transgender health outcomes and improve clinical care.
 
 Our research focuses on several key areas within transgender health:
 :::
