@@ -10,25 +10,61 @@
 <atom:link href="https://papadopoulos-lab.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A collection of thoughts.
 </description>
-<generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 05 Feb 2026 23:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Fri, 13 Feb 2026 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>test</title>
-  <dc:creator>test </dc:creator>
-  <link>https://papadopoulos-lab.github.io/post/2026-02-06-test/test.html</link>
+  <title>GOOD study, trying again</title>
+  <dc:creator>HG </dc:creator>
+  <link>https://papadopoulos-lab.github.io/post/2026-02-13-good-study-trying-again/good-study-trying-again.html</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p>test</p>
+<p>It is really very good. TEsting again after pushing. Many packages to install.</p>
 
 
 
  ]]></description>
-  <guid>https://papadopoulos-lab.github.io/post/2026-02-06-test/test.html</guid>
-  <pubDate>Thu, 05 Feb 2026 23:00:00 GMT</pubDate>
+  <guid>https://papadopoulos-lab.github.io/post/2026-02-13-good-study-trying-again/good-study-trying-again.html</guid>
+  <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>GOOD study</title>
+  <dc:creator>HG </dc:creator>
+  <link>https://papadopoulos-lab.github.io/post/2026-02-13-good-study/good-study.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>It is really very good. TEsting again after pushing. Many packages to install.</p>
+
+
+
+ ]]></description>
+  <guid>https://papadopoulos-lab.github.io/post/2026-02-13-good-study/good-study.html</guid>
+  <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>New groundbreaking study by GD lab</title>
+  <dc:creator>GK </dc:creator>
+  <link>https://papadopoulos-lab.github.io/post/2026-02-07-new-groundbreaking-study-by-gd-lab/new-groundbreaking-study-by-gd-lab.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>We published a new very good study on a very good journal and we think that the results are very good. Yes they are indeed.</p>
+
+
+
+ ]]></description>
+  <guid>https://papadopoulos-lab.github.io/post/2026-02-07-new-groundbreaking-study-by-gd-lab/new-groundbreaking-study-by-gd-lab.html</guid>
+  <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Best study ever</title>
@@ -46,7 +82,25 @@
 
  ]]></description>
   <guid>https://papadopoulos-lab.github.io/post/2026-02-06-best-study-ever/best-study-ever.html</guid>
-  <pubDate>Thu, 05 Feb 2026 23:00:00 GMT</pubDate>
+  <pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>test</title>
+  <dc:creator>test </dc:creator>
+  <link>https://papadopoulos-lab.github.io/post/2026-02-06-test/test.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>test</p>
+
+
+
+ ]]></description>
+  <guid>https://papadopoulos-lab.github.io/post/2026-02-06-test/test.html</guid>
+  <pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Study</title>
@@ -64,7 +118,7 @@
 
  ]]></description>
   <guid>https://papadopoulos-lab.github.io/post/2026-02-06-study/study.html</guid>
-  <pubDate>Thu, 05 Feb 2026 23:00:00 GMT</pubDate>
+  <pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Sparse Inference</title>
@@ -639,7 +693,7 @@ Tibshirani, Robert. 1996. <span>“Regression Shrinkage and Selection via the La
 </div>
 </div></section></div> ]]></description>
   <guid>https://papadopoulos-lab.github.io/post/2023-04-14-sparse-inference/sparse-inference.html</guid>
-  <pubDate>Thu, 13 Apr 2023 22:00:00 GMT</pubDate>
+  <pubDate>Fri, 14 Apr 2023 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Sampling Bias</title>
@@ -1176,7 +1230,7 @@ F-statistic:  6152 on 4 and 4995 DF,  p-value: &lt; 2.2e-16</code></pre>
 
  ]]></description>
   <guid>https://papadopoulos-lab.github.io/post/2023-02-23-sampling-bias/sampling-bias.html</guid>
-  <pubDate>Wed, 22 Feb 2023 23:00:00 GMT</pubDate>
+  <pubDate>Thu, 23 Feb 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
