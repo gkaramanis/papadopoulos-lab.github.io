@@ -1,0 +1,11 @@
+---
+title: "GOOD study"
+description: |
+  VEry good
+author:
+  - name: "HG"
+date: 2026-02-13
+---
+
+
+It is really very good
