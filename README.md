@@ -12,7 +12,8 @@ New publications are fetched monthly from ORCID and opened as GitHub issues labe
 
 ## TODO
 
-- [ ] Move GitHub Pages to serve from a dedicated `gh-pages` branch instead of `docs/` — avoids hashed filename conflicts in `docs/` when multiple people render locally and push
+- [ ] Move GitHub Pages to serve from a dedicated `gh-pages` branch instead of `docs/` — avoids hashed filename conflicts when multiple people render locally and push; prerequisite for render-on-push
+- [ ] Add render-on-push GitHub Action (do this after moving to `gh-pages` branch, otherwise local and CI renders will conflict)
 - [ ] Fix PDF links
 - [ ] Add funding as a tag/filter on the Projects page
 - [ ] Add all relevant studies from all team members to the projects pages
