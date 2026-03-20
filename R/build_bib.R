@@ -97,17 +97,25 @@ existing <- if (file.exists(OUTFILE)) {
   )
 } else NULL
 
+# ── Combine new entries into a BibEntry object ────────────────────────────────
+
+if (length(entries) == 0) {
+  message("No entries resolved — publications.bib not updated.")
+  quit(status = 0)
+}
+
+new_bib <- do.call(c, entries)
+
+# ── Merge with existing publications.bib ─────────────────────────────────────
+
 if (!is.null(existing) && length(existing) > 0) {
   message(glue("Merging with {length(existing)} existing entries in {OUTFILE}."))
-  entries <- c(entries, as.list(existing))
+  all_bib <- c(new_bib, existing)
+} else {
+  all_bib <- new_bib
 }
 
 # ── Deduplicate by DOI ────────────────────────────────────────────────────────
-
-if (length(entries) == 0) {
-  message("No entries — publications.bib not updated.")
-  quit(status = 0)
-}
 
 extract_doi_from_entry <- function(e) {
   doi <- tryCatch(as.character(e$doi), error = function(x) NA_character_)
@@ -115,13 +123,12 @@ extract_doi_from_entry <- function(e) {
   tolower(sub("^https?://doi\\.org/", "", trimws(doi)))
 }
 
-entry_dois <- vapply(entries, extract_doi_from_entry, character(1))
-entries    <- entries[!duplicated(entry_dois) | is.na(entry_dois)]
-message(glue("{length(entries)} total entries after deduplication."))
+entry_dois <- vapply(seq_along(all_bib), function(i) extract_doi_from_entry(all_bib[i]), character(1))
+all_bib    <- all_bib[!duplicated(entry_dois) | is.na(entry_dois)]
+message(glue("{length(all_bib)} total entries after deduplication."))
 
 # ── Write bib ─────────────────────────────────────────────────────────────────
 
-all_bib <- do.call(c, entries)
 RefManageR::WriteBib(all_bib, file = OUTFILE, verbose = FALSE)
 message(glue("\nWritten {length(all_bib)} entries to {OUTFILE}."))
 message("Re-render the site locally to publish the updated list.")
