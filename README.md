@@ -13,3 +13,9 @@ New publications are fetched monthly from ORCID and opened as GitHub issues labe
 ## TODO
 
 - [ ] Move GitHub Pages to serve from a dedicated `gh-pages` branch instead of `docs/` — avoids hashed filename conflicts in `docs/` when multiple people render locally and push
+- [ ] Fix PDF links
+- [ ] Add funding as a tag/filter on the Projects page
+- [ ] Add all relevant studies from all team members to the projects pages
+- [ ] All team members to get ORCID IDs and import their full publication history
+- [ ] Delete or replace `update_bib.R` (superseded by `R/fetch_publications.R` and `R/build_bib.R`)
+- [ ] Set up custom domain uppsalatransresearch.se
