@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Research projects spanning registry-based epidemiology, methodological innovation, and open-source tools">
+<meta name="description" content="Plain language information about our research studies for participants and the general public">
 
-<title>Projects – Uppsala Transgender
+<title>For Participants – Uppsala Transgender
 Health Research Group</title>
 <style>
 code{white-space: pre-wrap;}
@@ -117,11 +117,11 @@ Health Research Group</span>
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./public.html"> 
+    <a class="nav-link active" href="./public.html" aria-current="page"> 
 <span class="menu-text">For Participants</span></a>
   </li>  
   <li class="nav-item">
@@ -162,12 +162,12 @@ Health Research Group</span>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">For Participants</h1>
 </div>
 
 <div>
   <div class="description">
-    <p>Research projects spanning registry-based epidemiology, methodological innovation, and open-source tools</p>
+    <p>Plain language information about our research studies for participants and the general public</p>
   </div>
 </div>
 
@@ -184,79 +184,50 @@ Health Research Group</span>
 </header>
 
 
-<p>Our lab is involved in a variety of research projects spanning multiple disciplines.</p>
-<div class="project-filters">
-  <div class="filter-group">
-    <span class="filter-label">Status:</span>
-    <button class="filter-btn filter-status active" data-filter="all" data-group="status">All</button>
-    <button class="filter-btn filter-status" data-filter="Ongoing" data-group="status">Ongoing</button>
-    <button class="filter-btn filter-status" data-filter="Completed" data-group="status">Completed</button>
-  </div>
-  <div class="filter-group">
-    <span class="filter-label">Topic:</span>
-    <button class="filter-btn filter-topic active" data-filter="all" data-group="topic">All</button>
-    <button class="filter-btn filter-topic" data-filter="Methods" data-group="topic">Methods</button>
-    <button class="filter-btn filter-topic" data-filter="Epidemiology" data-group="topic">Epidemiology</button>
-    <button class="filter-btn filter-topic" data-filter="Open-source tools" data-group="topic">Open-source tools</button>
-    <button class="filter-btn filter-topic" data-filter="Registry studies" data-group="topic">Registry studies</button>
-    <button class="filter-btn filter-topic" data-filter="Clinical outcomes" data-group="topic">Clinical outcomes</button>
-  </div>
-</div>
-<div class="project-card" data-status="Ongoing" data-topics="[&quot;Methods&quot;,&quot;Open-source tools&quot;]">
-<h3 style="margin-bottom: 0.5rem;" class="anchored"><a href="projects/swereg.html">swereg R package</a></h3>
-<span class="status-badge">Ongoing</span>
-<p>We develop and maintain <a href="https://papadopoulos-lab.github.io/swereg/">swereg</a>, an R package for analyzing Swedish healthcare registry data.</p>
-<p><span class="listing-tags">Methods</span> <span class="listing-tags">Open-source tools</span></p>
-<p><a href="projects/swereg.html">Read more →</a></p>
-</div>
-<div class="project-card" data-status="Ongoing" data-topics="[&quot;Epidemiology&quot;,&quot;Registry studies&quot;]">
-<h3 style="margin-bottom: 0.5rem;" class="anchored"><a href="projects/population-studies.html">Population Studies</a></h3>
-<span class="status-badge">Ongoing</span>
-<p>Registry-based studies examining population dynamics and epidemiological patterns in Swedish healthcare data.</p>
-<p><span class="listing-tags">Epidemiology</span> <span class="listing-tags">Registry studies</span></p>
-<p><a href="projects/population-studies.html">Read more →</a></p>
-</div>
-<div class="project-card" data-status="Ongoing" data-topics="[&quot;Methods&quot;,&quot;Epidemiology&quot;,&quot;Clinical outcomes&quot;]">
-<h3 style="margin-bottom: 0.5rem;" class="anchored"><a href="projects/registry-trajectories.html">Registry Trajectories</a></h3>
-<span class="status-badge">Ongoing</span>
-<p>Developing novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries.</p>
-<p><span class="listing-tags">Methods</span> <span class="listing-tags">Clinical outcomes</span></p>
-<p><a href="projects/registry-trajectories.html">Read more →</a></p>
-</div>
-<script>
-(function () {
-  const cards = document.querySelectorAll('.project-card');
-  let activeStatus = 'all';
-  let activeTopic = 'all';
-
-  function applyFilters() {
-    cards.forEach(card => {
-      const statusMatch = activeStatus === 'all' || card.dataset.status === activeStatus;
-      const topics = JSON.parse(card.dataset.topics || '[]');
-      const topicMatch = activeTopic === 'all' || topics.includes(activeTopic);
-      card.style.display = (statusMatch && topicMatch) ? '' : 'none';
-    });
-  }
-
-  document.querySelectorAll('.filter-status').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-status').forEach(b => b.classList.remove('active'));
-      activeStatus = btn.dataset.filter;
-      btn.classList.add('active');
-      applyFilters();
-    });
-  });
-
-  document.querySelectorAll('.filter-topic').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-topic').forEach(b => b.classList.remove('active'));
-      activeTopic = btn.dataset.filter;
-      btn.classList.add('active');
-      applyFilters();
-    });
-  });
-})();
-</script>
+<p>Our research aims to improve the understanding and care of people with gender dysphoria. On this page you can find plain language information about our ongoing studies — what we are investigating, why it matters, and what participation involves. We also share our findings here as they become available, so that participants can see the results of the research they contributed to.</p>
+<p>If you have questions about a specific study, contact details are provided in each section.</p>
+<hr>
+<section id="study-1-placeholder-study-title" class="level2 project-card">
+<h2 class="anchored" data-anchor-id="study-1-placeholder-study-title">Study 1: Placeholder study title</h2>
+<p><strong>What is this study about?</strong></p>
+<p>Placeholder: explain in plain language what the study investigates and why it matters. Avoid jargon. Focus on what participants and the general public would want to know — the human question behind the research.</p>
+<p><strong>Why are we doing this?</strong></p>
+<p>Placeholder: describe the knowledge gap this study addresses and what we hope to learn. Keep it concrete — what could change in clinical practice if the study findings are as expected?</p>
+<p><strong>What does participation involve?</strong></p>
+<p>Placeholder: describe what participants are asked to do, how long it takes, whether there are any risks or inconveniences, and that participation is voluntary.</p>
+<p><strong>What have we found?</strong></p>
+<p>Placeholder: plain language summary of results, updated as findings are published. Until then: <em>Results will be shared here as the study progresses. Thank you for your contribution.</em></p>
+<p><strong>Who can I contact?</strong></p>
+<p>Placeholder name, <a href="mailto:placeholder@uu.se">placeholder@uu.se</a></p>
+</section>
+<hr>
+<section id="study-2-placeholder-study-title" class="level2 project-card">
+<h2 class="anchored" data-anchor-id="study-2-placeholder-study-title">Study 2: Placeholder study title</h2>
+<p><strong>What is this study about?</strong></p>
+<p>Placeholder: explain in plain language what the study investigates and why it matters.</p>
+<p><strong>Why are we doing this?</strong></p>
+<p>Placeholder: describe the knowledge gap and what we hope to learn.</p>
+<p><strong>What does participation involve?</strong></p>
+<p>Placeholder: describe what participants are asked to do, timeframe, and that participation is voluntary.</p>
+<p><strong>What have we found?</strong></p>
+<p>Placeholder: plain language summary of results, updated as findings are published. Until then: <em>Results will be shared here as the study progresses. Thank you for your contribution.</em></p>
+<p><strong>Who can I contact?</strong></p>
+<p>Placeholder name, <a href="mailto:placeholder@uu.se">placeholder@uu.se</a></p>
+</section>
+<hr>
+<section id="study-3-placeholder-study-title" class="level2 project-card">
+<h2 class="anchored" data-anchor-id="study-3-placeholder-study-title">Study 3: Placeholder study title</h2>
+<p><strong>What is this study about?</strong></p>
+<p>Placeholder: explain in plain language what the study investigates and why it matters.</p>
+<p><strong>Why are we doing this?</strong></p>
+<p>Placeholder: describe the knowledge gap and what we hope to learn.</p>
+<p><strong>What does participation involve?</strong></p>
+<p>Placeholder: describe what participants are asked to do, timeframe, and that participation is voluntary.</p>
+<p><strong>What have we found?</strong></p>
+<p>Placeholder: plain language summary of results, updated as findings are published. Until then: <em>Results will be shared here as the study progresses. Thank you for your contribution.</em></p>
+<p><strong>Who can I contact?</strong></p>
+<p>Placeholder name, <a href="mailto:placeholder@uu.se">placeholder@uu.se</a></p>
+</section>
 
 
 

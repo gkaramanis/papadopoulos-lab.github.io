@@ -1,8 +1,28 @@
 ---
 title: "Registry-based health trajectories"
-status: "Ongoing"
-categories: ["Registry studies", "Clinical outcomes"]
 ---
 
-<span class="status-badge">Ongoing</span>  
-We examine long-term treatment outcomes and healthcare utilization patterns to inform evidence-based clinical guidance.
+<span class="status-badge">Ongoing</span> <span class="listing-tags">Methods</span> <span class="listing-tags">Clinical outcomes</span>
+
+## Background
+
+We develop and apply novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries. This work aims to characterize how individuals move through the healthcare system over time, identifying patterns in treatment sequences, healthcare utilization, and long-term outcomes.
+
+Placeholder: expand with specific analytical methods, data sources, and clinical questions being addressed.
+
+## Team
+
+- Fotis Papadopoulos, Principal Investigator
+- Malin Indremo, Clinical outcomes
+- Alexander Engberg, Statistical methods
+- Placeholder: additional collaborators
+
+## Key outputs
+
+### Publications
+
+- Placeholder: key papers from this project.
+
+### Data & code
+
+- Placeholder: links to analysis code or data availability statements.

@@ -23,6 +23,7 @@ website:
         href: index.html
       - people.qmd
       - projects.qmd
+      - public.qmd
       - publications.qmd
       - presentations.qmd
       - funding.qmd

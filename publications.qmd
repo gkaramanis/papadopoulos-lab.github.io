@@ -12,7 +12,7 @@ library(data.table)
 ```
 
 ```{r echo=FALSE, warning=FALSE, include=FALSE}
-d <- knitcitations::read.bibtex("publications2.bib")
+d <- knitcitations::read.bibtex("publications.bib")
 ```
 
 ```{r echo=FALSE, warning=FALSE, results = "asis"}

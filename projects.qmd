@@ -4,14 +4,32 @@ description: |
     Research projects spanning registry-based epidemiology, methodological innovation, and open-source tools
 ---
 
-Our lab is involved in a variety of research projects spanning multiple disciplines. Below is a selection of our current and past projects.
-
-## Current Projects
-
-::: {.project-card}
+Our lab is involved in a variety of research projects spanning multiple disciplines.
 
 ```{=html}
-<h3 style="margin-bottom: 0.5rem;">swereg R package</h3>
+<div class="project-filters">
+  <div class="filter-group">
+    <span class="filter-label">Status:</span>
+    <button class="filter-btn filter-status active" data-filter="all" data-group="status">All</button>
+    <button class="filter-btn filter-status" data-filter="Ongoing" data-group="status">Ongoing</button>
+    <button class="filter-btn filter-status" data-filter="Completed" data-group="status">Completed</button>
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">Topic:</span>
+    <button class="filter-btn filter-topic active" data-filter="all" data-group="topic">All</button>
+    <button class="filter-btn filter-topic" data-filter="Methods" data-group="topic">Methods</button>
+    <button class="filter-btn filter-topic" data-filter="Epidemiology" data-group="topic">Epidemiology</button>
+    <button class="filter-btn filter-topic" data-filter="Open-source tools" data-group="topic">Open-source tools</button>
+    <button class="filter-btn filter-topic" data-filter="Registry studies" data-group="topic">Registry studies</button>
+    <button class="filter-btn filter-topic" data-filter="Clinical outcomes" data-group="topic">Clinical outcomes</button>
+  </div>
+</div>
+```
+
+:::{.project-card data-status="Ongoing" data-topics='["Methods","Open-source tools"]'}
+
+```{=html}
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/swereg.html">swereg R package</a></h3>
 <span class="status-badge">Ongoing</span>
 ```
 
@@ -19,30 +37,73 @@ We develop and maintain [swereg](https://papadopoulos-lab.github.io/swereg/), an
 
 <span class="listing-tags">Methods</span> <span class="listing-tags">Open-source tools</span>
 
+[Read more →](projects/swereg.html)
+
 :::
 
-::: {.project-card}
+:::{.project-card data-status="Ongoing" data-topics='["Epidemiology","Registry studies"]'}
 
 ```{=html}
-<h3 style="margin-bottom: 0.5rem;">Population Studies</h3>
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/population-studies.html">Population Studies</a></h3>
 <span class="status-badge">Ongoing</span>
 ```
 
 Registry-based studies examining population dynamics and epidemiological patterns in Swedish healthcare data.
 
-<span class="listing-tags">Epidemiology</span> <span class="listing-tags">Registry-based methods</span>
+<span class="listing-tags">Epidemiology</span> <span class="listing-tags">Registry studies</span>
+
+[Read more →](projects/population-studies.html)
 
 :::
 
-::: {.project-card}
+:::{.project-card data-status="Ongoing" data-topics='["Methods","Epidemiology","Clinical outcomes"]'}
 
 ```{=html}
-<h3 style="margin-bottom: 0.5rem;">Registry Trajectories</h3>
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/registry-trajectories.html">Registry Trajectories</a></h3>
 <span class="status-badge">Ongoing</span>
 ```
 
 Developing novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries.
 
-<span class="listing-tags">Methods</span> <span class="listing-tags">Epidemiology</span>
+<span class="listing-tags">Methods</span> <span class="listing-tags">Clinical outcomes</span>
+
+[Read more →](projects/registry-trajectories.html)
 
 :::
+
+```{=html}
+<script>
+(function () {
+  const cards = document.querySelectorAll('.project-card');
+  let activeStatus = 'all';
+  let activeTopic = 'all';
+
+  function applyFilters() {
+    cards.forEach(card => {
+      const statusMatch = activeStatus === 'all' || card.dataset.status === activeStatus;
+      const topics = JSON.parse(card.dataset.topics || '[]');
+      const topicMatch = activeTopic === 'all' || topics.includes(activeTopic);
+      card.style.display = (statusMatch && topicMatch) ? '' : 'none';
+    });
+  }
+
+  document.querySelectorAll('.filter-status').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-status').forEach(b => b.classList.remove('active'));
+      activeStatus = btn.dataset.filter;
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
+
+  document.querySelectorAll('.filter-topic').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-topic').forEach(b => b.classList.remove('active'));
+      activeTopic = btn.dataset.filter;
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
+})();
+</script>
+```

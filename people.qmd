@@ -12,33 +12,38 @@ The lab brings together expertise in epidemiology, registry-based methods, and d
 ::: {.grid columns=2}
 ::: {.profile-card}
 ![](resources/fotis.jpeg){.profile-img width="120px"}<br>
-<span class="profile-title">Dr. Fotis Papadopoulos</span>  
-<span class="profile-role">Assistant Professor</span>  
-Department of Neuroscience, Uppsala University  
-[Email](mailto:fotis.papadopoulos@uu.se)
+<span class="profile-title">Dr. Fotios Papadopoulos</span>\
+<span class="profile-role">Professor of Psychiatry</span>\
+Department of Medical Sciences, Uppsala University\
+Dr. Papadopoulos is a practicing psychiatrist at the Gender Identity Clinic at Uppsala University Hospital. He chairs the Swedish national quality register for gender dysphoria and leads multiple national research initiatives, including a multicenter cohort study on gender dysphoria, a qualitative study on detransition, and the development of a core outcome set for gender-affirming treatment. His research focuses on treatment outcomes in gender dysphoria, with an emphasis on gender incongruence, body satisfaction, mental health, and treatment side effects. He also chairs Sweden's national working group in research in gender dysphoria and a national research network on gender dysphoria.
+[Email](mailto:fotis.papadopoulos@uu.se) | [UU Profile](https://www.uu.se/kontakt-och-organisation/personal?query=N6-101) | [LinkedIn](https://www.linkedin.com/in/fotios-c-papadopoulos-2043069b/)
 :::
 ::: {.profile-card}
-![](https://api.dicebear.com/9.x/pixel-art/png?seed=one){.profile-img width="120px"}<br>
-<span class="profile-title">Lab Member A</span>  
-<span class="profile-role">Postdoctoral Researcher</span>  
-Placeholder bio and research focus.
+![](https://api.dicebear.com/9.x/pixel-art/png?seed=georgios){.profile-img width="120px"}<br>
+<span class="profile-title">Georgios Karamanis</span>\
+<span class="profile-role">Specialist in Psychiatry, PhD</span>\
+Department of Neuroscience, Uppsala University\
+Georgios Karamanis is a specialist in psychiatry and PhD at Uppsala University. Since 2014, he has worked in adult psychiatric services and at the Gender Identity Clinic at Uppsala University Hospital, where he also serves as medical director. His research focuses on gender dysphoria, using epidemiological methods and Swedish register data to study etiology, treatment safety, and health outcomes. He teaches on gender dysphoria, register-based studies, and data visualization, and has served as a board member and treasurer of Svensk förening för transpersoners hälsa (SFTH).
 :::
 ::: {.profile-card}
-![](https://api.dicebear.com/9.x/pixel-art/png?seed=two){.profile-img width="120px"}<br>
-<span class="profile-title">Lab Member B</span>  
-<span class="profile-role">PhD Student</span>  
-Placeholder bio and research focus.
+![](https://api.dicebear.com/9.x/pixel-art/png?seed=malin){.profile-img width="120px"}<br>
+<span class="profile-title">Dr. Malin Indremo</span>\
+<span class="profile-role">Psychologist, PhD</span>\
+Gender Identity Clinic, Uppsala University Hospital\
+Dr. Indremo holds a PhD from Uppsala University and is a practicing psychologist at the Gender Identity Clinic at Uppsala University Hospital. Her research focuses on gender dysphoria, including a multicenter cohort study, national register-based studies, a qualitative study on detransition, and development of a core outcome set for gender-affirming treatment. Her work centers on treatment outcomes with emphasis on gender incongruence, body satisfaction, mental health, detransition, and changing healthcare needs. She serves as a board member of the Swedish National Quality Register for Gender Dysphoria and SFTH.
 :::
 ::: {.profile-card}
-![](https://api.dicebear.com/9.x/pixel-art/png?seed=three){.profile-img width="120px"}<br>
-<span class="profile-title">Lab Member C</span>  
-<span class="profile-role">Research Assistant</span>  
-Placeholder bio and research focus.
+![](https://api.dicebear.com/9.x/pixel-art/png?seed=alexander){.profile-img width="120px"}<br>
+<span class="profile-title">Alexander Engberg</span>\
+<span class="profile-role">Statistician, PhD Candidate</span>\
+Department of Medical Sciences, Uppsala University\
+Alexander Engberg is a statistician at the Department of Medical Sciences, Uppsala University, where he manages research data, provides statistical advice, and conducts statistical analyses to support ongoing projects. He holds a master's degree in statistics from Uppsala University and is currently completing his PhD in statistics at the same institution. He also works with the Department of Women's and Children's Health at Uppsala University, where he is involved in data management and statistical analysis.
 :::
 ::: {.profile-card}
-![](https://api.dicebear.com/9.x/pixel-art/png?seed=four){.profile-img width="120px"}<br>
-<span class="profile-title">Lab Member D</span>  
-<span class="profile-role">Visiting Scholar</span>  
-Placeholder bio and research focus.
+![](https://api.dicebear.com/9.x/pixel-art/png?seed=lisann){.profile-img width="120px"}<br>
+<span class="profile-title">Lisann Dahlén</span>\
+<span class="profile-role">Research Assistant</span>\
+Department of Medical Sciences, Uppsala University\
+Lisann Dahlén has been working as a research assistant at the Department of Medical Sciences at Uppsala University since 2024. She has studied psychology and has been involved in different studies with a main focus on the development of a core outcome set for gender-affirming treatment. She is also assisting in a study about body image and has helped establish a national research network on gender dysphoria.
 :::
 :::

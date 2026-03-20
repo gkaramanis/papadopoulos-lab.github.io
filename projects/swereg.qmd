@@ -1,8 +1,28 @@
 ---
 title: "swereg R package"
-status: "Ongoing"
-categories: ["Methods", "Open-source tools"]
 ---
 
-<span class="status-badge">Ongoing</span>  
-We develop and maintain [swereg](https://papadopoulos-lab.github.io/swereg/), an R package for analyzing Swedish healthcare registry data.
+<span class="status-badge">Ongoing</span> <span class="listing-tags">Methods</span> <span class="listing-tags">Open-source tools</span>
+
+## Background
+
+We develop and maintain [swereg](https://papadopoulos-lab.github.io/swereg/), an open-source R package for working with Swedish healthcare registry data. The package provides a standardized set of tools for data cleaning, linkage, and analysis, lowering the barrier to reproducible registry-based research.
+
+Placeholder: expand with motivation, history of the package, and what problems it solves.
+
+## Team
+
+- Fotis Papadopoulos, Principal Investigator
+- Alexander Engberg, Statistical methods
+- Placeholder: additional contributors
+
+## Key outputs
+
+### Code & data
+
+- [swereg on GitHub](https://github.com/papadopoulos-lab/swereg)
+- [Package documentation](https://papadopoulos-lab.github.io/swereg/)
+
+### Publications
+
+- Placeholder: cite any methodological paper or software note here.

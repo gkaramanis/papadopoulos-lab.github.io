@@ -1,0 +1,93 @@
+---
+title: For Participants
+description: |
+    Plain language information about our research studies for participants and the general public
+---
+
+Our research aims to improve the understanding and care of people with gender dysphoria. On this page you can find plain language information about our ongoing studies — what we are investigating, why it matters, and what participation involves. We also share our findings here as they become available, so that participants can see the results of the research they contributed to.
+
+If you have questions about a specific study, contact details are provided in each section.
+
+---
+
+::: {.project-card}
+
+## Study 1: Placeholder study title
+
+**What is this study about?**
+
+Placeholder: explain in plain language what the study investigates and why it matters. Avoid jargon. Focus on what participants and the general public would want to know — the human question behind the research.
+
+**Why are we doing this?**
+
+Placeholder: describe the knowledge gap this study addresses and what we hope to learn. Keep it concrete — what could change in clinical practice if the study findings are as expected?
+
+**What does participation involve?**
+
+Placeholder: describe what participants are asked to do, how long it takes, whether there are any risks or inconveniences, and that participation is voluntary.
+
+**What have we found?**
+
+Placeholder: plain language summary of results, updated as findings are published. Until then: *Results will be shared here as the study progresses. Thank you for your contribution.*
+
+**Who can I contact?**
+
+Placeholder name, [placeholder@uu.se](mailto:placeholder@uu.se)
+
+:::
+
+---
+
+::: {.project-card}
+
+## Study 2: Placeholder study title
+
+**What is this study about?**
+
+Placeholder: explain in plain language what the study investigates and why it matters.
+
+**Why are we doing this?**
+
+Placeholder: describe the knowledge gap and what we hope to learn.
+
+**What does participation involve?**
+
+Placeholder: describe what participants are asked to do, timeframe, and that participation is voluntary.
+
+**What have we found?**
+
+Placeholder: plain language summary of results, updated as findings are published. Until then: *Results will be shared here as the study progresses. Thank you for your contribution.*
+
+**Who can I contact?**
+
+Placeholder name, [placeholder@uu.se](mailto:placeholder@uu.se)
+
+:::
+
+---
+
+::: {.project-card}
+
+## Study 3: Placeholder study title
+
+**What is this study about?**
+
+Placeholder: explain in plain language what the study investigates and why it matters.
+
+**Why are we doing this?**
+
+Placeholder: describe the knowledge gap and what we hope to learn.
+
+**What does participation involve?**
+
+Placeholder: describe what participants are asked to do, timeframe, and that participation is voluntary.
+
+**What have we found?**
+
+Placeholder: plain language summary of results, updated as findings are published. Until then: *Results will be shared here as the study progresses. Thank you for your contribution.*
+
+**Who can I contact?**
+
+Placeholder name, [placeholder@uu.se](mailto:placeholder@uu.se)
+
+:::
