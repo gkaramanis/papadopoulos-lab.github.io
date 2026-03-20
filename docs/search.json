@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Sparse Inference\n\n\nExamining sparse inference using both frequentist and bayesian methodology.\n\n\n\n\n\nApr 14, 2023\n\n\n\n\n\n\n\nSampling Bias\n\n\nExamining sampling bias in simulated data.\n\n\n\n\n\nFeb 23, 2023\n\n\n\n\n\nNo matching items\n\nRSS Feed"
+    "text": "Title\n\n\nBlog post summary\n\n\n\n\n\nMar 20, 2026\n\n\n\n\n\n\n\nSparse Inference\n\n\nExamining sparse inference using both frequentist and bayesian methodology.\n\n\n\n\n\nApr 14, 2023\n\n\n\n\n\n\n\nSampling Bias\n\n\nExamining sampling bias in simulated data.\n\n\n\n\n\nFeb 23, 2023\n\n\n\n\n\nNo matching items\n\nRSS Feed"
   },
   {
     "objectID": "people.html",
@@ -63,13 +63,6 @@
     "text": "Our lab is involved in a variety of research projects spanning multiple disciplines.\n\n  \n    Status:\n    All\n    Ongoing\n    Completed\n  \n  \n    Topic:\n    All\n    Methods\n    Epidemiology\n    Open-source tools\n    Registry studies\n    Clinical outcomes\n  \n\n\nswereg R package\nOngoing\nWe develop and maintain swereg, an R package for analyzing Swedish healthcare registry data.\nMethods Open-source tools\nRead more →\n\n\nPopulation Studies\nOngoing\nRegistry-based studies examining population dynamics and epidemiological patterns in Swedish healthcare data.\nEpidemiology Registry studies\nRead more →\n\n\nRegistry Trajectories\nOngoing\nDeveloping novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries.\nMethods Clinical outcomes\nRead more →"
   },
   {
-    "objectID": "projects.html#current-projects",
-    "href": "projects.html#current-projects",
-    "title": "Projects",
-    "section": "Current Projects",
-    "text": "Current Projects\n\nswereg R package\nOngoing\nWe develop and maintain swereg, an R package for analyzing Swedish healthcare registry data.\nMethods Open-source tools\n\n\nPopulation Studies\nOngoing\nRegistry-based studies examining population dynamics and epidemiological patterns in Swedish healthcare data.\nEpidemiology Registry-based methods\n\n\nRegistry Trajectories\nOngoing\nDeveloping novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries.\nMethods Epidemiology"
-  },
-  {
     "objectID": "funding-items/current-portfolio.html",
     "href": "funding-items/current-portfolio.html",
     "title": "Current funding portfolio",
@@ -89,6 +82,55 @@
     "title": "Registry-based health trajectories",
     "section": "",
     "text": "Ongoing Methods Clinical outcomes"
+  },
+  {
+    "objectID": "projects/registry-trajectories.html#background",
+    "href": "projects/registry-trajectories.html#background",
+    "title": "Registry-based health trajectories",
+    "section": "Background",
+    "text": "Background\nWe develop and apply novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries. This work aims to characterize how individuals move through the healthcare system over time, identifying patterns in treatment sequences, healthcare utilization, and long-term outcomes.\nPlaceholder: expand with specific analytical methods, data sources, and clinical questions being addressed."
+  },
+  {
+    "objectID": "projects/registry-trajectories.html#team",
+    "href": "projects/registry-trajectories.html#team",
+    "title": "Registry-based health trajectories",
+    "section": "Team",
+    "text": "Team\n\nFotis Papadopoulos, Principal Investigator\nMalin Indremo, Clinical outcomes\nAlexander Engberg, Statistical methods\nPlaceholder: additional collaborators"
+  },
+  {
+    "objectID": "projects/registry-trajectories.html#key-outputs",
+    "href": "projects/registry-trajectories.html#key-outputs",
+    "title": "Registry-based health trajectories",
+    "section": "Key outputs",
+    "text": "Key outputs\n\nPublications\n\nPlaceholder: key papers from this project.\n\n\n\nData & code\n\nPlaceholder: links to analysis code or data availability statements."
+  },
+  {
+    "objectID": "public.html",
+    "href": "public.html",
+    "title": "For Participants",
+    "section": "",
+    "text": "Our research aims to improve the understanding and care of people with gender dysphoria. On this page you can find plain language information about our ongoing studies — what we are investigating, why it matters, and what participation involves. We also share our findings here as they become available, so that participants can see the results of the research they contributed to.\nIf you have questions about a specific study, contact details are provided in each section."
+  },
+  {
+    "objectID": "public.html#study-1-placeholder-study-title",
+    "href": "public.html#study-1-placeholder-study-title",
+    "title": "For Participants",
+    "section": "Study 1: Placeholder study title",
+    "text": "Study 1: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters. Avoid jargon. Focus on what participants and the general public would want to know — the human question behind the research.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap this study addresses and what we hope to learn. Keep it concrete — what could change in clinical practice if the study findings are as expected?\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, how long it takes, whether there are any risks or inconveniences, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
+  },
+  {
+    "objectID": "public.html#study-2-placeholder-study-title",
+    "href": "public.html#study-2-placeholder-study-title",
+    "title": "For Participants",
+    "section": "Study 2: Placeholder study title",
+    "text": "Study 2: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap and what we hope to learn.\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, timeframe, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
+  },
+  {
+    "objectID": "public.html#study-3-placeholder-study-title",
+    "href": "public.html#study-3-placeholder-study-title",
+    "title": "For Participants",
+    "section": "Study 3: Placeholder study title",
+    "text": "Study 3: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap and what we hope to learn.\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, timeframe, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
   },
   {
     "objectID": "post/2023-02-23-sampling-bias/sampling-bias.html",
@@ -124,6 +166,34 @@
     "title": "Sampling Bias",
     "section": "Conclusion",
     "text": "Conclusion\nConclusion: Biased datasets can be corrected for by either:\n\nSample weights\nIncluding the sampling variables as covariates in the regression model"
+  },
+  {
+    "objectID": "public 2.html",
+    "href": "public 2.html",
+    "title": "For Participants",
+    "section": "",
+    "text": "Our research aims to improve the understanding and care of people with gender dysphoria. On this page you can find plain language information about our ongoing studies — what we are investigating, why it matters, and what participation involves. We also share our findings here as they become available, so that participants can see the results of the research they contributed to.\nIf you have questions about a specific study, contact details are provided in each section."
+  },
+  {
+    "objectID": "public 2.html#study-1-placeholder-study-title",
+    "href": "public 2.html#study-1-placeholder-study-title",
+    "title": "For Participants",
+    "section": "Study 1: Placeholder study title",
+    "text": "Study 1: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters. Avoid jargon. Focus on what participants and the general public would want to know — the human question behind the research.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap this study addresses and what we hope to learn. Keep it concrete — what could change in clinical practice if the study findings are as expected?\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, how long it takes, whether there are any risks or inconveniences, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
+  },
+  {
+    "objectID": "public 2.html#study-2-placeholder-study-title",
+    "href": "public 2.html#study-2-placeholder-study-title",
+    "title": "For Participants",
+    "section": "Study 2: Placeholder study title",
+    "text": "Study 2: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap and what we hope to learn.\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, timeframe, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
+  },
+  {
+    "objectID": "public 2.html#study-3-placeholder-study-title",
+    "href": "public 2.html#study-3-placeholder-study-title",
+    "title": "For Participants",
+    "section": "Study 3: Placeholder study title",
+    "text": "Study 3: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap and what we hope to learn.\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, timeframe, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
   },
   {
     "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html",
@@ -189,6 +259,13 @@
     "text": "Conclusion\nThe blog article discusses the limitations of using LASSO (Least Absolute Shrinkage and Selection Operator) models for statistical inference, particularly in situations where the number of predictors (i.e. independent variables) is much larger than the sample size. In these cases, LASSO models can suffer from high variability in the estimated coefficients, which can lead to incorrect or unreliable conclusions.\nOne proposed solution to this problem is to use a two-stage inference approach, where LASSO is first used to select a subset of predictors, and then a separate statistical method (such as ordinary least squares) is used to estimate the coefficients for the selected predictors. However, this two-stage approach can also have limitations, such as a loss of power in the second stage and increased computational complexity.\nIn contrast, Bayesian statistics offer a one-stage inference approach that can provide more reliable and interpretable results in complex modeling situations. Bayesian statistics allow for the incorporation of prior knowledge and uncertainty in the model, which can help to reduce variability and improve accuracy. Bayesian methods also provide a framework for model comparison and selection, which can help to identify the most appropriate model for a given dataset.\nOverall, while LASSO models can be useful in certain situations, their limitations in high-dimensional data settings highlight the advantages of Bayesian statistics for reliable and interpretable statistical inference."
   },
   {
+    "objectID": "post/2026-03-20-title/title.html",
+    "href": "post/2026-03-20-title/title.html",
+    "title": "Title",
+    "section": "",
+    "text": "Blog post"
+  },
+  {
     "objectID": "projects/population-studies.html",
     "href": "projects/population-studies.html",
     "title": "Population-based studies in transgender health",
@@ -196,11 +273,53 @@
     "text": "Ongoing Epidemiology Registry studies"
   },
   {
+    "objectID": "projects/population-studies.html#background",
+    "href": "projects/population-studies.html#background",
+    "title": "Population-based studies in transgender health",
+    "section": "Background",
+    "text": "Background\nWe conduct large-scale population studies using Swedish health registries to investigate the prevalence, incidence, and long-term health outcomes of individuals with gender dysphoria. By linking multiple national registers, we can study health trajectories across time with high completeness and minimal recall bias.\nPlaceholder: expand with study rationale, data sources, and research questions."
+  },
+  {
+    "objectID": "projects/population-studies.html#team",
+    "href": "projects/population-studies.html#team",
+    "title": "Population-based studies in transgender health",
+    "section": "Team",
+    "text": "Team\n\nFotis Papadopoulos, Principal Investigator\nGeorgios Karamanis, Epidemiological analysis\nAlexander Engberg, Statistical analysis\nPlaceholder: additional collaborators"
+  },
+  {
+    "objectID": "projects/population-studies.html#key-outputs",
+    "href": "projects/population-studies.html#key-outputs",
+    "title": "Population-based studies in transgender health",
+    "section": "Key outputs",
+    "text": "Key outputs\n\nPublications\n\nPlaceholder: key papers from this project.\n\n\n\nData & code\n\nPlaceholder: links to analysis code or data availability statements."
+  },
+  {
     "objectID": "projects/swereg.html",
     "href": "projects/swereg.html",
     "title": "swereg R package",
     "section": "",
     "text": "Ongoing Methods Open-source tools"
+  },
+  {
+    "objectID": "projects/swereg.html#background",
+    "href": "projects/swereg.html#background",
+    "title": "swereg R package",
+    "section": "Background",
+    "text": "Background\nWe develop and maintain swereg, an open-source R package for working with Swedish healthcare registry data. The package provides a standardized set of tools for data cleaning, linkage, and analysis, lowering the barrier to reproducible registry-based research.\nPlaceholder: expand with motivation, history of the package, and what problems it solves."
+  },
+  {
+    "objectID": "projects/swereg.html#team",
+    "href": "projects/swereg.html#team",
+    "title": "swereg R package",
+    "section": "Team",
+    "text": "Team\n\nFotis Papadopoulos, Principal Investigator\nAlexander Engberg, Statistical methods\nPlaceholder: additional contributors"
+  },
+  {
+    "objectID": "projects/swereg.html#key-outputs",
+    "href": "projects/swereg.html#key-outputs",
+    "title": "swereg R package",
+    "section": "Key outputs",
+    "text": "Key outputs\n\nCode & data\n\nswereg on GitHub\nPackage documentation\n\n\n\nPublications\n\nPlaceholder: cite any methodological paper or software note here."
   },
   {
     "objectID": "funding-items/past-support.html",
@@ -271,96 +390,5 @@
     "title": "Presentations",
     "section": "",
     "text": "Below is a curated list of recent talks and invited presentations.\n\n\n\n\n\n\n\n\n\n\n\n\nPractical data management for modern open science\n\n\n\n\n\n\n\n\n\nOct 1, 2024\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/swereg.html#background",
-    "href": "projects/swereg.html#background",
-    "title": "swereg R package",
-    "section": "Background",
-    "text": "Background\nWe develop and maintain swereg, an open-source R package for working with Swedish healthcare registry data. The package provides a standardized set of tools for data cleaning, linkage, and analysis, lowering the barrier to reproducible registry-based research.\nPlaceholder: expand with motivation, history of the package, and what problems it solves."
-  },
-  {
-    "objectID": "projects/swereg.html#team",
-    "href": "projects/swereg.html#team",
-    "title": "swereg R package",
-    "section": "Team",
-    "text": "Team\n\nFotis Papadopoulos, Principal Investigator\nAlexander Engberg, Statistical methods\nPlaceholder: additional contributors"
-  },
-  {
-    "objectID": "projects/swereg.html#key-outputs",
-    "href": "projects/swereg.html#key-outputs",
-    "title": "swereg R package",
-    "section": "Key outputs",
-    "text": "Key outputs\n\nCode & data\n\nswereg on GitHub\nPackage documentation\n\n\n\nPublications\n\nPlaceholder: cite any methodological paper or software note here."
-  },
-  {
-    "objectID": "projects/population-studies.html#background",
-    "href": "projects/population-studies.html#background",
-    "title": "Population-based studies in transgender health",
-    "section": "Background",
-    "text": "Background\nWe conduct large-scale population studies using Swedish health registries to investigate the prevalence, incidence, and long-term health outcomes of individuals with gender dysphoria. By linking multiple national registers, we can study health trajectories across time with high completeness and minimal recall bias.\nPlaceholder: expand with study rationale, data sources, and research questions."
-  },
-  {
-    "objectID": "projects/population-studies.html#team",
-    "href": "projects/population-studies.html#team",
-    "title": "Population-based studies in transgender health",
-    "section": "Team",
-    "text": "Team\n\nFotis Papadopoulos, Principal Investigator\nGeorgios Karamanis, Epidemiological analysis\nAlexander Engberg, Statistical analysis\nPlaceholder: additional collaborators"
-  },
-  {
-    "objectID": "projects/population-studies.html#key-outputs",
-    "href": "projects/population-studies.html#key-outputs",
-    "title": "Population-based studies in transgender health",
-    "section": "Key outputs",
-    "text": "Key outputs\n\nPublications\n\nPlaceholder: key papers from this project.\n\n\n\nData & code\n\nPlaceholder: links to analysis code or data availability statements."
-  },
-  {
-    "objectID": "projects/registry-trajectories.html#background",
-    "href": "projects/registry-trajectories.html#background",
-    "title": "Registry-based health trajectories",
-    "section": "Background",
-    "text": "Background\nWe develop and apply novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries. This work aims to characterize how individuals move through the healthcare system over time, identifying patterns in treatment sequences, healthcare utilization, and long-term outcomes.\nPlaceholder: expand with specific analytical methods, data sources, and clinical questions being addressed."
-  },
-  {
-    "objectID": "projects/registry-trajectories.html#team",
-    "href": "projects/registry-trajectories.html#team",
-    "title": "Registry-based health trajectories",
-    "section": "Team",
-    "text": "Team\n\nFotis Papadopoulos, Principal Investigator\nMalin Indremo, Clinical outcomes\nAlexander Engberg, Statistical methods\nPlaceholder: additional collaborators"
-  },
-  {
-    "objectID": "projects/registry-trajectories.html#key-outputs",
-    "href": "projects/registry-trajectories.html#key-outputs",
-    "title": "Registry-based health trajectories",
-    "section": "Key outputs",
-    "text": "Key outputs\n\nPublications\n\nPlaceholder: key papers from this project.\n\n\n\nData & code\n\nPlaceholder: links to analysis code or data availability statements."
-  },
-  {
-    "objectID": "public.html",
-    "href": "public.html",
-    "title": "For Participants",
-    "section": "",
-    "text": "Our research aims to improve the understanding and care of people with gender dysphoria. On this page you can find plain language information about our ongoing studies — what we are investigating, why it matters, and what participation involves. We also share our findings here as they become available, so that participants can see the results of the research they contributed to.\nIf you have questions about a specific study, contact details are provided in each section."
-  },
-  {
-    "objectID": "public.html#study-1-placeholder-study-title",
-    "href": "public.html#study-1-placeholder-study-title",
-    "title": "For Participants",
-    "section": "Study 1: Placeholder study title",
-    "text": "Study 1: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters. Avoid jargon. Focus on what participants and the general public would want to know — the human question behind the research.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap this study addresses and what we hope to learn. Keep it concrete — what could change in clinical practice if the study findings are as expected?\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, how long it takes, whether there are any risks or inconveniences, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
-  },
-  {
-    "objectID": "public.html#study-2-placeholder-study-title",
-    "href": "public.html#study-2-placeholder-study-title",
-    "title": "For Participants",
-    "section": "Study 2: Placeholder study title",
-    "text": "Study 2: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap and what we hope to learn.\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, timeframe, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
-  },
-  {
-    "objectID": "public.html#study-3-placeholder-study-title",
-    "href": "public.html#study-3-placeholder-study-title",
-    "title": "For Participants",
-    "section": "Study 3: Placeholder study title",
-    "text": "Study 3: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap and what we hope to learn.\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, timeframe, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
   }
 ]

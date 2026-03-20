@@ -12,7 +12,25 @@
 <description>A collection of thoughts.
 </description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 13 Apr 2023 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 19 Mar 2026 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Title</title>
+  <dc:creator>Georgios Karamanis</dc:creator>
+  <link>https://papadopoulos-lab.github.io/post/2026-03-20-title/title.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Blog post</p>
+
+
+
+ ]]></description>
+  <guid>https://papadopoulos-lab.github.io/post/2026-03-20-title/title.html</guid>
+  <pubDate>Thu, 19 Mar 2026 23:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Sparse Inference</title>
   <dc:creator>Richard Aubrey White</dc:creator>
