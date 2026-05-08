@@ -23,7 +23,7 @@ Dr. Papadopoulos is a practicing psychiatrist at the Gender Identity Clinic at U
 <span class="profile-title">Dr. Kristen Clark</span>\
 <span class="profile-role">Docent of Experimental Medicine & Postdoctoral Researcher in Clinical Psychiatry</span>\
 Department of Medical Sciences, Uppsala University\
-Docent of experimental medicine and postdoctoral researcher in Clinical Psychiatry at the Department of Medical Sciences, Uppsala University, Sweden. Her research focuses on transgender health, with particular emphasis on healthcare access, treatment pathways, and long-term outcomes using cohort data, national registers, and qualitative approaches. Dr. Clark's work is interdisciplinary, applying psychiatric epidemiology, public health, and health services research to understand clinical needs and improve the quality and accessibility of gender affirming care.\
+Her research focuses on transgender health, with particular emphasis on healthcare access, treatment pathways, and long-term outcomes using cohort data, national registers, and qualitative approaches. Dr. Clark's work is interdisciplinary, applying psychiatric epidemiology, public health, and health services research to understand clinical needs and improve the quality and accessibility of gender affirming care.\
 [ORCID](https://orcid.org/0000-0001-6584-4560)
 :::
 ::: {.profile-card}
@@ -54,5 +54,12 @@ Alexander Engberg is a statistician at the Department of Medical Sciences, Uppsa
 Department of Medical Sciences, Uppsala University\
 Lisann Dahlén has been working as a research assistant at the Department of Medical Sciences at Uppsala University since 2024. She has studied psychology and has been involved in different studies with a main focus on the development of a core outcome set for gender-affirming treatment. She is also assisting in a study about body image and has helped establish a national research network on gender dysphoria.\
 [ORCID](https://orcid.org/0009-0000-3882-293X)
+:::
+::: {.profile-card}
+![](https://api.dicebear.com/9.x/pixel-art/png?seed=malena){.profile-img}<br>
+<span class="profile-title">Malena Forsare</span>\
+<span class="profile-role">Clinical Psychologist, PhD Student</span>\
+Gender Identity Clinic, Malmö & Medical Faculty, Lund University\
+Malena Forsare is a clinical psychologist at the Gender Identity Clinic in Malmö and a PhD student at the Medical Faculty at Lund University. Her research examines gender detransition from multiple perspectives, with a focus on experiences in a Nordic context. Two of the studies in her doctoral thesis are conducted in collaboration with the Uppsala Transgender Health Research Group.
 :::
 :::
