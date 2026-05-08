@@ -116,6 +116,10 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
+ul, ol {
+  font-size: var(--bs-body-font-size);
+}
+
 // Section headers
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
@@ -125,7 +129,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  border-bottom: 2px solid #e76f51;
   padding-bottom: 0.5rem;
 }
 
