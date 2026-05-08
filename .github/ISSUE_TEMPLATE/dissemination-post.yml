@@ -1,5 +1,4 @@
 
-
 name: Dissemination Post
 description: Submit a new dissemination blog post for the website
 title: "[Dissemination] "
@@ -19,18 +18,57 @@ body:
     id: summary
     attributes:
       label: Summary
-      description: Brief summary of the post shown on the blog summary page
+      description: Brief summary of the post shown on the blog listing page (1–2 sentences)
       placeholder: "Enter a short summary"
     validations:
       required: true
   - type: textarea
-    id: main-content
+    id: question
     attributes:
-      label: Main Content
-      description: Write your post content here. This will be the main text of your blog post.
-      placeholder: "Enter the main content of your post"
+      label: What question did we ask and why is it important?
+      description: Describe the research question and its relevance to the public
+      placeholder: "We wanted to understand..."
     validations:
       required: true
+  - type: textarea
+    id: methods
+    attributes:
+      label: How did we answer the question?
+      description: Briefly describe the methods in plain language
+      placeholder: "We used..."
+    validations:
+      required: true
+  - type: textarea
+    id: findings
+    attributes:
+      label: What did we find?
+      description: Key results, ideally as bullet points
+      placeholder: "- Finding one\n- Finding two"
+    validations:
+      required: true
+  - type: textarea
+    id: implications
+    attributes:
+      label: What does this mean for the community and healthcare system?
+      description: Implications and takeaways for patients, clinicians, and the public
+      placeholder: "These findings suggest..."
+    validations:
+      required: true
+  - type: textarea
+    id: swedish
+    attributes:
+      label: Swedish version (optional)
+      description: Paste the Swedish translation of the above sections if available
+      placeholder: "Vilken fråga ställde vi..."
+    validations:
+      required: false
+  - type: input
+    id: doi
+    attributes:
+      label: DOI / publication link
+      placeholder: "https://doi.org/..."
+    validations:
+      required: false
   - type: input
     id: author
     attributes:
