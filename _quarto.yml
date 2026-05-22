@@ -19,8 +19,6 @@ website:
       - icon: resources/logo.png
         href: index.html
     right:
-      - text: "Home"
-        href: index.html
       - people.qmd
       - projects.qmd
       - public.qmd
