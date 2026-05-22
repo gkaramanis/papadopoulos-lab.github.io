@@ -1,7 +1,7 @@
 logo:
-  small: resources/logo.png
-  medium: resources/logo.png
-  large: resources/logo.png
+  small: resources/logo-pastel.png
+  medium: resources/logo-pastel.png
+  large: resources/logo-pastel.png
 
 color:
   palette:

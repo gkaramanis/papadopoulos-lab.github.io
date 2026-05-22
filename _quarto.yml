@@ -15,9 +15,7 @@ website:
   site-url: "https://papadopoulos-lab.github.io"
   favicon: favicon.png
   navbar:
-    left:
-      - icon: resources/logo-pastel.png
-        href: index.html
+    left: []
     right:
       - people.qmd
       - projects.qmd
