@@ -16,7 +16,7 @@ website:
   favicon: favicon.png
   navbar:
     left:
-      - icon: resources/logo.png
+      - icon: resources/logo-pastel.png
         href: index.html
     right:
       - people.qmd
