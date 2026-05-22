@@ -26,10 +26,8 @@ website:
       - presentations.qmd
       - funding.qmd
       - blog.qmd
-      - icon: github
-        href: https://github.com/papadopoulos-lab
   page-footer:
-    center: "Uppsala Transgender Health Research Group · Department of Medical Sciences, Uppsala University<br>[fotis.papadopoulos@uu.se](mailto:fotis.papadopoulos@uu.se) · [GitHub](https://github.com/papadopoulos-lab) · [Swereg](https://papadopoulos-lab.github.io/swereg/)"
+    center: "Uppsala Transgender Health Research Group<br>Department of Medical Sciences, Uppsala University<br>[fotis.papadopoulos@uu.se](mailto:fotis.papadopoulos@uu.se) · [GitHub](https://github.com/papadopoulos-lab) · [Swereg](https://papadopoulos-lab.github.io/swereg/)"
 format:
   html:
     theme: [litera, custom.scss, brand]
