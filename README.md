@@ -28,6 +28,8 @@ New publications are fetched monthly from ORCID and opened as GitHub issues labe
 
 Three sections are still being written and are hidden from the site: Projects, For Participants and Funding. Each is hidden with `draft: true` in its front matter, which empties the page and drops it from the navbar, search and sitemap. Removing that line brings the page back.
 
+To read a hidden page, run `quarto render --profile drafts`, which renders drafts in full into `_site/`. Normal builds and the live site are unaffected. `quarto preview` does not work for this, as it blanks drafts again on re-render.
+
 The files carrying it are `projects.qmd` and the three pages in `projects/`, `public.qmd`, `funding.qmd`, and the two pages in `funding-items/`.
 
 The live navbar is therefore People, Publications, Presentations and Blog.
