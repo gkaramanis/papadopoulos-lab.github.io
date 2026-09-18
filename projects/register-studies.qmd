@@ -1,59 +1,37 @@
 ---
 draft: true
-title: "Register-based studies on gender dysphoria"
+title: "Register-based studies"
 description: |
-  Nationwide studies using Swedish health and population registers to follow everyone diagnosed with gender dysphoria
+  Population studies and care trajectories using Swedish health registries
 ---
 
 <span class="status-badge">Ongoing</span> <span class="listing-tags">Register studies</span>
 
 ## In brief
 
-Sweden records health and population data for everyone in the country. That lets us follow every person who has received a gender dysphoria diagnosis in healthcare, over many years, without asking anyone to fill in a form or remember the past. It is how we can answer questions about rare events, such as a particular illness or a reversal of a legal gender change, that a study of a few hundred people could never settle.
+We conduct large-scale population studies using Swedish health registries to investigate the prevalence, incidence, and long-term health outcomes of individuals with gender dysphoria. By linking multiple national registers, we can study health trajectories across time with high completeness and minimal recall bias.
+
+We also develop and apply novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries. This work aims to characterize how individuals move through the healthcare system over time, identifying patterns in treatment sequences, healthcare utilization, and long-term outcomes.
 
 ## Why it matters
 
-Questionnaire studies depend on who volunteers and on what people recall. Registers avoid both problems, and they cover enough people for long enough that uncommon outcomes become countable. That matters most for questions about safety, where the events of concern are serious but rare.
-
 ## What we do
 
-We link the national patient register, the prescribed drug register, the medical birth register and population records, then compare people diagnosed with gender dysphoria against matched people who were not. Two questions run through the work:
-
-- Do people who receive gender-affirming treatment have a higher risk of physical outcomes, such as stroke or heart attack, or psychiatric outcomes, such as admission to hospital or suicidal behaviour?
-- What can be said about how the population of people seeking care has changed, and about what happens to them afterwards?
+## Taking part
 
 ## What we have found
 
-- Legal gender reversal is rare. Legal gender change remained stable in an estimated 98% of cases at ten years. [Clark et al. 2025](https://doi.org/10.1001/jamanetworkopen.2025.27780)
-- No cases of idiopathic intracranial hypertension were found among people treated with GnRH analogues for gender dysphoria in Sweden. [Karamanis et al. 2023](https://doi.org/10.1001/jamapediatrics.2023.0656)
-- Gender dysphoria shows familial clustering in twins. [Karamanis et al. 2022](https://doi.org/10.1038/s41598-022-17749-0)
-- Cardiovascular outcomes were examined after the start of gender-affirming hormone therapy. [Karalexi et al. 2022](https://doi.org/10.1093/eurjpc/zwac133)
-- Referrals to child and adolescent gender identity clinics tracked media coverage of transgender health. [Indremo et al. 2022](https://doi.org/10.1001/jamanetworkopen.2021.46531)
-- The gender dysphoria diagnosis in the Swedish registers is valid, and incidence trends were described nationwide. [Indremo et al. 2021](https://doi.org/10.1038/s41598-021-95421-9)
-
 ## For researchers
-
-| | |
-| --- | --- |
-| Design | Nationwide register-based cohort and case-control studies with matched comparison groups |
-| Data sources | National Patient Register, Prescribed Drug Register, Medical Birth Register, Total Population Register and linked administrative data |
-| Coverage | All individuals in Sweden with a recorded gender dysphoria diagnosis |
-| Exposures | Gender dysphoria diagnosis; gender-affirming hormonal treatment identified from dispensed prescriptions |
-| Tooling | Analyses use [swereg](swereg.html), our open-source R package for Swedish register data |
 
 ## Team and funding
 
-| Member | Role |
-| --- | --- |
-| Fotios Papadopoulos | Principal investigator |
-| Georgios Karamanis | Epidemiological analysis |
-| Richard White | Methods and analysis |
-| Alexander Engberg | Statistical analysis |
-| Kristen Clark | Health services research |
-| Malin Indremo | Clinical outcomes |
-
-TO CHECK — funding sources for this strand are not recorded anywhere yet.
+- Fotis Papadopoulos, Principal Investigator
+- Georgios Karamanis, Epidemiological analysis
+- Malin Indremo, Clinical outcomes
+- Alexander Engberg, Statistical analysis
 
 ## Contact
 
 [fotis.papadopoulos@uu.se](mailto:fotis.papadopoulos@uu.se)
+
+## På svenska

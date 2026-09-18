@@ -6,7 +6,7 @@ listing:
   contents: presentations-items
   type: grid
   grid-columns: 2
-  sort: date
+  sort: "date desc"
   filter-ui: false
 ---
-Below is a curated list of recent talks and invited presentations.
+Talks, posters and invited lectures by members of the group.

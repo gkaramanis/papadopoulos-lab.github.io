@@ -7,16 +7,6 @@ description: |
 
 When someone refers to gender identity, they usually mean the gender a person experiences themselves as and identifies with. That might be woman, man, neither, or something in between. People whose gender identity does not match the sex they were assigned at birth can experience severe discomfort and distress. That condition is called gender dysphoria.
 
-Far more people have sought care for gender dysphoria over the past decade, particularly younger people, and they face a higher risk of poor mental and physical health, discrimination and violence. Most published research in the field is methodologically weak. Both the Swedish Agency for Health Technology Assessment and Assessment of Social Services (SBU) and the Swedish Research Council for Health, Working Life and Welfare (FORTE) have identified the resulting knowledge gaps and called for better studies.
-
-We aim to answer several of those questions properly:
-
-i. Is gender-affirming treatment associated with better outcomes in gender dysphoria, body satisfaction, mental health and social vulnerability, such as discrimination and exposure to violence?
-ii. Do people undergoing gender-affirming treatment face a higher risk of physical outcomes, such as stroke and heart attack, or psychiatric outcomes, such as psychiatric admission and suicidal behaviour?
-iii. What matters for people whose need for gender-affirming care changes, or who have experience of detransition, retransition or regret?
-
-To answer them we combine three kinds of evidence. A large ongoing multicentre cohort study gives detailed, clinically meaningful measures. Register data covering everyone in Sweden with a gender dysphoria diagnosis gives the statistical power to assess rare but serious outcomes. Qualitative interviews explain the decisions behind the numbers.
-
 ```{=html}
 <div class="project-filters">
   <div class="filter-group">
@@ -44,7 +34,7 @@ To answer them we combine three kinds of evidence. A large ongoing multicentre c
 <span class="status-badge">Ongoing</span>
 ```
 
-A national multicentre cohort study running since 2016, following people assessed and treated for gender dysphoria at clinics across Sweden, alongside a comparison group.
+A national multicentre study, running since 2016, recruiting patients with gender dysphoria under clinical assessment or treatment.
 
 <span class="listing-tags">Cohort studies</span>
 
@@ -55,11 +45,11 @@ A national multicentre cohort study running since 2016, following people assesse
 :::{.project-card data-status="Ongoing" data-topics='["Register studies"]'}
 
 ```{=html}
-<h3 style="margin-bottom: 0.5rem;"><a href="projects/register-studies.html">Register-based studies on gender dysphoria</a></h3>
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/register-studies.html">Register-based studies</a></h3>
 <span class="status-badge">Ongoing</span>
 ```
 
-Nationwide studies linking Swedish health and population registers to follow everyone diagnosed with gender dysphoria, and to measure outcomes too rare for a cohort study to settle.
+Large-scale population studies using Swedish health registries, and analytical approaches for studying care trajectories and patient pathways.
 
 <span class="listing-tags">Register studies</span>
 
@@ -70,11 +60,11 @@ Nationwide studies linking Swedish health and population registers to follow eve
 :::{.project-card data-status="Ongoing" data-topics='["Qualitative studies"]'}
 
 ```{=html}
-<h3 style="margin-bottom: 0.5rem;"><a href="projects/detransition.html">De/retransition and changing care needs</a></h3>
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/detransition.html">Study about de/retransition</a></h3>
 <span class="status-badge">Ongoing</span>
 ```
 
-A qualitative multicentre study of the experiences and needs of people who have detransitioned, retransitioned or otherwise changed direction in their care.
+A qualitative study of the experiences and needs of people who have experienced detransition in some form.
 
 <span class="listing-tags">Qualitative studies</span>
 
@@ -85,11 +75,11 @@ A qualitative multicentre study of the experiences and needs of people who have 
 :::{.project-card data-status="Ongoing" data-topics='["Qualitative studies"]'}
 
 ```{=html}
-<h3 style="margin-bottom: 0.5rem;"><a href="projects/transrelated.html">Transrelated: relatives of people with gender dysphoria</a></h3>
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/transrelated.html">Transrelated: relatives of transgender individuals tell their story</a></h3>
 <span class="status-badge">Ongoing</span>
 ```
 
-Interviews with close relatives and friends of people being assessed for gender dysphoria, about their own experience and how they were met by healthcare.
+Interviews with relatives of people undergoing clinical evaluation for gender dysphoria, about their own experience.
 
 <span class="listing-tags">Qualitative studies</span>
 
@@ -111,6 +101,18 @@ We develop and maintain [swereg](https://papadopoulos-lab.github.io/swereg/), an
 [Read more →](projects/swereg.html)
 
 :::
+
+## What we are trying to answer
+
+Far more people have sought care for gender dysphoria over the past decade, particularly younger people, and they face a higher risk of poor mental and physical health, discrimination and violence. Both the Swedish Agency for Health Technology Assessment and Assessment of Social Services (SBU) and the Swedish Research Council for Health, Working Life and Welfare (FORTE) have identified the knowledge gaps and called for better studies.
+
+We aim to answer several of those questions properly:
+
+i. Is gender-affirming treatment associated with better outcomes in gender dysphoria, body satisfaction, mental health and social vulnerability, such as discrimination and exposure to violence?
+ii. Do people undergoing gender-affirming treatment face a higher risk of physical outcomes, such as stroke and heart attack, or psychiatric outcomes, such as psychiatric admission and suicidal behaviour?
+iii. What matters for people whose need for gender-affirming care changes, or who have experience of detransition, retransition or regret?
+
+To answer them we combine three kinds of evidence. A large ongoing multicentre cohort study gives detailed, clinically meaningful measures. Register data covering everyone in Sweden with a gender dysphoria diagnosis gives the statistical power to assess rare but serious outcomes. Qualitative interviews explain the decisions behind the numbers.
 
 ```{=html}
 <script>

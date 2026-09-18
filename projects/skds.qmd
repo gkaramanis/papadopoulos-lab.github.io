@@ -2,66 +2,49 @@
 draft: true
 title: "The Swedish Gender Dysphoria Study (SKDS)"
 description: |
-  A national multicentre cohort study following people assessed and treated for gender dysphoria in Sweden
+  A national multicentre study of people under assessment or treatment for gender dysphoria in Sweden
 ---
 
 <span class="status-badge">Ongoing</span> <span class="listing-tags">Cohort studies</span>
 
 ## In brief
 
-The Swedish Gender Dysphoria Study follows people who are being assessed or treated for gender dysphoria at clinics across Sweden, and asks them the same questions over several years. By following the same people over time, we can see what actually changes, rather than guessing from a single snapshot.
-
-The study has been running since 2016. It is known in Swedish as Svenska könsdysforistudien, abbreviated SKDS, and in English as SGDS.
+The Swedish Gender Dysphoria Study is a national multicentre study that has been running since 2016.
 
 ## Why it matters
 
-Gender identity is the gender a person experiences themselves as, and identifies with. That might be woman, man, neither, or somewhere in between. When a person's gender identity does not match the sex they were assigned at birth, the mismatch can cause serious discomfort and distress. That condition is called gender dysphoria.
-
-Far more people have sought care for gender dysphoria over the past decade, particularly younger people. People with gender dysphoria face a higher risk of poor mental and physical health, of discrimination, and of exposure to violence.
-
-Most published research in the field is methodologically weak. Both the Swedish Agency for Health Technology Assessment and Assessment of Social Services (SBU) and the Swedish Research Council for Health, Working Life and Welfare (FORTE) have identified the resulting knowledge gaps and called for better studies.
+When someone refers to gender identity, what they usually mean is the gender one experiences and identifies themselves with. This can for example be woman, man, neither of them or something in the middle. People whose gender identity does not align with the sex they were assigned at birth can experience severe discomfort and suffering. This condition is called gender dysphoria.
 
 ## What we do
 
-Participants are recruited through psychiatry and endocrinology clinics in Umeå, Uppsala, Alingsås, Gothenburg, Linköping, Malmö and Lund, and through child and adolescent psychiatry in Stockholm. A comparison group of people without gender dysphoria takes part alongside them.
+The study recruits patients with gender dysphoria, under clinical assessment or treatment, who have contact with psychiatry or endocrinology clinics in Umeå, Uppsala, Alingsås, Gothenburg, Linköping, Malmö and Lund, and with the Child and Adolescent Psychiatry clinic in Stockholm.
 
-The study has several parts, and participants choose which ones they join:
+The overall aim of the study is to contribute to a better understanding of the development of gender dysphoria and to identify important factors associated with better outcomes in terms of symptoms of gender dysphoria, somatic and mental health, quality of life, ability to work, education and perceived social stigma. This can hopefully lead to improved care for people with gender dysphoria in the future.
 
-- online questionnaires, covering wellbeing and personality among other things
-- cognitive tests, before and after hormonal treatment
-- a saliva sample for genetic analysis
-- hair samples and stored newborn screening (PKU) samples, to look for links between gender dysphoria and exposure to substances before birth and in early life
+The study consists of several parts. Participants are asked to complete online questionnaires, undertake cognitive tests before and after hormonal treatment, and provide saliva samples for genetic analyses. A new feature of the study is that it is now possible to collect participants' hair and PKU samples. This is to examine possible links between gender dysphoria and exposure to various environmental substances during the fetal period and early life.
 
-Results are only ever published at group level.
+Results are only published at group level.
 
 ## Taking part
 
-Participation is voluntary and you choose which parts of the study to join. If you are being assessed or treated at one of the clinics above, ask your clinician, or write to the address under Contact.
+Participants choose which parts of the study they want to participate in.
 
 ## What we have found
 
-Several sub-studies have been completed and presented at national and international conferences, including the Swedish Professional Association for Transgender Health (SFTH) and the European Professional Association for Transgender Health (EPATH). Areas covered so far include self-harm, eating disorder symptoms, neuropsychiatric symptoms, and people's preferences for gender-affirming treatment. The study also produced a validation and psychometric evaluation of the Transgender Congruence Scale.
+A number of sub-studies have already been conducted and results from these have been presented at national and international scientific conferences and compiled in manuscripts and master theses. Areas investigated include self-harm behaviours, eating disorder symptoms, neuropsychiatric symptoms, and preferences for gender affirming treatment. In addition, a validation and psychometric evaluation of the Transgender Congruence Scale (TCS) was conducted.
 
-- Autism is far more common among participants with gender dysphoria than in the comparison group, but autistic participants did not report a different degree of gender incongruence. [Özel et al. 2025](https://doi.org/10.1016/j.psychres.2025.116591)
-- People seeking gender-affirming treatment in Sweden differ in which treatments they want, and those preferences relate to other characteristics. [Axfors et al. 2023](https://doi.org/10.1007/s13178-021-00650-2)
-- The study design and measures are described in full in the protocol. [Özel et al. 2023](https://doi.org/10.1136/bmjopen-2022-066571)
-
-Conference abstracts appear in the EPATH books of abstracts for [2019](https://epath.eu/wp-content/uploads/2019/04/Boof-of-abstracts-EPATH2019.pdf) and [2021](https://epath.eu/wp-content/uploads/2021/08/FINAL-EPATH2021.pdf).
+Books of abstracts: [EPATH 2019](https://epath.eu/wp-content/uploads/2019/04/Boof-of-abstracts-EPATH2019.pdf), [EPATH 2021](https://epath.eu/wp-content/uploads/2021/08/FINAL-EPATH2021.pdf).
 
 ## For researchers
 
 | | |
 | --- | --- |
-| Design | Prospective multicentre cohort with a cisgender comparison group |
+| Design | National multicentre study with a control group |
 | Running since | 2016 |
-| Setting | Adult psychiatry and endocrinology in Umeå, Uppsala, Alingsås, Gothenburg, Linköping, Malmö and Lund; child and adolescent psychiatry in Stockholm |
-| Participants | TO CHECK — the source document states about 400 participants and 458 comparison individuals, and gives a data collection end date of December 2022 |
-| Measures | Questionnaires on mental health, quality of life, work capacity, education and perceived stigma; Transgender Congruence Scale; RAADS-14 and AQ for autistic traits; cognitive testing before and after hormonal treatment |
-| Biological samples | Saliva for genetic analysis; hair; stored PKU samples |
-| Linkage | National patient registers |
-| Protocol | [Özel et al. BMJ Open 2023](https://doi.org/10.1136/bmjopen-2022-066571) |
-
-The overall aim is to understand how gender dysphoria develops, and to identify what is associated with better outcomes in gender dysphoria itself, in physical and mental health, quality of life, capacity to work, education, and experienced social stigma.
+| Setting | Psychiatry and endocrinology in Umeå, Uppsala, Alingsås, Gothenburg, Linköping, Malmö and Lund; Child and Adolescent Psychiatry in Stockholm |
+| Participants | |
+| Data collection | Online questionnaires; cognitive tests before and after hormonal treatment; saliva samples for genetic analyses; hair and PKU samples |
+| Status | |
 
 ## Team and funding
 
@@ -69,43 +52,49 @@ Steering committee:
 
 | Member | Role | Site |
 | --- | --- | --- |
-| Fotios Papadopoulos | Psychiatry | Uppsala |
-| Alkistis Skalkidou | Gynaecology | Uppsala |
-| Owe Bodlund | Psychiatry | Umeå |
-| Lars-Göran Sjöström | Endocrinology | Umeå |
-| Åsa Tivesten | Endocrinology | Gothenburg |
-| Ulrika Beckman | Psychology | Alingsås |
-| Attila Fazekas | Psychiatry | Malmö |
-| Nils Thelin | Psychiatry | Linköping |
-| Jeanette Wahlberg | Endocrinology | Linköping |
-| Louise Frisén | Child and adolescent psychiatry | Stockholm |
+| Fotios Papadopoulos | Associate Professor and consultant Psychiatrist | Uppsala |
+| Alkistis Skalkidou | Professor and consultant Gynaecologist | Uppsala |
+| Owe Bodlund | Associate Professor and consultant Psychiatrist | Umeå |
+| Lars-Göran Sjöström | Senior consultant, Endocrinology | Umeå |
+| Åsa Tivesten | Professor and Senior consultant, Endocrinology | Gothenburg |
+| Ulrika Beckman | Psychologist | Alingsås |
+| Attila Fazekas | Senior consultant, Psychiatry | Lund |
+| Nils Thelin | Senior consultant, Psychiatry | Linköping |
+| Jeanette Wahlberg | Senior consultant, Endocrinology | Linköping |
+| Louise Frisén | Senior Consultant, Child and Adolescent Psychiatry | Stockholm |
 
 ## Contact
 
-Questions about the study go to [skds@neuro.uu.se](mailto:skds@neuro.uu.se), Fotios Papadopoulos.
+For questions about the study, please contact [skds@neuro.uu.se](mailto:skds@neuro.uu.se) (Fotios Papadopoulos).
 
 ## På svenska
 
 ### Kort om studien
 
-Svenska könsdysforistudien är en nationell multicenterstudie som pågått sedan 2016. Studien följer personer med könsdysfori, under utredning eller behandling, och ställer samma frågor om och om igen under flera år. Genom att följa samma personer över tid kan vi se vad som faktiskt förändras.
+Svenska könsdysforistudien är en nationell multicenterstudie som pågått sedan 2016.
 
 ### Varför studien behövs
 
-När man talar om könsidentitet brukar man mena det kön en person själv upplever sig tillhöra och identifierar sig med. Det kan till exempel vara kvinna eller man, ingetdera eller någonstans däremellan. Om en person har en könsidentitet som inte stämmer överens med det kön denne tilldelats vid födseln kan detta orsaka svårt obehag och lidande. Detta tillstånd kallas för könsdysfori.
-
-En betydande ökning av personer som söker för könsdysfori har observerats under de senaste åren, särskilt bland yngre personer. Individer med könsdysfori är en grupp med ökad risk för psykisk och fysisk ohälsa, diskriminering och våldsutsatthet. Majoriteten av studierna på området är metodiskt svaga, och både Statens beredning för medicinsk och social utvärdering (SBU) och Forskningsrådet för hälsa, arbetsliv och välfärd (FORTE) har publicerat relaterade kunskapsluckor och betonar behovet av mer forskning.
+När man talar om könsidentitet brukar man mena det kön en person själv upplever sig tillhöra och identifierar sig med. Det kan till exempel vara kvinna eller man, ingetdera eller någonstans däremellan. Om en person har en könsidentitet som inte stämmer överens med det kön denne tilldelats vid födseln, kan detta orsaka svårt obehag och lidande. Detta tillstånd kallas för könsdysfori.
 
 ### Så går det till
 
-Studien rekryterar patienter som har kontakt med psykiatri och endokrinologi i Umeå, Uppsala, Alingsås, Göteborg, Linköping, Malmö och Lund, och med barn- och ungdomspsykiatri i Stockholm. En kontrollgrupp deltar parallellt.
+Studien rekryterar patienter med könsdysfori, under utredning eller behandling, som har kontakt med psykiatri och endokrinologi i Umeå, Uppsala, Alingsås, Göteborg, Linköping, Malmö, Lund och med barn- och ungdomspsykiatri i Stockholm.
 
-Studien består av flera delar, och deltagarna väljer själva vilka de vill delta i: webbenkäter om bland annat mående och personlighet, kognitiva tester före och efter hormonell behandling, salivprov för genetisk analys, samt hår- och PKU-prov för att hitta eventuella samband med exponering för olika ämnen under fostertiden och tidigt i livet.
+Det övergripande syftet med studien är att bidra till ökad kunskap kring uppkomst av könsdysfori samt att identifiera viktiga faktorer som förknippas med bättre utfall när det gäller själva könsdysforin, somatisk och psykisk hälsa, livskvalitet, arbetsförmåga, utbildning och upplevt socialt stigma. Detta kan förhoppningsvis leda till förbättrad vård för personer med könsdysfori i framtiden.
 
-Det övergripande syftet är att bidra till ökad kunskap kring uppkomst av könsdysfori och att identifiera viktiga faktorer som förknippas med bättre utfall när det gäller själva könsdysforin, somatisk och psykisk hälsa, livskvalitet, arbetsförmåga, utbildning och upplevt socialt stigma.
+Studien består av flera olika delar. Deltagarna får besvara webbenkäter med frågor rörande bland annat mående och personlighet, genomföra kognitiva tester före- och efter hormonell behandling och lämna salivprov för genetisk analys. Nytt i studien är att det nu finns möjlighet att analysera deltagarnas hår och PKU-prov. Detta för att hitta eventuella samband med könsdysfori och exponering för olika ämnen under fostertiden och tidigt i livet.
 
-Resultaten från studien offentliggörs enbart på gruppnivå.
+Resultaten från studien kommer enbart att offentliggöras på gruppnivå.
 
 ### Delta i studien
 
-Deltagandet är frivilligt och du väljer själv vilka delar du vill vara med i. Fråga din behandlare på någon av mottagningarna ovan, eller skriv till [skds@neuro.uu.se](mailto:skds@neuro.uu.se).
+Deltagarna väljer själva vilka av studiens delar de vill delta i.
+
+### Delstudier och resultat
+
+Ett antal delstudier har redan genomförts och resultat från dessa har presenterats på nationella och internationella vetenskapliga konferenser och sammanställts i manuskript och magisteruppsatser. Områden som undersökts är bland annat självskadebeteenden, ätstörningsproblematik, neuropsykiatrisk problematik, samt preferenser när det gäller könsbekräftande behandling. Dessutom har det gjorts en validering och psykometrisk utvärdering av the Transgender Congruence Scale (TCS).
+
+### Kontakt
+
+För frågor angående studien kontakta [fotis.papadopoulos@uu.se](mailto:fotis.papadopoulos@uu.se).

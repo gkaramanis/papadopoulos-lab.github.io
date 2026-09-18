@@ -1,0 +1,8 @@
+# Review profile: renders draft pages in full and puts them back in the navbar.
+#
+#   quarto preview --profile drafts
+#
+# Only active with that flag, so a normal render and the published site are
+# unaffected.
+website:
+  draft-mode: visible

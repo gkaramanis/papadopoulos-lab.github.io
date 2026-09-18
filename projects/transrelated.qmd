@@ -1,43 +1,41 @@
 ---
 draft: true
-title: "Transrelated: relatives of people with gender dysphoria"
+title: "Transrelated: relatives of transgender individuals tell their story"
 description: |
-  Interviews with close relatives and friends of people being assessed for gender dysphoria, about their own experience
+  Interviews with relatives of people undergoing clinical evaluation for gender dysphoria
 ---
 
 <span class="status-badge">Ongoing</span> <span class="listing-tags">Qualitative studies</span>
 
 ## In brief
 
-We interview the people around someone being assessed for gender dysphoria, such as a parent, partner or close friend, about their own experience. We ask how they were met by healthcare and by society, and whether the assessment and any treatment changed the relationship.
-
-The study is known as Transanhörig in Swedish.
+Gender dysphoria is the experience of significant discomfort due to incongruence between the experienced gender identity and the appearance of the body. A significant increase in the prevalence of gender dysphoria has been described recently, especially among young people.
 
 ## Why it matters
 
-Gender dysphoria is the distress caused when the body's appearance does not match a person's experienced gender identity. Prevalence has risen sharply in recent years, especially among younger people. People with gender dysphoria may experience exclusion and stigma, which can sustain mental health problems and hold back their development, social life and participation in society.
-
-We know that relatives matter, both as support and in making life after gender-affirming treatment easier. Yet there is very little research on family relationships in this context.
+Individuals with gender dysphoria can experience exclusion and stigmatization that can maintain mental health problems and prevent the individual's own development, socialization and integration in society. There is limited knowledge about family relationships for people with gender dysphoria, although these relationships are important in supporting and facilitating integration after gender-affirming treatment.
 
 ## What we do
 
-The study is attached to the larger [Swedish Gender Dysphoria Study](skds.html), which began in 2016. Patients who have consented to that study are asked whether someone they consider themselves close to may be contacted. They provide the contact details. The relative is then approached separately, given information, and gives their own consent.
+The aim of this project is to explore how relatives experience living with an individual undergoing clinical evaluation for gender dysphoria. We will also explore the relatives' experiences of how society and the health care system treats them and the person with gender dysphoria, as well as the possible impact of the gender dysphoria evaluation process on family relationships.
 
-Relatives who agree take part in an interview, by telephone or in person, whichever they prefer and whichever is practical. A question guide supports the interview. Participants are also asked to take part in a follow-up interview later in the person's assessment and any treatment. Interviews are analysed thematically.
+This study is part of the larger multicentre project [Svenska könsdysforistudien](skds.html), started in 2016. All patients who have consented to take part in that study are asked whether a close relative or friend could be contacted. The individual seeking care for gender dysphoria evaluation provides the contact details. The relative is then approached separately, given information about the study, and gives separate consent if willing.
+
+After consent is given, relatives are interviewed either by telephone or in a personal meeting. A question guide has been developed to support data collection. They are also asked to participate in a second interview, later in the process of their relative's transition. All interviews are analysed using thematic analysis.
 
 ## Taking part
 
-Relatives are invited through the person being assessed, so there is no way to sign up directly. Consent is given separately from the person in care, and taking part is voluntary.
+## What we have found
 
 ## For researchers
 
 | | |
 | --- | --- |
-| Design | Qualitative interview study nested in the SKDS cohort, thematic analysis |
-| Sampling | Relatives nominated by consenting SKDS participants, approached and consented separately |
-| Data collection | Semi-structured interviews by telephone or in person, with a question guide, plus a follow-up interview later in the care pathway |
+| Design | Qualitative interview study within the Swedish Gender Dysphoria Study, analysed with thematic analysis |
 | Principal investigator | Sara Sylvén |
-| Status | TO CHECK — the source material does not state whether data collection is complete |
+| Status | |
+
+## Team and funding
 
 ## Contact
 
@@ -47,18 +45,18 @@ Relatives are invited through the person being assessed, so there is no way to s
 
 ### Kort om studien
 
-Vi intervjuar närstående till personer som utreds för könsdysfori, till exempel en förälder, partner eller nära vän, om deras egen upplevelse. Vi frågar hur de har bemötts av vården och av samhället, och om utredningen och en eventuell behandling har påverkat relationen.
+Könsdysfori innebär ett lidande som beror på att kroppens utseende inte stämmer med den upplevda könsidentiteten. En markant prevalensökning har noterats de senaste åren, framförallt hos yngre personer.
 
 ### Varför studien behövs
 
-Könsdysfori innebär ett lidande som beror på att kroppens utseende inte stämmer med den upplevda könsidentiteten. En markant prevalensökning har noterats de senaste åren, framför allt hos yngre personer. Personer med könsdysfori kan uppleva utanförskap och stigmatisering, vilket kan vidmakthålla psykiska besvär och förhindra personens utveckling, socialisering och integration i samhället.
-
-Det finns väldigt lite kunskap kring familjerelationer för personer med könsdysfori, trots att vi vet att närstående är viktiga som stöd och för att underlätta integrationen efter könsbekräftande behandling.
+Personer med könsdysfori kan uppleva utanförskap och stigmatisering, vilket kan vidmakthålla psykiska besvär och förhindra personens utveckling, socialisering och integration i samhället. Det finns väldigt lite kunskap kring familjerelationer för personer med könsdysfori. Detta trots att vi vet att närstående är viktiga som stöd, och för att underlätta integrationen efter könsbekräftande behandling.
 
 ### Så går det till
 
-Studien är kopplad till [Svenska könsdysforistudien](skds.html), som startade 2016. Alla patienter som samtyckt till att delta tillfrågas om en person som den enskilde anser sig ha en nära relation till får kontaktas, och anger då kontaktuppgifter. Den närstående kontaktas sedan och tillfrågas separat om att delta.
+Syftet med det aktuella projektet är att undersöka närståendes upplevelser av att leva med någon som är under utredning för könsdysfori. Vi avser även undersöka närståendes upplevelser av samhällets och vårdens bemötande av dem och deras anhöriga samt om och hur utredning och behandling har påverkat relationen.
 
-Efter samtycke genomförs en första intervju via telefon eller personligt möte, beroende på vad deltagaren föredrar och vad som är praktiskt möjligt. En frågeguide har utarbetats som stöd för datainsamlingen. Deltagarna tillfrågas även om en uppföljande intervju längre fram under den anhöriges utredning och eventuella behandling. Intervjuerna analyseras med tematisk analys.
+Studien är kopplad till en större klinisk prospektiv studie, [Svenska könsdysforistudien](skds.html), som startades 2016. Alla patienter som givit samtycke till att delta i studien tillfrågas om en person som den enskilde anser sig ha en nära relation till får kontaktas. Personen som sökt vård för könsdysfori anger då kontaktuppgifter till denna närstående. Den närstående kommer sedan att kontaktas och separat tillfrågas om att delta i den aktuella studien.
+
+Efter att de tillfrågats om studien och givit medgivande kommer de närstående att genomföra en första intervju via telefon eller genom personligt möte, beroende på vad studiedeltagaren själv föredrar och vad som är praktiskt möjligt. En frågeguide har utarbetats som stöd för datainsamlingen. Deltagarna kommer även att tillfrågas om att delta i en uppföljande intervju med samma tillvägagångssätt, längre fram under deras anhörigas utredning och eventuella behandling. Intervjuerna kommer att analyseras med tematisk analys.
 
 Ansvarig för studien: Sara Sylvén.
