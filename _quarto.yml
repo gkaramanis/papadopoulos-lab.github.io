@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  render:
+    # .qmd only, so CLAUDE.md and other repo docs are not published as pages
+    - "*.qmd"
+    - "**/*.qmd"
 
 resources:
   - "favicon.png"
@@ -12,7 +16,7 @@ resources:
 website:
   title: "Uppsala Transgender  \n
           Health Research Group"
-  site-url: "https://papadopoulos-lab.github.io"
+  site-url: "https://gkaramanis.github.io/papadopoulos-lab.github.io/"  # temporary host; back to the custom domain once DNS is live
   favicon: favicon.png
   navbar:
     left: []

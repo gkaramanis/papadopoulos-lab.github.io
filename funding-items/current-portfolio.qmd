@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Current funding portfolio"
 status: "Updating"
 categories: ["Funding"]

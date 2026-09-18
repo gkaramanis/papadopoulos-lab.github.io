@@ -7,33 +7,16 @@
 <channel>
 <title>Uppsala Transgender  
  Health Research Group</title>
-<link>https://papadopoulos-lab.github.io/blog.html</link>
-<atom:link href="https://papadopoulos-lab.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://gkaramanis.github.io/papadopoulos-lab.github.io/blog.html</link>
+<atom:link href="https://gkaramanis.github.io/papadopoulos-lab.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A collection of thoughts.
 </description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 19 Mar 2026 23:00:00 GMT</lastBuildDate>
-<item>
-  <title>Title</title>
-  <dc:creator>Georgios Karamanis</dc:creator>
-  <link>https://papadopoulos-lab.github.io/post/2026-03-20-title/title.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Blog post</p>
-
-
-
- ]]></description>
-  <guid>https://papadopoulos-lab.github.io/post/2026-03-20-title/title.html</guid>
-  <pubDate>Thu, 19 Mar 2026 23:00:00 GMT</pubDate>
-</item>
+<lastBuildDate>Mon, 01 Sep 2025 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Stability After Legal Gender Change Among Adults With Gender Dysphoria</title>
   <dc:creator>Kristen D. Clark</dc:creator>
-  <link>https://papadopoulos-lab.github.io/post/2025-09-02-stability-legal-gender-change/</link>
+  <link>https://gkaramanis.github.io/papadopoulos-lab.github.io/post/2025-09-02-stability-legal-gender-change/</link>
   <description><![CDATA[ 
 
 
@@ -105,13 +88,13 @@
 </section>
 
  ]]></description>
-  <guid>https://papadopoulos-lab.github.io/post/2025-09-02-stability-legal-gender-change/</guid>
+  <guid>https://gkaramanis.github.io/papadopoulos-lab.github.io/post/2025-09-02-stability-legal-gender-change/</guid>
   <pubDate>Mon, 01 Sep 2025 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Sparse Inference</title>
   <dc:creator>Richard Aubrey White</dc:creator>
-  <link>https://papadopoulos-lab.github.io/post/2023-04-14-sparse-inference/sparse-inference.html</link>
+  <link>https://gkaramanis.github.io/papadopoulos-lab.github.io/post/2023-04-14-sparse-inference/sparse-inference.html</link>
   <description><![CDATA[ 
 
 
@@ -680,13 +663,13 @@ Makowski, Dominique, Matthew S Ben-Shachar, and Daniel Lüdecke. 2019. <span>“
 Tibshirani, Robert. 1996. <span>“Regression Shrinkage and Selection via the Lasso.”</span> <em>Journal of the Royal Statistical Society. Series B (Methodological)</em> 58 (1): 267–88. <a href="http://www.jstor.org/stable/2346178">http://www.jstor.org/stable/2346178</a>.
 </div>
 </div></section></div> ]]></description>
-  <guid>https://papadopoulos-lab.github.io/post/2023-04-14-sparse-inference/sparse-inference.html</guid>
+  <guid>https://gkaramanis.github.io/papadopoulos-lab.github.io/post/2023-04-14-sparse-inference/sparse-inference.html</guid>
   <pubDate>Thu, 13 Apr 2023 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Sampling Bias</title>
   <dc:creator>Richard Aubrey White</dc:creator>
-  <link>https://papadopoulos-lab.github.io/post/2023-02-23-sampling-bias/sampling-bias.html</link>
+  <link>https://gkaramanis.github.io/papadopoulos-lab.github.io/post/2023-02-23-sampling-bias/sampling-bias.html</link>
   <description><![CDATA[ 
 
 
@@ -1216,7 +1199,7 @@ F-statistic:  6152 on 4 and 4995 DF,  p-value: &lt; 2.2e-16</code></pre>
 </section>
 
  ]]></description>
-  <guid>https://papadopoulos-lab.github.io/post/2023-02-23-sampling-bias/sampling-bias.html</guid>
+  <guid>https://gkaramanis.github.io/papadopoulos-lab.github.io/post/2023-02-23-sampling-bias/sampling-bias.html</guid>
   <pubDate>Wed, 22 Feb 2023 23:00:00 GMT</pubDate>
 </item>
 </channel>

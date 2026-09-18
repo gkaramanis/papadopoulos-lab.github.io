@@ -29,7 +29,7 @@ Her research focuses on transgender health, with particular emphasis on healthca
 [ORCID](https://orcid.org/0000-0001-6584-4560)
 :::
 ::: {.profile-card}
-![](https://api.dicebear.com/9.x/pixel-art/png?seed=malin){.profile-img}<br>
+![](resources/malin.jpeg){.profile-img}<br>
 <span class="profile-title">Dr. Malin Indremo</span>\
 <span class="profile-role">Psychologist, PhD</span>\
 Gender Identity Clinic, Uppsala University Hospital\

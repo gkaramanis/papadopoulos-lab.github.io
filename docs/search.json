@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Title\n\n\nBlog post summary\n\n\n\n\n\nMar 20, 2026\n\n\n\n\n\n\n\nStability After Legal Gender Change Among Adults With Gender Dysphoria\n\n\nA new study using Swedish national registers followed over 7,000 people with a gender dysphoria diagnosis and found that legal gender reversal was rare, with legal gender change remaining stable in an estimated 98% of cases at 10 years.\n\n\n\n\n\nSep 2, 2025\n\n\n\n\n\n\n\nSparse Inference\n\n\nExamining sparse inference using both frequentist and bayesian methodology.\n\n\n\n\n\nApr 14, 2023\n\n\n\n\n\n\n\nSampling Bias\n\n\nExamining sampling bias in simulated data.\n\n\n\n\n\nFeb 23, 2023\n\n\n\n\n\nNo matching items\n\nRSS Feed"
-  },
-  {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "People",
-    "section": "",
-    "text": "The lab brings together expertise in epidemiology, registry-based methods, and data science. Member profiles are updated as new roles are confirmed."
-  },
-  {
-    "objectID": "people.html#lab-members",
-    "href": "people.html#lab-members",
-    "title": "People",
-    "section": "Lab members",
-    "text": "Lab members\n\n\n Dr. Fotios Papadopoulos\nProfessor of Psychiatry\nDepartment of Medical Sciences, Uppsala University\n\nDr. Papadopoulos is a practicing psychiatrist at the Gender Identity Clinic at Uppsala University Hospital. He chairs the Swedish national quality register for gender dysphoria and leads multiple national research initiatives, including a multicenter cohort study on gender dysphoria, a qualitative study on detransition, and the development of a core outcome set for gender-affirming treatment. His research focuses on treatment outcomes in gender dysphoria, with an emphasis on gender incongruence, body satisfaction, mental health, and treatment side effects. He also chairs Sweden’s national working group in research in gender dysphoria and a national research network on gender dysphoria. Email | UU Profile | LinkedIn\n\n\n Dr. Kristen Clark\nDocent of Experimental Medicine & Postdoctoral Researcher in Clinical Psychiatry\nDepartment of Medical Sciences, Uppsala University\n\nHer research focuses on transgender health, with particular emphasis on healthcare access, treatment pathways, and long-term outcomes using cohort data, national registers, and qualitative approaches. Dr. Clark’s work is interdisciplinary, applying psychiatric epidemiology, public health, and health services research to understand clinical needs and improve the quality and accessibility of gender affirming care.\nORCID\n\n\n Dr. Malin Indremo\nPsychologist, PhD\nGender Identity Clinic, Uppsala University Hospital\n\nDr. Indremo holds a PhD from Uppsala University and is a practicing psychologist at the Gender Identity Clinic at Uppsala University Hospital. Her research focuses on gender dysphoria, including a multicenter cohort study, national register-based studies, a qualitative study on detransition, and development of a core outcome set for gender-affirming treatment. Her work centers on treatment outcomes with emphasis on gender incongruence, body satisfaction, mental health, detransition, and changing healthcare needs. She serves as a board member of the Swedish National Quality Register for Gender Dysphoria and SFTH.\n\n\n Georgios Karamanis\nSpecialist in Psychiatry, PhD\nDepartment of Medical Sciences, Uppsala University\n\nGeorgios Karamanis is a specialist in psychiatry and PhD at the Department of Medical Sciences, Uppsala University. Since 2014, he has worked in adult psychiatric services and at the Gender Identity Clinic at Uppsala University Hospital, where he also serves as medical director. His research focuses on gender dysphoria, using epidemiological methods and Swedish register data to study etiology, treatment safety, and health outcomes. He teaches on gender dysphoria, register-based studies, and data visualization, and has served as a board member and treasurer of Svensk förening för transpersoners hälsa (SFTH).\n\n\n Alexander Engberg\nStatistician, PhD Candidate\nDepartment of Medical Sciences, Uppsala University\n\nAlexander Engberg is a statistician at the Department of Medical Sciences, Uppsala University, where he manages research data, provides statistical advice, and conducts statistical analyses to support ongoing projects. He holds a master’s degree in statistics from Uppsala University and is currently completing his PhD in statistics at the same institution. He also works with the Department of Women’s and Children’s Health at Uppsala University, where he is involved in data management and statistical analysis.\n\n\n Lisann Dahlén\nResearch Assistant\nDepartment of Medical Sciences, Uppsala University\n\nLisann Dahlén has been working as a research assistant at the Department of Medical Sciences at Uppsala University since 2024. She has studied psychology and has been involved in different studies with a main focus on the development of a core outcome set for gender-affirming treatment. She is also assisting in a study about body image and has helped establish a national research network on gender dysphoria.\nORCID\n\n\n Malena Forsare\nClinical Psychologist, PhD Student\nGender Identity Clinic, Malmö & Medical Faculty, Lund University\n\nMalena Forsare is a clinical psychologist at the Gender Identity Clinic in Malmö and a PhD student at the Medical Faculty at Lund University. Her research examines gender detransition from multiple perspectives, with a focus on experiences in a Nordic context. Two of the studies in her doctoral thesis are conducted in collaboration with the Uppsala Transgender Health Research Group."
-  },
-  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
@@ -77,74 +56,11 @@
     "text": "2019\n\n[1] Durbeej, N. et al.  (2019). “Outside the norm: Mental health, school adjustment and community engagement in non-binary youth”. In: Scandinavian Journal of Public Health. DOI: 10.1177/1403494819890994."
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
     "section": "",
-    "text": "Our lab is involved in a variety of research projects spanning multiple disciplines.\n\n  \n    Status:\n    All\n    Ongoing\n    Completed\n  \n  \n    Topic:\n    All\n    Methods\n    Epidemiology\n    Open-source tools\n    Registry studies\n    Clinical outcomes\n  \n\n\nswereg R package\nOngoing\nWe develop and maintain swereg, an R package for analyzing Swedish healthcare registry data.\nMethods Open-source tools\nRead more →\n\n\nPopulation Studies\nOngoing\nRegistry-based studies examining population dynamics and epidemiological patterns in Swedish healthcare data.\nEpidemiology Registry studies\nRead more →\n\n\nRegistry Trajectories\nOngoing\nDeveloping novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries.\nMethods Clinical outcomes\nRead more →"
-  },
-  {
-    "objectID": "funding-items/past-support.html",
-    "href": "funding-items/past-support.html",
-    "title": "Past support",
-    "section": "",
-    "text": "Status: Updating\nPrevious funding acknowledgements will be added once they are fully documented."
-  },
-  {
-    "objectID": "projects/swereg.html",
-    "href": "projects/swereg.html",
-    "title": "swereg R package",
-    "section": "",
-    "text": "Ongoing Methods Open-source tools"
-  },
-  {
-    "objectID": "projects/swereg.html#background",
-    "href": "projects/swereg.html#background",
-    "title": "swereg R package",
-    "section": "Background",
-    "text": "Background\nWe develop and maintain swereg, an open-source R package for working with Swedish healthcare registry data. The package provides a standardized set of tools for data cleaning, linkage, and analysis, lowering the barrier to reproducible registry-based research.\nPlaceholder: expand with motivation, history of the package, and what problems it solves."
-  },
-  {
-    "objectID": "projects/swereg.html#team",
-    "href": "projects/swereg.html#team",
-    "title": "swereg R package",
-    "section": "Team",
-    "text": "Team\n\nFotis Papadopoulos, Principal Investigator\nAlexander Engberg, Statistical methods\nPlaceholder: additional contributors"
-  },
-  {
-    "objectID": "projects/swereg.html#key-outputs",
-    "href": "projects/swereg.html#key-outputs",
-    "title": "swereg R package",
-    "section": "Key outputs",
-    "text": "Key outputs\n\nCode & data\n\nswereg on GitHub\nPackage documentation\n\n\n\nPublications\n\nPlaceholder: cite any methodological paper or software note here."
-  },
-  {
-    "objectID": "projects/population-studies.html",
-    "href": "projects/population-studies.html",
-    "title": "Population-based studies in transgender health",
-    "section": "",
-    "text": "Ongoing Epidemiology Registry studies"
-  },
-  {
-    "objectID": "projects/population-studies.html#background",
-    "href": "projects/population-studies.html#background",
-    "title": "Population-based studies in transgender health",
-    "section": "Background",
-    "text": "Background\nWe conduct large-scale population studies using Swedish health registries to investigate the prevalence, incidence, and long-term health outcomes of individuals with gender dysphoria. By linking multiple national registers, we can study health trajectories across time with high completeness and minimal recall bias.\nPlaceholder: expand with study rationale, data sources, and research questions."
-  },
-  {
-    "objectID": "projects/population-studies.html#team",
-    "href": "projects/population-studies.html#team",
-    "title": "Population-based studies in transgender health",
-    "section": "Team",
-    "text": "Team\n\nFotis Papadopoulos, Principal Investigator\nGeorgios Karamanis, Epidemiological analysis\nAlexander Engberg, Statistical analysis\nPlaceholder: additional collaborators"
-  },
-  {
-    "objectID": "projects/population-studies.html#key-outputs",
-    "href": "projects/population-studies.html#key-outputs",
-    "title": "Population-based studies in transgender health",
-    "section": "Key outputs",
-    "text": "Key outputs\n\nPublications\n\nPlaceholder: key papers from this project.\n\n\n\nData & code\n\nPlaceholder: links to analysis code or data availability statements."
+    "text": "Below is a curated list of recent talks and invited presentations.\n\n\n\n\n\n\n\n\n\n\n\n\nPractical data management for modern open science\n\n\n\n\n\n\n\n\n\nOct 1, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "post/2025-09-02-stability-legal-gender-change/index.html",
@@ -224,6 +140,41 @@
     "text": "Conclusion\nConclusion: Biased datasets can be corrected for by either:\n\nSample weights\nIncluding the sampling variables as covariates in the regression model"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Uppsala Transgender Health Research Group",
+    "section": "",
+    "text": "The Uppsala Transgender Health Research Group at Uppsala University is dedicated to advancing research in gender dysphoria and transgender health. Our multidisciplinary approach combines epidemiological methods, registry-based research, and innovative data science techniques to better understand transgender health outcomes and improve clinical care.\nOur research focuses on several key areas within transgender health:"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Uppsala Transgender Health Research Group",
+    "section": "Contact",
+    "text": "Contact\nfotis.papadopoulos@uu.se"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Stability After Legal Gender Change Among Adults With Gender Dysphoria\n\n\nA new study using Swedish national registers followed over 7,000 people with a gender dysphoria diagnosis and found that legal gender reversal was rare, with legal gender change remaining stable in an estimated 98% of cases at 10 years.\n\n\n\n\n\nSep 2, 2025\n\n\n\n\n\n\n\nSparse Inference\n\n\nExamining sparse inference using both frequentist and bayesian methodology.\n\n\n\n\n\nApr 14, 2023\n\n\n\n\n\n\n\nSampling Bias\n\n\nExamining sampling bias in simulated data.\n\n\n\n\n\nFeb 23, 2023\n\n\n\n\n\nNo matching items\n\nRSS Feed"
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
+    "section": "",
+    "text": "The lab brings together expertise in epidemiology, registry-based methods, and data science. Member profiles are updated as new roles are confirmed."
+  },
+  {
+    "objectID": "people.html#lab-members",
+    "href": "people.html#lab-members",
+    "title": "People",
+    "section": "Lab members",
+    "text": "Lab members\n\n\n Dr. Fotios Papadopoulos\nProfessor of Psychiatry\nDepartment of Medical Sciences, Uppsala University\n\nDr. Papadopoulos is a practicing psychiatrist at the Gender Identity Clinic at Uppsala University Hospital. He chairs the Swedish national quality register for gender dysphoria and leads multiple national research initiatives, including a multicenter cohort study on gender dysphoria, a qualitative study on detransition, and the development of a core outcome set for gender-affirming treatment. His research focuses on treatment outcomes in gender dysphoria, with an emphasis on gender incongruence, body satisfaction, mental health, and treatment side effects. He also chairs Sweden’s national working group in research in gender dysphoria and a national research network on gender dysphoria. Email | UU Profile | LinkedIn\n\n\n Dr. Kristen Clark\nDocent of Experimental Medicine & Postdoctoral Researcher in Clinical Psychiatry\nDepartment of Medical Sciences, Uppsala University\n\nHer research focuses on transgender health, with particular emphasis on healthcare access, treatment pathways, and long-term outcomes using cohort data, national registers, and qualitative approaches. Dr. Clark’s work is interdisciplinary, applying psychiatric epidemiology, public health, and health services research to understand clinical needs and improve the quality and accessibility of gender affirming care.\nORCID\n\n\n Dr. Malin Indremo\nPsychologist, PhD\nGender Identity Clinic, Uppsala University Hospital\n\nDr. Indremo holds a PhD from Uppsala University and is a practicing psychologist at the Gender Identity Clinic at Uppsala University Hospital. Her research focuses on gender dysphoria, including a multicenter cohort study, national register-based studies, a qualitative study on detransition, and development of a core outcome set for gender-affirming treatment. Her work centers on treatment outcomes with emphasis on gender incongruence, body satisfaction, mental health, detransition, and changing healthcare needs. She serves as a board member of the Swedish National Quality Register for Gender Dysphoria and SFTH.\n\n\n Georgios Karamanis\nSpecialist in Psychiatry, PhD\nDepartment of Medical Sciences, Uppsala University\n\nGeorgios Karamanis is a specialist in psychiatry and PhD at the Department of Medical Sciences, Uppsala University. Since 2014, he has worked in adult psychiatric services and at the Gender Identity Clinic at Uppsala University Hospital, where he also serves as medical director. His research focuses on gender dysphoria, using epidemiological methods and Swedish register data to study etiology, treatment safety, and health outcomes. He teaches on gender dysphoria, register-based studies, and data visualization, and has served as a board member and treasurer of Svensk förening för transpersoners hälsa (SFTH).\n\n\n Alexander Engberg\nStatistician, PhD Candidate\nDepartment of Medical Sciences, Uppsala University\n\nAlexander Engberg is a statistician at the Department of Medical Sciences, Uppsala University, where he manages research data, provides statistical advice, and conducts statistical analyses to support ongoing projects. He holds a master’s degree in statistics from Uppsala University and is currently completing his PhD in statistics at the same institution. He also works with the Department of Women’s and Children’s Health at Uppsala University, where he is involved in data management and statistical analysis.\n\n\n Lisann Dahlén\nResearch Assistant\nDepartment of Medical Sciences, Uppsala University\n\nLisann Dahlén has been working as a research assistant at the Department of Medical Sciences at Uppsala University since 2024. She has studied psychology and has been involved in different studies with a main focus on the development of a core outcome set for gender-affirming treatment. She is also assisting in a study about body image and has helped establish a national research network on gender dysphoria.\nORCID\n\n\n Malena Forsare\nClinical Psychologist, PhD Student\nGender Identity Clinic, Malmö & Medical Faculty, Lund University\n\nMalena Forsare is a clinical psychologist at the Gender Identity Clinic in Malmö and a PhD student at the Medical Faculty at Lund University. Her research examines gender detransition from multiple perspectives, with a focus on experiences in a Nordic context. Two of the studies in her doctoral thesis are conducted in collaboration with the Uppsala Transgender Health Research Group."
+  },
+  {
     "objectID": "post/2023-04-14-sparse-inference/sparse-inference.html",
     "href": "post/2023-04-14-sparse-inference/sparse-inference.html",
     "title": "Sparse Inference",
@@ -287,108 +238,10 @@
     "text": "Conclusion\nThe blog article discusses the limitations of using LASSO (Least Absolute Shrinkage and Selection Operator) models for statistical inference, particularly in situations where the number of predictors (i.e. independent variables) is much larger than the sample size. In these cases, LASSO models can suffer from high variability in the estimated coefficients, which can lead to incorrect or unreliable conclusions.\nOne proposed solution to this problem is to use a two-stage inference approach, where LASSO is first used to select a subset of predictors, and then a separate statistical method (such as ordinary least squares) is used to estimate the coefficients for the selected predictors. However, this two-stage approach can also have limitations, such as a loss of power in the second stage and increased computational complexity.\nIn contrast, Bayesian statistics offer a one-stage inference approach that can provide more reliable and interpretable results in complex modeling situations. Bayesian statistics allow for the incorporation of prior knowledge and uncertainty in the model, which can help to reduce variability and improve accuracy. Bayesian methods also provide a framework for model comparison and selection, which can help to identify the most appropriate model for a given dataset.\nOverall, while LASSO models can be useful in certain situations, their limitations in high-dimensional data settings highlight the advantages of Bayesian statistics for reliable and interpretable statistical inference."
   },
   {
-    "objectID": "post/2026-03-20-title/title.html",
-    "href": "post/2026-03-20-title/title.html",
-    "title": "Title",
-    "section": "",
-    "text": "Blog post"
-  },
-  {
-    "objectID": "public.html",
-    "href": "public.html",
-    "title": "For Participants",
-    "section": "",
-    "text": "Our research aims to improve the understanding and care of people with gender dysphoria. On this page you can find plain language information about our ongoing studies — what we are investigating, why it matters, and what participation involves. We also share our findings here as they become available, so that participants can see the results of the research they contributed to.\nIf you have questions about a specific study, contact details are provided in each section."
-  },
-  {
-    "objectID": "public.html#study-1-placeholder-study-title",
-    "href": "public.html#study-1-placeholder-study-title",
-    "title": "For Participants",
-    "section": "Study 1: Placeholder study title",
-    "text": "Study 1: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters. Avoid jargon. Focus on what participants and the general public would want to know — the human question behind the research.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap this study addresses and what we hope to learn. Keep it concrete — what could change in clinical practice if the study findings are as expected?\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, how long it takes, whether there are any risks or inconveniences, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
-  },
-  {
-    "objectID": "public.html#study-2-placeholder-study-title",
-    "href": "public.html#study-2-placeholder-study-title",
-    "title": "For Participants",
-    "section": "Study 2: Placeholder study title",
-    "text": "Study 2: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap and what we hope to learn.\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, timeframe, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
-  },
-  {
-    "objectID": "public.html#study-3-placeholder-study-title",
-    "href": "public.html#study-3-placeholder-study-title",
-    "title": "For Participants",
-    "section": "Study 3: Placeholder study title",
-    "text": "Study 3: Placeholder study title\nWhat is this study about?\nPlaceholder: explain in plain language what the study investigates and why it matters.\nWhy are we doing this?\nPlaceholder: describe the knowledge gap and what we hope to learn.\nWhat does participation involve?\nPlaceholder: describe what participants are asked to do, timeframe, and that participation is voluntary.\nWhat have we found?\nPlaceholder: plain language summary of results, updated as findings are published. Until then: Results will be shared here as the study progresses. Thank you for your contribution.\nWho can I contact?\nPlaceholder name, placeholder@uu.se"
-  },
-  {
-    "objectID": "projects/registry-trajectories.html",
-    "href": "projects/registry-trajectories.html",
-    "title": "Registry-based health trajectories",
-    "section": "",
-    "text": "Ongoing Methods Clinical outcomes"
-  },
-  {
-    "objectID": "projects/registry-trajectories.html#background",
-    "href": "projects/registry-trajectories.html#background",
-    "title": "Registry-based health trajectories",
-    "section": "Background",
-    "text": "Background\nWe develop and apply novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries. This work aims to characterize how individuals move through the healthcare system over time, identifying patterns in treatment sequences, healthcare utilization, and long-term outcomes.\nPlaceholder: expand with specific analytical methods, data sources, and clinical questions being addressed."
-  },
-  {
-    "objectID": "projects/registry-trajectories.html#team",
-    "href": "projects/registry-trajectories.html#team",
-    "title": "Registry-based health trajectories",
-    "section": "Team",
-    "text": "Team\n\nFotis Papadopoulos, Principal Investigator\nMalin Indremo, Clinical outcomes\nAlexander Engberg, Statistical methods\nPlaceholder: additional collaborators"
-  },
-  {
-    "objectID": "projects/registry-trajectories.html#key-outputs",
-    "href": "projects/registry-trajectories.html#key-outputs",
-    "title": "Registry-based health trajectories",
-    "section": "Key outputs",
-    "text": "Key outputs\n\nPublications\n\nPlaceholder: key papers from this project.\n\n\n\nData & code\n\nPlaceholder: links to analysis code or data availability statements."
-  },
-  {
     "objectID": "presentations-items/2024-10-practical-data-management.html",
     "href": "presentations-items/2024-10-practical-data-management.html",
     "title": "Practical data management for modern open science",
     "section": "",
     "text": "Date: 2024-10-01\nLocation: Uppsala University\nA practical overview of data management workflows for reproducible research. PDF"
-  },
-  {
-    "objectID": "funding-items/current-portfolio.html",
-    "href": "funding-items/current-portfolio.html",
-    "title": "Current funding portfolio",
-    "section": "",
-    "text": "Status: Updating\nA summary of active funding sources will be posted here as awards are confirmed."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Uppsala Transgender Health Research Group",
-    "section": "",
-    "text": "The Uppsala Transgender Health Research Group at Uppsala University is dedicated to advancing research in gender dysphoria and transgender health. Our multidisciplinary approach combines epidemiological methods, registry-based research, and innovative data science techniques to better understand transgender health outcomes and improve clinical care.\nOur research focuses on several key areas within transgender health:"
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Uppsala Transgender Health Research Group",
-    "section": "Contact",
-    "text": "Contact\nfotis.papadopoulos@uu.se"
-  },
-  {
-    "objectID": "funding.html",
-    "href": "funding.html",
-    "title": "Funding",
-    "section": "",
-    "text": "Our funding portfolio supports registry-based research, methodological innovation, and open-source tool development. Details are updated as awards are confirmed.\n\nNational Science Foundation (NSF)\nEuropean Research Council (ERC)\nLocal university grants\nPrivate foundations"
-  },
-  {
-    "objectID": "presentations.html",
-    "href": "presentations.html",
-    "title": "Presentations",
-    "section": "",
-    "text": "Below is a curated list of recent talks and invited presentations.\n\n\n\n\n\n\n\n\n\n\n\n\nPractical data management for modern open science\n\n\n\n\n\n\n\n\n\nOct 1, 2024\n\n\n\n\n\n\nNo matching items"
   }
 ]

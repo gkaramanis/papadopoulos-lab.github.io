@@ -1,6 +1,10 @@
-# Uppsala Transgender Health Research Group — website
+# Uppsala Transgender Health Research Group
 
-Quarto website for the [Uppsala Transgender Health Research Group](https://papadopoulos-lab.github.io).
+Quarto website for the Uppsala Transgender Health Research Group.
+
+The live site is https://papadopoulos-lab.github.io, published by GitHub Pages from `main` at `/docs`. Rendered output is committed, so a content change means running `quarto render` and committing both the source and `docs/`.
+
+A custom domain, `uppsalatransresearch.se`, is registered but not yet serving the site. Its DNS and Pages configuration are still to be set up.
 
 ## Publications pipeline
 
@@ -9,6 +13,16 @@ New publications are fetched monthly from ORCID and opened as GitHub issues labe
 - **Fetch:** `Rscript R/fetch_publications.R` (or trigger the GitHub Actions workflow manually)
 - **Build:** `Rscript R/build_bib.R` (runs automatically when a publication issue is labelled)
 - **Members:** edit `members.csv` to add/update ORCID IDs and join dates
+
+## Pages in progress
+
+Three sections are still being written and are hidden from the site: Projects, For Participants and Funding. Each is hidden with `draft: true` in its front matter, which empties the page and drops it from the navbar, search and sitemap. Removing that line brings the page back.
+
+The files carrying it are `projects.qmd` and the three pages in `projects/`, `public.qmd`, `funding.qmd`, and the two pages in `funding-items/`.
+
+The live navbar is therefore People, Publications, Presentations and Blog.
+
+The `render:` list in `_quarto.yml` is limited to `.qmd` files so that repository documentation is not published as site pages.
 
 ## TODO
 
@@ -19,4 +33,5 @@ New publications are fetched monthly from ORCID and opened as GitHub issues labe
 - [ ] Add all relevant studies from all team members to the projects pages
 - [ ] All team members to get ORCID IDs and import their full publication history
 - [ ] Delete or replace `update_bib.R` (superseded by `R/fetch_publications.R` and `R/build_bib.R`)
-- [ ] Set up custom domain uppsalatransresearch.se
+- [ ] Write the remaining page content and unhide the pages: Projects (Team and Key outputs sections), For Participants, Funding
+- [ ] Set up the custom domain uppsalatransresearch.se — point its DNS at GitHub Pages, set the domain on this repository, commit a `CNAME` file and uncomment its line under `resources` in `_quarto.yml`, and change `site-url` from the temporary `gkaramanis.github.io` host to the domain

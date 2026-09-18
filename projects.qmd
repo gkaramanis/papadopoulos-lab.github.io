@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Projects
 description: |
     Research projects spanning registry-based epidemiology, methodological innovation, and open-source tools
