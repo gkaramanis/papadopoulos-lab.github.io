@@ -462,3 +462,22 @@ cite {
     border-color: #2a9d8f;
   }
 }
+
+// Link from a publication to its plain-language blog post
+.post-link {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.5rem;
+  border: 1px solid #2a9d8f;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #1f7c71;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.post-link:hover {
+  background: #2a9d8f;
+  color: #ffffff;
+}

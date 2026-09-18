@@ -40,27 +40,40 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
-          # Extract fields from the issue body (YAML form uses ### headers)
-          TITLE=$(echo "$ISSUE_BODY" | awk '/^### Title$/{flag=1;next}/^### /{flag=0}flag' | sed '/^[[:space:]]*$/d' | xargs)
-          SUMMARY=$(echo "$ISSUE_BODY" | awk '/^### Summary$/{flag=1;next}/^### /{flag=0}flag' | sed '/^[[:space:]]*$/d' | xargs)
-          CONTENT=$(echo "$ISSUE_BODY" | awk '/^### Main Content$/{flag=1;next}/^### /{flag=0}flag')
-          AUTHOR=$(echo "$ISSUE_BODY" | awk '/^### Author$/{flag=1;next}/^### /{flag=0}flag' | sed '/^[[:space:]]*$/d' | xargs)
+          # The issue form writes each answer under a "### <label>" heading.
+          # Labels must match .github/ISSUE_TEMPLATE/dissemination-post.yml
+          # exactly, or the section comes out empty.
+          field() {
+            printf '%s' "$ISSUE_BODY" | awk -v h="### $1" '
+              $0 == h {flag=1; next}
+              /^### / {flag=0}
+              flag {print}
+            ' | sed -e 's/^_No response_$//' -e '/^[[:space:]]*$/d'
+          }
 
-          # Fallbacks if fields are empty
+          TITLE=$(field "Title" | head -1)
+          SUMMARY=$(field "Summary" | tr '\n' ' ')
+          QUESTION=$(field "What question did we ask and why is it important?")
+          METHODS=$(field "How did we answer the question?")
+          FINDINGS=$(field "What did we find?")
+          IMPLICATIONS=$(field "What does this mean for the community and healthcare system?")
+          SWEDISH=$(field "Swedish version (optional)")
+          DOI=$(field "DOI / publication link" | head -1 | sed -e 's|^https\?://\(dx\.\)\?doi\.org/||' -e 's/^doi://I' | xargs)
+          AUTHOR=$(field "Author" | head -1)
+
           [ -z "$TITLE" ] && TITLE="$ISSUE_TITLE"
           [ -z "$AUTHOR" ] && AUTHOR="Unknown"
 
-          # Slugify the title for folder name
-          SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^[-]*\|[-]*$//g')
+          SLUG=$(printf '%s' "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^[-]*//; s/[-]*$//')
           DATE=$(date +%Y-%m-%d)
           POST_DIR="post/$DATE-$SLUG"
           mkdir -p "$POST_DIR"
 
-          # Create the QMD file with proper YAML front matter
-          QMD_FILE="$POST_DIR/$SLUG.qmd"
+          QMD_FILE="$POST_DIR/index.qmd"
           SAFE_TITLE=$(printf '%s' "$TITLE" | sed 's/"/\\"/g')
           SAFE_SUMMARY=$(printf '%s' "$SUMMARY" | sed 's/"/\\"/g')
           SAFE_AUTHOR=$(printf '%s' "$AUTHOR" | sed 's/"/\\"/g')
+
           {
             printf '%s\n' '---'
             printf 'title: "%s"\n' "$SAFE_TITLE"
@@ -69,8 +82,17 @@ jobs:
             printf '%s\n' 'author:'
             printf '  - name: "%s"\n' "$SAFE_AUTHOR"
             printf 'date: %s\n' "$DATE"
+            # The publications page links a paper to its post by matching this
+            [ -n "$DOI" ] && printf 'doi: %s\n' "$DOI"
             printf '%s\n\n' '---'
-            printf '%s\n' "$CONTENT"
+
+            [ -n "$DOI" ] && printf 'Read the paper: [%s](https://doi.org/%s)\n\n' "$DOI" "$DOI"
+
+            [ -n "$QUESTION" ]     && printf '## What question did we ask and why is it important?\n\n%s\n\n' "$QUESTION"
+            [ -n "$METHODS" ]      && printf '## How did we answer the question?\n\n%s\n\n' "$METHODS"
+            [ -n "$FINDINGS" ]     && printf '## What did we find?\n\n%s\n\n' "$FINDINGS"
+            [ -n "$IMPLICATIONS" ] && printf '## What does this mean for the community and healthcare system?\n\n%s\n\n' "$IMPLICATIONS"
+            [ -n "$SWEDISH" ]      && printf '## På svenska\n\n%s\n' "$SWEDISH" || true
           } > "$QMD_FILE"
 
           echo "Created $QMD_FILE"

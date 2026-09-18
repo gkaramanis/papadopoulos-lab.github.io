@@ -15,14 +15,55 @@ library(data.table)
 d <- knitcitations::read.bibtex("publications.bib")
 ```
 
+```{r echo=FALSE, warning=FALSE, include=FALSE}
+
+# Blog posts declare the paper they are about with `doi:` in their front
+# matter. Collect those so each publication can link to its plain-language
+# post. A post without a doi field is simply not matched.
+
+normalise_doi <- function(x) {
+  x <- tolower(trimws(x))
+  x <- sub("^<|>$", "", x)
+  x <- sub("^https?://(dx\\.)?doi\\.org/", "", x)
+  sub("^doi:", "", x)
+}
+
+post_files <- list.files("post", pattern = "\\.qmd$", recursive = TRUE, full.names = TRUE)
+
+read_post <- function(path) {
+  lines <- readLines(path, warn = FALSE)
+  fence <- which(trimws(lines) == "---")
+  if (length(fence) < 2) return(NULL)
+  yaml_lines <- lines[(fence[1] + 1):(fence[2] - 1)]
+
+  doi <- stringr::str_match(yaml_lines, "^doi:\\s*[\"']?([^\"'#]+)")[, 2]
+  doi <- doi[!is.na(doi)]
+  if (length(doi) == 0) return(NULL)
+
+  title <- stringr::str_match(yaml_lines, "^title:\\s*[\"']?([^\"']+)")[, 2]
+  title <- title[!is.na(title)]
+
+  data.frame(
+    doi   = normalise_doi(doi[1]),
+    url   = sub("\\.qmd$", ".html", path),
+    title = if (length(title)) trimws(title[1]) else "Read the summary",
+    stringsAsFactors = FALSE
+  )
+}
+
+post_map <- do.call(rbind, Filter(Negate(is.null), lapply(post_files, read_post)))
+if (is.null(post_map)) post_map <- data.frame(doi = character(), url = character(), title = character())
+```
+
 ```{r echo=FALSE, warning=FALSE, results = "asis"}
-q <- capture.output(print(d, .opts = list(sorting="ydnt", bib.style = "authoryear", max.names = 1, dashed = F, style = "html")))
+q <- capture.output(print(d, .opts = list(sorting="ydnt", bib.style = "authoryear", max.names = 50, dashed = F, style = "html")))
 
 index <- length(d)
 current_year <- 9999
+entry_doi <- NA_character_
 for(i in seq_along(q)){
   to_print <- q[i]
-  
+
   # year headings
   if(i < length(q)-1) if(stringr::str_detect(q[i+1], "\\(20[0-9][0-9]\\)\\.")){
     new_year <- stringr::str_extract(q[i+1], "[0-9][0-9][0-9][0-9]")
@@ -31,13 +72,30 @@ for(i in seq_along(q)){
       cat("##", current_year, "\n\n")
     }
   }
-  
+
   # numbering publications
   if(stringr::str_detect(to_print, "<p><cite>")){
     to_print <- stringr::str_replace(to_print, "<p><cite>", glue::glue("<p><cite>[{index}] "))
     index <- index - 1
+    entry_doi <- NA_character_
   }
-  
+
+  # An entry spans several output lines, so pick the DOI up wherever it falls
+  # and attach the blog-post link at the closing tag.
+  if (is.na(entry_doi)) {
+    found <- stringr::str_extract(to_print, "10\\.[0-9]{4,}/[^\"<[:space:]]+")
+    if (!is.na(found)) entry_doi <- normalise_doi(sub("\\.$", "", found))
+  }
+
+  if (stringr::str_detect(to_print, "</cite>")) {
+    hit <- if (!is.na(entry_doi)) which(post_map$doi == entry_doi) else integer(0)
+    if (length(hit) == 1) {
+      link <- glue::glue(' <a class="post-link" href="{post_map$url[hit]}">Plain-language summary</a>')
+      to_print <- stringr::str_replace(to_print, "</cite>", paste0("</cite>", link))
+    }
+    entry_doi <- NA_character_
+  }
+
   # outputting
   cat(to_print, "\n")
 }

@@ -2,10 +2,20 @@
 draft: true
 title: Projects
 description: |
-    Research projects spanning registry-based epidemiology, methodological innovation, and open-source tools
+  Our research on gender dysphoria, from a national cohort study to register-based epidemiology, qualitative interviews and open-source tools
 ---
 
-Our lab is involved in a variety of research projects spanning multiple disciplines.
+When someone refers to gender identity, they usually mean the gender a person experiences themselves as and identifies with. That might be woman, man, neither, or something in between. People whose gender identity does not match the sex they were assigned at birth can experience severe discomfort and distress. That condition is called gender dysphoria.
+
+Far more people have sought care for gender dysphoria over the past decade, particularly younger people, and they face a higher risk of poor mental and physical health, discrimination and violence. Most published research in the field is methodologically weak. Both the Swedish Agency for Health Technology Assessment and Assessment of Social Services (SBU) and the Swedish Research Council for Health, Working Life and Welfare (FORTE) have identified the resulting knowledge gaps and called for better studies.
+
+We aim to answer several of those questions properly:
+
+i. Is gender-affirming treatment associated with better outcomes in gender dysphoria, body satisfaction, mental health and social vulnerability, such as discrimination and exposure to violence?
+ii. Do people undergoing gender-affirming treatment face a higher risk of physical outcomes, such as stroke and heart attack, or psychiatric outcomes, such as psychiatric admission and suicidal behaviour?
+iii. What matters for people whose need for gender-affirming care changes, or who have experience of detransition, retransition or regret?
+
+To answer them we combine three kinds of evidence. A large ongoing multicentre cohort study gives detailed, clinically meaningful measures. Register data covering everyone in Sweden with a gender dysphoria diagnosis gives the statistical power to assess rare but serious outcomes. Qualitative interviews explain the decisions behind the numbers.
 
 ```{=html}
 <div class="project-filters">
@@ -18,57 +28,87 @@ Our lab is involved in a variety of research projects spanning multiple discipli
   <div class="filter-group">
     <span class="filter-label">Topic:</span>
     <button class="filter-btn filter-topic active" data-filter="all" data-group="topic">All</button>
-    <button class="filter-btn filter-topic" data-filter="Methods" data-group="topic">Methods</button>
-    <button class="filter-btn filter-topic" data-filter="Epidemiology" data-group="topic">Epidemiology</button>
-    <button class="filter-btn filter-topic" data-filter="Open-source tools" data-group="topic">Open-source tools</button>
-    <button class="filter-btn filter-topic" data-filter="Registry studies" data-group="topic">Registry studies</button>
-    <button class="filter-btn filter-topic" data-filter="Clinical outcomes" data-group="topic">Clinical outcomes</button>
+    <button class="filter-btn filter-topic" data-filter="Cohort studies" data-group="topic">Cohort studies</button>
+    <button class="filter-btn filter-topic" data-filter="Register studies" data-group="topic">Register studies</button>
+    <button class="filter-btn filter-topic" data-filter="Qualitative studies" data-group="topic">Qualitative studies</button>
+    <button class="filter-btn filter-topic" data-filter="Method development" data-group="topic">Method development</button>
+    <button class="filter-btn filter-topic" data-filter="Tools" data-group="topic">Tools</button>
   </div>
 </div>
 ```
 
-:::{.project-card data-status="Ongoing" data-topics='["Methods","Open-source tools"]'}
+:::{.project-card data-status="Ongoing" data-topics='["Cohort studies"]'}
+
+```{=html}
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/skds.html">The Swedish Gender Dysphoria Study (SKDS)</a></h3>
+<span class="status-badge">Ongoing</span>
+```
+
+A national multicentre cohort study running since 2016, following people assessed and treated for gender dysphoria at clinics across Sweden, alongside a comparison group.
+
+<span class="listing-tags">Cohort studies</span>
+
+[Read more →](projects/skds.html)
+
+:::
+
+:::{.project-card data-status="Ongoing" data-topics='["Register studies"]'}
+
+```{=html}
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/register-studies.html">Register-based studies on gender dysphoria</a></h3>
+<span class="status-badge">Ongoing</span>
+```
+
+Nationwide studies linking Swedish health and population registers to follow everyone diagnosed with gender dysphoria, and to measure outcomes too rare for a cohort study to settle.
+
+<span class="listing-tags">Register studies</span>
+
+[Read more →](projects/register-studies.html)
+
+:::
+
+:::{.project-card data-status="Ongoing" data-topics='["Qualitative studies"]'}
+
+```{=html}
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/detransition.html">De/retransition and changing care needs</a></h3>
+<span class="status-badge">Ongoing</span>
+```
+
+A qualitative multicentre study of the experiences and needs of people who have detransitioned, retransitioned or otherwise changed direction in their care.
+
+<span class="listing-tags">Qualitative studies</span>
+
+[Read more →](projects/detransition.html)
+
+:::
+
+:::{.project-card data-status="Ongoing" data-topics='["Qualitative studies"]'}
+
+```{=html}
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/transrelated.html">Transrelated: relatives of people with gender dysphoria</a></h3>
+<span class="status-badge">Ongoing</span>
+```
+
+Interviews with close relatives and friends of people being assessed for gender dysphoria, about their own experience and how they were met by healthcare.
+
+<span class="listing-tags">Qualitative studies</span>
+
+[Read more →](projects/transrelated.html)
+
+:::
+
+:::{.project-card data-status="Ongoing" data-topics='["Method development","Tools"]'}
 
 ```{=html}
 <h3 style="margin-bottom: 0.5rem;"><a href="projects/swereg.html">swereg R package</a></h3>
 <span class="status-badge">Ongoing</span>
 ```
 
-We develop and maintain [swereg](https://papadopoulos-lab.github.io/swereg/), an R package for analyzing Swedish healthcare registry data.
+We develop and maintain [swereg](https://papadopoulos-lab.github.io/swereg/), an open-source R package for analysing Swedish healthcare registry data.
 
-<span class="listing-tags">Methods</span> <span class="listing-tags">Open-source tools</span>
+<span class="listing-tags">Method development</span> <span class="listing-tags">Tools</span>
 
 [Read more →](projects/swereg.html)
-
-:::
-
-:::{.project-card data-status="Ongoing" data-topics='["Epidemiology","Registry studies"]'}
-
-```{=html}
-<h3 style="margin-bottom: 0.5rem;"><a href="projects/population-studies.html">Population Studies</a></h3>
-<span class="status-badge">Ongoing</span>
-```
-
-Registry-based studies examining population dynamics and epidemiological patterns in Swedish healthcare data.
-
-<span class="listing-tags">Epidemiology</span> <span class="listing-tags">Registry studies</span>
-
-[Read more →](projects/population-studies.html)
-
-:::
-
-:::{.project-card data-status="Ongoing" data-topics='["Methods","Epidemiology","Clinical outcomes"]'}
-
-```{=html}
-<h3 style="margin-bottom: 0.5rem;"><a href="projects/registry-trajectories.html">Registry Trajectories</a></h3>
-<span class="status-badge">Ongoing</span>
-```
-
-Developing novel analytical approaches for studying care trajectories and patient pathways in Swedish healthcare registries.
-
-<span class="listing-tags">Methods</span> <span class="listing-tags">Clinical outcomes</span>
-
-[Read more →](projects/registry-trajectories.html)
 
 :::
 

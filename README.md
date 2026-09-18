@@ -34,6 +34,16 @@ The live navbar is therefore People, Publications, Presentations and Blog.
 
 The `render:` list in `_quarto.yml` is limited to `.qmd` files so that repository documentation is not published as site pages.
 
+## Linking a paper to its blog post
+
+A blog post can declare the paper it is about by putting its DOI in the front matter:
+
+```yaml
+doi: 10.1001/jamanetworkopen.2025.27780
+```
+
+The publications page then adds a "Plain-language summary" link to the matching entry. Matching is on DOI alone, so nothing else needs to be kept in step. Posts created from the dissemination issue form get this automatically from the form's DOI field.
+
 ## TODO
 
 - [ ] Rewrite the wiki's page-creation guide: it still tells people to clone the repository and render locally, which CI now does, so a page can be added entirely in the GitHub web editor

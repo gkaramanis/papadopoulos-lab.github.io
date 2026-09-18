@@ -5,6 +5,7 @@ description: |
 author:
   - name: "Kristen D. Clark"
 date: 2025-09-02
+doi: 10.1001/jamanetworkopen.2025.27780
 ---
 
 *Clark KD, White RA, Karamanis G, Indremo M, Özel F, Skalkidou A, Frisell T, Papadopoulos FC. Stability After Legal Gender Change Among Adults With Gender Dysphoria. JAMA Netw Open. 2025 Sep 2;8(9):e2527780. doi: [10.1001/jamanetworkopen.2025.27780](https://doi.org/10.1001/jamanetworkopen.2025.27780)*

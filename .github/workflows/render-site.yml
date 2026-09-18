@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Safety net: rebuild weekly so a missed trigger cannot leave the site stale,
+  # for example a publication-to-blog-post link that never got drawn.
+  schedule:
+    - cron: "0 6 * * 1"
 
 permissions:
   contents: write

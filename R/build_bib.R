@@ -69,7 +69,9 @@ for (doi in dois) {
   })
 
   if (!is.null(bib) && length(bib) > 0) {
-    entries <- c(entries, bib)
+    # Append the BibEntry itself. Using c(entries, bib) would strip its class
+    # and splice its fields into the list, which then breaks WriteBib.
+    entries[[length(entries) + 1]] <- bib
   } else {
     failed <- c(failed, doi)
   }
@@ -106,11 +108,18 @@ if (length(entries) == 0) {
 
 new_bib <- do.call(c, entries)
 
+if (!inherits(new_bib, "BibEntry")) {
+  stop("Resolved entries did not combine into a BibEntry; got class ",
+       paste(class(new_bib), collapse = "/"))
+}
+
 # ── Merge with existing publications.bib ─────────────────────────────────────
 
 if (!is.null(existing) && length(existing) > 0) {
   message(glue("Merging with {length(existing)} existing entries in {OUTFILE}."))
-  all_bib <- c(new_bib, existing)
+  # Existing entries first, so hand-curated ones (local PDF links, corrected
+  # metadata) win over a freshly resolved copy of the same paper.
+  all_bib <- c(existing, new_bib)
 } else {
   all_bib <- new_bib
 }
@@ -123,11 +132,48 @@ extract_doi_from_entry <- function(e) {
   tolower(sub("^https?://doi\\.org/", "", trimws(doi)))
 }
 
-entry_dois <- vapply(seq_along(all_bib), function(i) extract_doi_from_entry(all_bib[i]), character(1))
-all_bib    <- all_bib[!duplicated(entry_dois) | is.na(entry_dois)]
+# Some hand-added entries carry no DOI field, so fall back to the title.
+# Without this they reappear as duplicates every time the pipeline runs.
+extract_title_from_entry <- function(e) {
+  ti <- tryCatch(as.character(e$title), error = function(x) NA_character_)
+  if (is.null(ti) || length(ti) == 0) return(NA_character_)
+  ti <- tolower(trimws(ti))
+  gsub("[^a-z0-9]+", " ", ti)
+}
+
+# An entry is a duplicate if either its DOI or its title has been seen. Both
+# checks are needed: hand-added entries may lack a DOI, so a resolved copy of
+# the same paper would otherwise slip through as a separate entry.
+entry_dois   <- vapply(seq_along(all_bib), function(i) extract_doi_from_entry(all_bib[i]), character(1))
+entry_titles <- vapply(seq_along(all_bib), function(i) extract_title_from_entry(all_bib[i]), character(1))
+
+seen_doi   <- character(0)
+seen_title <- character(0)
+keep       <- integer(0)
+
+for (i in seq_along(all_bib)) {
+  d <- entry_dois[i]
+  t <- entry_titles[i]
+  has_d <- !is.na(d) && nzchar(d)
+  has_t <- !is.na(t) && nzchar(t)
+
+  if ((has_d && d %in% seen_doi) || (has_t && t %in% seen_title)) next
+
+  keep <- c(keep, i)
+  if (has_d) seen_doi   <- c(seen_doi, d)
+  if (has_t) seen_title <- c(seen_title, t)
+}
+
+all_bib <- all_bib[keep]
+
 message(glue("{length(all_bib)} total entries after deduplication."))
 
 # ── Write bib ─────────────────────────────────────────────────────────────────
+
+if (!inherits(all_bib, "BibEntry")) {
+  stop("Refusing to write: all_bib is ", paste(class(all_bib), collapse = "/"),
+       ", not a BibEntry")
+}
 
 RefManageR::WriteBib(all_bib, file = OUTFILE, verbose = FALSE)
 message(glue("\nWritten {length(all_bib)} entries to {OUTFILE}."))

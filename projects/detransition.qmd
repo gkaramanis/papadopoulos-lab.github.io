@@ -1,0 +1,57 @@
+---
+draft: true
+title: "De/retransition and changing care needs"
+description: |
+  A qualitative multicentre study of the experiences and needs of people who have detransitioned, retransitioned or changed direction in their care
+---
+
+<span class="status-badge">Ongoing</span> <span class="listing-tags">Qualitative studies</span>
+
+## In brief
+
+Some people stop gender-affirming treatment, go back to identifying with the sex they were assigned at birth, come to see their gender identity as less important, or start to identify in another way again. We interview people with those experiences to understand what they went through and what they needed from healthcare.
+
+## Why it matters
+
+The words used here are slippery. Detransition and retransition can each mean stopping medical treatment, returning to the sex assigned at birth, or shifting identity in some other direction. Some people distinguish medical detransition, meaning stopping medical treatment, from social detransition, meaning changing the social side of an earlier transition. Retransition is sometimes used for transitioning again after one or more earlier transitions, not necessarily back to the sex assigned at birth. Within all of these groups there may also be people who regret treatments or other steps they took. The literature uses the terms inconsistently, which has caused real confusion.
+
+Debate about gender-affirming care in Sweden, particularly for young people, has been intense in recent years. In February 2022 the National Board of Health and Welfare issued markedly stricter recommendations on hormonal treatment for minors, advising that it be offered only in exceptional cases and otherwise within research. Those recommendations drew on SBU's review of the evidence, which concluded that it is not possible to say how often people change their gender identity, stop treatment, or come to regret it, and which raised concern that the experiences and needs of detransitioned people are largely undocumented.
+
+## What we do
+
+We interview people who have experience of detransition in some form, and analyse what they tell us thematically. The aim is to map experiences and needs first, so that the prevalence of detransition can later be measured systematically.
+
+Better knowledge here matters for care on both sides of a diagnosis: during assessment, and after any gender-affirming treatment has begun.
+
+## For researchers
+
+| | |
+| --- | --- |
+| Design | Qualitative multicentre interview study, thematic analysis |
+| Aim | Map the experiences and needs of people with experience of de/retransition, as groundwork for later prevalence estimation |
+| Presented | Karinsdotter A, Indremo M, Pagoni K, Öster C, Papadopoulos FC. *Studie om de/re/omtransition: en multicenter kvalitativ studie i Sverige.* 15th SFTH conference, Gothenburg, 9–11 November 2022 |
+| Status | TO CHECK — recruitment and analysis status not stated in the source material |
+
+## Team and funding
+
+TO CHECK — the source material names the conference authors but does not state the current team or funding.
+
+## Contact
+
+[fotis.papadopoulos@uu.se](mailto:fotis.papadopoulos@uu.se)
+
+## På svenska
+
+### Kort om studien
+
+Vissa personer avbryter könsbekräftande behandling, återgår till att identifiera sig med det kön de tilldelades vid födseln, upplever att könsidentiteten fått mindre betydelse, eller börjar identifiera sig på ett annat sätt. Vi intervjuar personer med sådana erfarenheter för att förstå vad de varit med om och vad de behövt från vården.
+
+### Varför studien behövs
+
+Detransition och retransition är begrepp som används på olika sätt. Det kan innebära att avbryta medicinsk könsbekräftande behandling, att återgå till att identifiera sig med det kön man tilldelades vid födseln, att könsidentiteten fått mindre betydelse, eller att man börjat identifiera sig på ett annat sätt. Vissa skiljer mellan medicinsk detransition och social detransition. Ibland används också begreppet omtransition, vilket innebär att göra en transition efter att tidigare ha gjort en eller flera, men inte nödvändigtvis tillbaka till det vid födseln tilldelade könet. Inom dessa grupper kan det också finnas individer som ångrar tidigare genomförda behandlingar eller andra steg de tagit.
+
+I Sverige har debatten om den könsbekräftande vården, framför allt för unga, varit intensiv de senaste åren. I februari 2022 kom Socialstyrelsen med nya rekommendationer för hormonell behandling för unga, betydligt striktare än tidigare. De grundar sig bland annat i SBU:s sammanställning av evidensläget, där man konstaterar att det inte går att avgöra hur vanligt det är att personer ändrar sin könsidentitet, avbryter behandlingar eller ångrar den, och där man uttrycker oro för ett stort mörkertal av detransitionerade vars upplevelser och behov inte är kartlagda.
+
+### Så går det till
+
+Vi genomför kvalitativa intervjuer och analyserar dem tematiskt. Syftet är att kartlägga erfarenheter och behov, för att på sikt kunna mäta förekomsten av detransition på ett systematiskt sätt. Ökad kunskap är också viktig för att utveckla den könsbekräftande vården, både under utredning och efter eventuell diagnos och behandling.
