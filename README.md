@@ -33,7 +33,7 @@ The `render:` list in `_quarto.yml` is limited to `.qmd` files so that repositor
 ## TODO
 
 - [ ] Move GitHub Pages to serve from a dedicated `gh-pages` branch instead of `docs/` — avoids hashed filename conflicts when multiple people render locally and push; prerequisite for render-on-push
-- [ ] Add render-on-push GitHub Action (do this after moving to `gh-pages` branch, otherwise local and CI renders will conflict)
+- [ ] Add render-on-push GitHub Action (do this after moving to `gh-pages` branch, otherwise local and CI renders will conflict). It also lets someone add or edit a page entirely in the GitHub web editor, with no clone and no local Quarto, since CI does the rendering. Update the wiki's page-creation guide when that lands, as it currently tells people to clone the repository
 - [ ] Fix PDF links
 - [ ] Add funding as a tag/filter on the Projects page
 - [ ] Add all relevant studies from all team members to the projects pages
