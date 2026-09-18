@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _site
   render:
     # .qmd only, so CLAUDE.md and other repo docs are not published as pages
     - "*.qmd"

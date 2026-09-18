@@ -8,7 +8,11 @@ Neither guide needs any coding. Everything below the line is for whoever maintai
 
 ---
 
-This repository publishes to https://gkaramanis.github.io/papadopoulos-lab.github.io/ through GitHub Pages, from `main` at `/docs`. Rendered output is committed, so a content change means running `quarto render` and committing both the source and `docs/`.
+This repository publishes to https://gkaramanis.github.io/papadopoulos-lab.github.io/ through GitHub Pages.
+
+Pushing to `main` is all it takes. A GitHub Action renders the site and publishes it to the `gh-pages` branch, which is what Pages serves. Built output is no longer committed, so edit the source, push, and the site follows a few minutes later. Nothing in `gh-pages` should ever be edited by hand.
+
+Render locally with `quarto preview` or `quarto render`, which write to `_site/`. That folder is ignored by git.
 
 That URL is temporary. A custom domain, `uppsalatransresearch.se`, is registered and will serve the site once its DNS is configured.
 
@@ -32,8 +36,7 @@ The `render:` list in `_quarto.yml` is limited to `.qmd` files so that repositor
 
 ## TODO
 
-- [ ] Move GitHub Pages to serve from a dedicated `gh-pages` branch instead of `docs/` — avoids hashed filename conflicts when multiple people render locally and push; prerequisite for render-on-push
-- [ ] Add render-on-push GitHub Action (do this after moving to `gh-pages` branch, otherwise local and CI renders will conflict). It also lets someone add or edit a page entirely in the GitHub web editor, with no clone and no local Quarto, since CI does the rendering. Update the wiki's page-creation guide when that lands, as it currently tells people to clone the repository
+- [ ] Rewrite the wiki's page-creation guide: it still tells people to clone the repository and render locally, which CI now does, so a page can be added entirely in the GitHub web editor
 - [ ] Fix PDF links
 - [ ] Add funding as a tag/filter on the Projects page
 - [ ] Add all relevant studies from all team members to the projects pages
