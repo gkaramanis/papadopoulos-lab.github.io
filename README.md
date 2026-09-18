@@ -4,7 +4,9 @@ Quarto website for the Uppsala Transgender Health Research Group.
 
 **Guides for team members:** [Publishing a blog post](../../wiki/Publishing-a-blog-post) · [Updating publications](../../wiki/Updating-publications) · [all wiki pages](../../wiki)
 
-Neither guide needs any coding. The rest of this file is for whoever maintains the site itself.
+Neither guide needs any coding. Everything below the line is for whoever maintains the site itself.
+
+---
 
 This repository publishes to https://gkaramanis.github.io/papadopoulos-lab.github.io/ through GitHub Pages, from `main` at `/docs`. Rendered output is committed, so a content change means running `quarto render` and committing both the source and `docs/`.
 
