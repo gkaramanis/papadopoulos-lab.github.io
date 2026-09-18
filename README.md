@@ -34,6 +34,12 @@ The live navbar is therefore People, Publications, Presentations and Blog.
 
 The `render:` list in `_quarto.yml` is limited to `.qmd` files so that repository documentation is not published as site pages.
 
+## Full-text PDFs
+
+Put a paper's PDF in `articles/`, named `<year>-<first author surname>.pdf`, for example `2025-ozel.pdf`. The publications page finds it by year and surname and adds a PDF link to that entry. Nothing needs to be written into `publications.bib`, and the link is relative, so it survives a change of domain.
+
+Three PDFs currently have no matching entry: `2021-makris.pdf`, `2022-bilal.pdf` and `2022-fransson.pdf`.
+
 ## Linking a paper to its blog post
 
 A blog post can declare the paper it is about by putting its DOI in the front matter:
@@ -46,11 +52,8 @@ The publications page then adds a "Plain-language summary" link to the matching 
 
 ## TODO
 
-- [ ] Rewrite the wiki's page-creation guide: it still tells people to clone the repository and render locally, which CI now does, so a page can be added entirely in the GitHub web editor
-- [ ] Fix PDF links
 - [ ] Add funding as a tag/filter on the Projects page
 - [ ] Add all relevant studies from all team members to the projects pages
 - [ ] All team members to get ORCID IDs and import their full publication history
-- [ ] Delete or replace `update_bib.R` (superseded by `R/fetch_publications.R` and `R/build_bib.R`)
 - [ ] Write the remaining page content and unhide the pages: Projects (Team and Key outputs sections), For Participants, Funding
 - [ ] Set up the custom domain uppsalatransresearch.se — point its DNS at GitHub Pages, set the domain on this repository, commit a `CNAME` file and uncomment its line under `resources` in `_quarto.yml`, and change `site-url` from the temporary `gkaramanis.github.io` host to the domain

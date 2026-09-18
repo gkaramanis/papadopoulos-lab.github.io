@@ -31,7 +31,10 @@ normalise_doi <- function(x) {
 post_files <- list.files("post", pattern = "\\.qmd$", recursive = TRUE, full.names = TRUE)
 
 read_post <- function(path) {
-  lines <- readLines(path, warn = FALSE)
+  # A file can vanish between listing and reading, so never fail the render
+  lines <- tryCatch(readLines(path, warn = FALSE), error = function(e) NULL)
+  if (is.null(lines)) return(NULL)
+
   fence <- which(trimws(lines) == "---")
   if (length(fence) < 2) return(NULL)
   yaml_lines <- lines[(fence[1] + 1):(fence[2] - 1)]
@@ -51,6 +54,24 @@ read_post <- function(path) {
   )
 }
 
+# Full texts live in articles/, named <year>-<first author surname>.pdf.
+# Matching on those two fields keeps the links host-independent, so they
+# survive a move to the custom domain.
+
+fold_accents <- function(x) {
+  y <- iconv(x, to = "ASCII//TRANSLIT")
+  y <- ifelse(is.na(y), x, y)
+  tolower(gsub("[^A-Za-z]", "", y))
+}
+
+article_files <- list.files("articles", pattern = "\\.pdf$")
+article_map <- data.frame(
+  year    = sub("^(\\d{4})-.*$", "\\1", article_files),
+  surname = fold_accents(sub("^\\d{4}-(.*)\\.pdf$", "\\1", article_files)),
+  file    = file.path("articles", article_files),
+  stringsAsFactors = FALSE
+)
+
 post_map <- do.call(rbind, Filter(Negate(is.null), lapply(post_files, read_post)))
 if (is.null(post_map)) post_map <- data.frame(doi = character(), url = character(), title = character())
 ```
@@ -60,7 +81,9 @@ q <- capture.output(print(d, .opts = list(sorting="ydnt", bib.style = "authoryea
 
 index <- length(d)
 current_year <- 9999
-entry_doi <- NA_character_
+entry_doi     <- NA_character_
+entry_year    <- NA_character_
+entry_surname <- NA_character_
 for(i in seq_along(q)){
   to_print <- q[i]
 
@@ -77,7 +100,13 @@ for(i in seq_along(q)){
   if(stringr::str_detect(to_print, "<p><cite>")){
     to_print <- stringr::str_replace(to_print, "<p><cite>", glue::glue("<p><cite>[{index}] "))
     index <- index - 1
-    entry_doi <- NA_character_
+    entry_doi     <- NA_character_
+    entry_year    <- NA_character_
+    entry_surname <- fold_accents(stringr::str_match(to_print, "<cite>\\[[0-9]+\\]\\s+([^,]+),")[, 2])
+  }
+
+  if (is.na(entry_year)) {
+    entry_year <- stringr::str_match(to_print, "\\((20[0-9]{2})\\)")[, 2]
   }
 
   # An entry spans several output lines, so pick the DOI up wherever it falls
@@ -89,11 +118,25 @@ for(i in seq_along(q)){
 
   if (stringr::str_detect(to_print, "</cite>")) {
     hit <- if (!is.na(entry_doi)) which(post_map$doi == entry_doi) else integer(0)
-    if (length(hit) == 1) {
+    # Take the first match: two posts may cover the same paper
+    if (length(hit) >= 1) {
+      hit <- hit[1]
       link <- glue::glue(' <a class="post-link" href="{post_map$url[hit]}">Plain-language summary</a>')
       to_print <- stringr::str_replace(to_print, "</cite>", paste0("</cite>", link))
     }
-    entry_doi <- NA_character_
+
+    pdf_hit <- if (!is.na(entry_year) && !is.na(entry_surname) && nzchar(entry_surname)) {
+      which(article_map$year == entry_year & article_map$surname == entry_surname)
+    } else integer(0)
+    if (length(pdf_hit) >= 1) {
+      pdf_hit <- pdf_hit[1]
+      pdf_link <- glue::glue(' <a class="pdf-link" href="{article_map$file[pdf_hit]}">PDF</a>')
+      to_print <- stringr::str_replace(to_print, "</cite>", paste0("</cite>", pdf_link))
+    }
+
+    entry_doi     <- NA_character_
+    entry_year    <- NA_character_
+    entry_surname <- NA_character_
   }
 
   # outputting

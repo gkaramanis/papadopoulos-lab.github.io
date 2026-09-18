@@ -43,12 +43,21 @@ jobs:
           # The issue form writes each answer under a "### <label>" heading.
           # Labels must match .github/ISSUE_TEMPLATE/dissemination-post.yml
           # exactly, or the section comes out empty.
+          # Blank lines inside an answer are kept, so paragraphs and lists
+          # survive; only the blank lines around the answer are trimmed.
           field() {
             printf '%s' "$ISSUE_BODY" | awk -v h="### $1" '
               $0 == h {flag=1; next}
               /^### / {flag=0}
               flag {print}
-            ' | sed -e 's/^_No response_$//' -e '/^[[:space:]]*$/d'
+            ' | sed -e '/^_No response_$/d' | awk '
+              { lines[NR] = $0 }
+              END {
+                s = 1; while (s <= NR && lines[s] ~ /^[[:space:]]*$/) s++
+                e = NR; while (e >= s && lines[e] ~ /^[[:space:]]*$/) e--
+                for (i = s; i <= e; i++) print lines[i]
+              }
+            '
           }
 
           TITLE=$(field "Title" | head -1)
@@ -58,7 +67,8 @@ jobs:
           FINDINGS=$(field "What did we find?")
           IMPLICATIONS=$(field "What does this mean for the community and healthcare system?")
           SWEDISH=$(field "Swedish version (optional)")
-          DOI=$(field "DOI / publication link" | head -1 | sed -e 's|^https\?://\(dx\.\)\?doi\.org/||' -e 's/^doi://I' | xargs)
+          # -E keeps this working on both GNU and BSD sed
+          DOI=$(field "DOI / publication link" | head -1 | sed -E -e 's|^https?://(dx\.)?doi\.org/||' -e 's|^[Dd][Oo][Ii]:[[:space:]]*||' | xargs)
           AUTHOR=$(field "Author" | head -1)
 
           [ -z "$TITLE" ] && TITLE="$ISSUE_TITLE"
