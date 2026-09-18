@@ -6,9 +6,9 @@ Quarto website for the Uppsala Transgender Health Research Group.
 
 Neither guide needs any coding. The rest of this file is for whoever maintains the site itself.
 
-The live site is https://papadopoulos-lab.github.io, published by GitHub Pages from `main` at `/docs`. Rendered output is committed, so a content change means running `quarto render` and committing both the source and `docs/`.
+This repository publishes to https://gkaramanis.github.io/papadopoulos-lab.github.io/ through GitHub Pages, from `main` at `/docs`. Rendered output is committed, so a content change means running `quarto render` and committing both the source and `docs/`.
 
-A custom domain, `uppsalatransresearch.se`, is registered but not yet serving the site. Its DNS and Pages configuration are still to be set up.
+That URL is temporary. A custom domain, `uppsalatransresearch.se`, is registered and will serve the site once its DNS is configured.
 
 ## Publications pipeline
 
