@@ -60,19 +60,28 @@ body {
 }
 
 .navbar .nav-link.active {
-  color: var(--brand-purple) !important;
+  color: var(--brand-purple-black) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--brand-pink);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.35em;
 }
 
 // Enhanced link styling
+// Links are almost black, close to the ink body text, so the pink
+// underline is what marks them as links
 a {
-  color: var(--brand-purple);
-  text-decoration: none;
+  color: var(--brand-purple-black);
+  text-decoration: underline;
+  text-decoration-color: var(--brand-pink);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
   transition: color 0.3s ease;
 }
 
 a:hover {
   color: var(--brand-purple-dark);
-  text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 
 // Hero section styling
@@ -158,7 +167,7 @@ h2 {
 }
 
 .btn-outline-primary {
-  color: var(--brand-purple);
+  color: var(--brand-purple-black);
   border-color: var(--brand-purple);
 
   &:hover {
@@ -264,7 +273,7 @@ h2 {
   }
 
   a {
-    color: var(--brand-purple);
+    color: var(--brand-purple-black);
 
     &:hover {
       color: var(--brand-purple-dark);

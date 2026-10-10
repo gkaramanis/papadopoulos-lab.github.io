@@ -14,12 +14,15 @@ color:
     ink: "#1f2d3d"           # text, headings; 13.99:1 on white
     pink: "#d94d7b"          # shared stems; rules and accents only
     cyan: "#62cbde"          # the U; decoration only
-    purple: "#9646e0"        # the T bar; links and controls, 4.94:1 on white
+    purple: "#9646e0"        # the T bar; button fills, white text 4.94:1
     orange: "#eb9135"        # the H; decoration only
     teal: "#2a9d8f"          # the R; borders and fills behind dark text
 
     # Shades for text and controls
-    purple-dark: "#7434b5"   # hover, white text 7.24:1
+    purple-black: "#2e1747"  # links and other purple text, 15.79:1 on white;
+                             # only 1.13:1 against ink text, so links carry a
+                             # pink underline
+    purple-dark: "#7434b5"   # link hover, button hover, 7.24:1 on white
     teal-dark: "#1f7c71"     # badge fill and teal text, 5.02:1
     muted: "#56616e"         # secondary text, 6.3:1 on white
     pink-tint: "#fbe6ee"     # tag background, ink text 11.76:1
@@ -38,7 +41,7 @@ color:
   info: purple
   light: "#ffffff"
   dark: ink
-  link: purple
+  link: purple-black
 
 typography:
   fonts:
@@ -68,7 +71,7 @@ typography:
     color: ink
 
   link:
-    color: purple
+    color: purple-black
 
   monospace:
     family: "SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace"
