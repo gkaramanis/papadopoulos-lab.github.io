@@ -40,8 +40,6 @@ The `render:` list in `_quarto.yml` is limited to `.qmd` files so that repositor
 
 Put a paper's PDF in `articles/`, named `<year>-<first author surname>.pdf`, for example `2025-ozel.pdf`. The publications page finds it by year and surname and adds a PDF link to that entry. Nothing needs to be written into `publications.bib`, and the link is relative, so it survives a change of domain.
 
-Three PDFs currently have no matching entry: `2021-makris.pdf`, `2022-bilal.pdf` and `2022-fransson.pdf`.
-
 ## Linking a paper to its blog post
 
 A blog post can declare the paper it is about by putting its DOI in the front matter:
