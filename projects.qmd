@@ -87,6 +87,21 @@ Interviews with relatives of people undergoing clinical evaluation for gender dy
 
 :::
 
+:::{.project-card data-status="Ongoing" data-topics='["Method development"]'}
+
+```{=html}
+<h3 style="margin-bottom: 0.5rem;"><a href="projects/core-outcome-set.html">A core outcome set for gender-affirming healthcare</a></h3>
+<span class="status-badge">Ongoing</span>
+```
+
+Agreeing, with patients, clinicians and researchers, which outcomes every study of gender-affirming treatment for adults in Sweden should measure.
+
+<span class="listing-tags">Method development</span>
+
+[Read more →](projects/core-outcome-set.html)
+
+:::
+
 :::{.project-card data-status="Ongoing" data-topics='["Method development","Tools"]'}
 
 ```{=html}

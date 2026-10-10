@@ -1,0 +1,44 @@
+---
+draft: true
+title: "A core outcome set for gender-affirming healthcare"
+description: |
+  Agreeing which outcomes every study of gender-affirming treatment for adults in Sweden should measure
+---
+
+<span class="status-badge">Ongoing</span> <span class="listing-tags">Method development</span>
+
+## In brief
+
+Studies of gender-affirming treatment measure many different things, in many different ways, so their results are hard to compare or combine. Together with transgender and gender diverse people, clinicians, researchers and policy-makers, we are agreeing on a short list of outcomes that every study of gender-affirming treatment for adults in Sweden should measure.
+
+## Why it matters
+
+Research on the outcomes of gender-affirming treatment has grown in recent years, but the evidence behind current recommendations is still weak. One reason is that studies choose different outcomes and measure them with different instruments. A core outcome set is an agreed minimum that every study reports, so that future studies can be compared and pooled.
+
+## What we do
+
+The work follows the recommendations of the Core Outcome Measures in Effectiveness Trials (COMET) initiative and runs in four phases.
+
+1. We review the published research and international guidelines on gender-affirming treatment to list the outcomes already in use.
+2. We ask transgender and gender diverse people which outcomes matter to them, through reports from patient and interest organisations and an anonymous survey.
+3. Researchers, healthcare professionals, policy-makers and transgender and gender diverse adults rate each outcome by importance over two or three rounds of a Delphi survey.
+4. A consensus meeting with representatives of every group agrees the final set.
+
+## What we have found
+
+## For researchers
+
+- **Design:** core outcome set development following COMET guidance. Umbrella review, stakeholder survey, two to three Delphi rounds and a consensus meeting
+- **Population:** transgender and gender diverse adults receiving gender-affirming treatment in Sweden
+- **Analysis:** survey responses are analysed interpretively to identify candidate outcomes. Likert-type ratings are aggregated in each Delphi round to decide which outcomes advance
+- **Ethics:** Swedish Ethical Review Authority, registration number 2024-04672-01
+- **Registration:** COMET registration number 3223
+- **Protocol:** Dahlén et al. (2025), *BMJ Open* 15(7):e098300. [doi:10.1136/bmjopen-2024-098300](https://doi.org/10.1136/bmjopen-2024-098300)
+
+## Team and funding
+
+## Contact
+
+[fotis.papadopoulos@uu.se](mailto:fotis.papadopoulos@uu.se)
+
+## På svenska
