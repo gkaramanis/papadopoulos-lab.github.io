@@ -1,81 +1,74 @@
+# The UTHR monogram, pink and ink version: the one made for white
+# backgrounds such as the navbar
 logo:
-  small: resources/logo-pastel.png
-  medium: resources/logo-pastel.png
-  large: resources/logo-pastel.png
+  small: resources/logo-uthr.svg
+  medium: resources/logo-uthr.svg
+  large: resources/logo-uthr.svg
 
+# Colours from the UTHR monogram. Text and controls use only pairs that
+# reach 4.5:1 on their background; pink, cyan and orange are too light for
+# text on white and appear as rules and tints.
 color:
   palette:
-    # Primary brand colors
-    pale-gray: "#f0f0f0"
-    dark-gray: "#e0e0e0"
-    
-    # Text colors
-    black: "#000000"
-    light-black: "#333333"
-    medium-gray: "#707070"
-    
-    # Accent colors
-    orange: "#e76f51"      # Orange (primary action)
-    teal: "#2a9d8f"        # Teal/green (secondary action)
-    
-    # Interactive colors
-    blue: "#2f6f9f"        # Link color
-    dark-blue: "#1f4f73"   # Link hover
-    
-    # Navigation & header colors
-    header-green: "#22863a"
-    bright-orange: "#ff8c42"
-    nav-gray: "#1f2d3d"
-    
-    # Component colors
-    border-gray: "#ededed"
-    light-bg: "#f8f9fa"
-    footer-bg: "#f7f7f7"
-    research-bg: "#fef6f2"
-    
-    # Button hover states
-    orange-hover: "#c85f45"
-    teal-hover: "#1f7c71"
-  
-  # Semantic theme colors (Bootstrap standard names)
-  foreground: black
+    # The monogram
+    ink: "#1f2d3d"           # text, headings; 13.99:1 on white
+    pink: "#d94d7b"          # shared stems; rules and accents only
+    cyan: "#62cbde"          # the U; decoration only
+    purple: "#9646e0"        # the T bar; links and controls, 4.94:1 on white
+    orange: "#eb9135"        # the H; decoration only
+    teal: "#2a9d8f"          # the R; borders and fills behind dark text
+
+    # Shades for text and controls
+    purple-dark: "#7434b5"   # hover, white text 7.24:1
+    teal-dark: "#1f7c71"     # badge fill and teal text, 5.02:1
+    muted: "#56616e"         # secondary text, 6.3:1 on white
+    pink-tint: "#fbe6ee"     # tag background, ink text 11.76:1
+    surface: "#f6f7f9"       # footer and quiet panels
+    line: "#e3e7ec"          # card borders and dividers
+    chip: "#eef1f4"          # inactive filter buttons
+
+  foreground: ink
   background: "#ffffff"
-  primary: orange
-  secondary: medium-gray
-  tertiary: teal
-  success: teal
+  primary: purple
+  secondary: muted
+  tertiary: teal-dark
+  success: teal-dark
   warning: orange
-  danger: orange
-  info: blue
+  danger: pink
+  info: purple
   light: "#ffffff"
-  dark: black
+  dark: ink
+  link: purple
 
 typography:
   fonts:
-    - family: Inter
+    - family: Fixel Text
       source: file
       files:
-        - path: resources/fonts/Inter-Regular.otf
-        - path: resources/fonts/Inter-Bold.otf
+        - path: resources/fonts/FixelText-Regular.woff2
+          weight: 400
+        - path: resources/fonts/FixelText-SemiBold.woff2
+          weight: 600
+        - path: resources/fonts/FixelText-Bold.woff2
           weight: 700
-        - path: resources/fonts/Inter-Italic.otf
-          style: italic
-    - family: Space Grotesk
+    - family: Fixel Display
       source: file
       files:
-        - path: resources/fonts/SpaceGrotesk-Regular.ttf
-        - path: resources/fonts/SpaceGrotesk-Bold.ttf
+        - path: resources/fonts/FixelDisplay-Bold.woff2
           weight: 700
-  
+
   base:
-    family: Inter
+    family: Fixel Text
     size: 16px
     line-height: 1.6
-  
+
   headings:
-    family: Space Grotesk
-    weight: 600
-    color: black
-  
+    family: Fixel Display
+    weight: 700
+    color: ink
+
+  link:
+    color: purple
+
   monospace:
     family: "SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace"

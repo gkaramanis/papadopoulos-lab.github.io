@@ -30,23 +30,23 @@ body {
 .navbar {
   box-shadow: none;
   background-color: #ffffff;
-  border-bottom: 3px solid #22863a;
+  border-bottom: 3px solid var(--brand-pink);
   padding: 0.25rem 0 !important;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Fixel Display", sans-serif;
   font-size: larger;
 }
 
 .navbar .nav-link {
-  color: #1f2d3d;
+  color: var(--brand-ink);
   font-size: 1rem;
 }
 
 .navbar-brand {
-  color: #ff8c42 !important;
+  color: var(--brand-ink) !important;
   display: flex !important;
   align-items: center !important;
   gap: 0.5rem !important;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Fixel Display", sans-serif;
 }
 
 .navbar-brand img {
@@ -60,18 +60,18 @@ body {
 }
 
 .navbar .nav-link.active {
-  color: #ff8c42 !important;
+  color: var(--brand-purple) !important;
 }
 
 // Enhanced link styling
 a {
-  color: #2f6f9f;
+  color: var(--brand-purple);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #1f4f73;
+  color: var(--brand-purple-dark);
   text-decoration: underline;
 }
 
@@ -114,7 +114,7 @@ a:hover {
 }
 
 #hero-heading h1 {
-  color: #000000;
+  color: var(--brand-ink);
   margin-bottom: 1.5rem;
 }
 
@@ -124,8 +124,8 @@ p, ul, ol {
 
 // Section headers
 h1, h2, h3, h4, h5, h6 {
-  color: #000000;
-  font-weight: 600;
+  color: var(--brand-ink);
+  font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -136,41 +136,41 @@ h2 {
 
 // Button styling
 .btn-primary {
-  background-color: #e76f51;
-  border-color: #e76f51;
+  background-color: var(--brand-purple);
+  border-color: var(--brand-purple);
 
   &:hover {
-    background-color: #c85f45;
-    border-color: #c85f45;
+    background-color: var(--brand-purple-dark);
+    border-color: var(--brand-purple-dark);
   }
 }
 
 .btn-secondary {
-  background-color: #2a9d8f;
-  border-color: #2a9d8f;
+  background-color: var(--brand-teal-dark);
+  border-color: var(--brand-teal-dark);
   color: #ffffff;
 
   &:hover {
-    background-color: #1f7c71;
-    border-color: #1f7c71;
+    background-color: var(--brand-ink);
+    border-color: var(--brand-ink);
     color: #ffffff;
   }
 }
 
 .btn-outline-primary {
-  color: #2a9d8f;
-  border-color: #2a9d8f;
+  color: var(--brand-purple);
+  border-color: var(--brand-purple);
 
   &:hover {
-    background-color: #2a9d8f;
-    border-color: #2a9d8f;
+    background-color: var(--brand-purple);
+    border-color: var(--brand-purple);
     color: #ffffff;
   }
 }
 
 // Card styling for team members
 .team-member {
-  background: #f8f9fa;
+  background: var(--brand-surface);
   border-radius: $component-border-radius-sm;
   padding: 1.5rem;
   margin-bottom: 2rem;
@@ -179,7 +179,7 @@ h2 {
 
 // Card styling for projects
 .project-card {
-  border: 1px solid #ededed;
+  border: 1px solid var(--brand-line);
   background: #ffffff;
   border-radius: $component-border-radius;
   padding: 1.5rem;
@@ -194,14 +194,14 @@ h2 {
 
   h3 {
     margin-top: 0;
-    color: #000000;
+    color: var(--brand-ink);
   }
 }
 
 // Research area highlighting
 .research-area {
-  background: linear-gradient(150deg, #fef6f2 0%, #ffffff 100%);
-  border: 1px solid rgba(231, 111, 81, 0.2);
+  background: linear-gradient(150deg, var(--brand-pink-tint) 0%, #ffffff 100%);
+  border: 1px solid rgba(217, 77, 123, 0.2);
   border-radius: $component-border-radius-sm;
   padding: 0.5rem;
   margin: 0.5rem 0;
@@ -250,9 +250,9 @@ h2 {
 
 // Footer styling
 .page-footer {
-  background-color: #f7f7f7;
-  color: #000000;
-  border-top: 3px solid #2a9d8f;
+  background-color: var(--brand-surface);
+  color: var(--brand-ink);
+  border-top: 3px solid var(--brand-pink);
   padding: 1.5rem 0;
   margin-top: 3rem;
   text-align: center;
@@ -264,21 +264,21 @@ h2 {
   }
 
   a {
-    color: #2f6f9f;
+    color: var(--brand-purple);
 
     &:hover {
-      color: #1f4f73;
+      color: var(--brand-purple-dark);
     }
   }
 }
 
 // Utility classes
 .accent-orange {
-  color: #e76f51;
+  color: var(--brand-orange);
 }
 
 .accent-green {
-  color: #2a9d8f;
+  color: var(--brand-teal-dark);
 }
 
 // Status badges and tags
@@ -288,7 +288,7 @@ h2 {
   font-size: 0.8rem;
   font-weight: 600;
   color: #ffffff;
-  background-color: #2a9d8f;
+  background-color: var(--brand-teal-dark);
   padding: 0.2rem 0.55rem;
   border-radius: 999px;
   text-transform: uppercase;
@@ -298,16 +298,15 @@ h2 {
 .listing-tags,
 .listing-categories {
   font-size: 0.85rem;
-  color: #707070;
-  background-color: #e76f51;
+  background-color: var(--brand-pink-tint);
   border-radius: 999px;
-  color: #ffffff;
+  color: var(--brand-ink);
   padding: 0.2rem 0.55rem;
 }
 
 // Profile cards
 .profile-card {
-  border: 1px solid #ededed;
+  border: 1px solid var(--brand-line);
   background: #ffffff;
   border-radius: $component-border-radius;
   padding: 1.5rem;
@@ -331,7 +330,7 @@ h2 {
   }
 
   .profile-role {
-    color: #707070;
+    color: var(--brand-muted);
     font-size: 0.9rem;
     margin-bottom: 0.75rem;
     font-weight: normal;
@@ -362,7 +361,7 @@ h2 {
 
 // Quarto listing cards
 .quarto-listing .card {
-  border: 1px solid #ededed;
+  border: 1px solid var(--brand-line);
   border-radius: $component-border-radius;
   box-shadow: $card-shadow;
   padding: 1.5rem;
@@ -371,7 +370,7 @@ h2 {
   flex-direction: column;
 
   .card-title {
-    color: #000000;
+    color: var(--brand-ink);
     font-weight: 600;
     margin-bottom: 0.5rem;
   }
@@ -384,7 +383,7 @@ h2 {
   .card-attribution {
     font-weight: normal;
     font-size: 0.9rem;
-    color: #707070;
+    color: var(--brand-muted);
     margin-top: auto;
     padding-top: 0.75rem;
   }
@@ -432,7 +431,7 @@ cite {
 
 .filter-label {
   font-size: 0.85rem;
-  color: #707070;
+  color: var(--brand-muted);
   font-weight: 600;
   width: 3.5rem;
   flex-shrink: 0;
@@ -442,9 +441,9 @@ cite {
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #707070;
-  background-color: #f0f0f0;
-  border: 1px solid #e0e0e0;
+  color: var(--brand-muted);
+  background-color: var(--brand-chip);
+  border: 1px solid var(--brand-line);
   padding: 0.2rem 0.65rem;
   border-radius: 999px;
   cursor: pointer;
@@ -453,13 +452,13 @@ cite {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 
   &:hover {
-    background-color: #e0e0e0;
+    background-color: var(--brand-line);
   }
 
   &.active {
-    background-color: #2a9d8f;
+    background-color: var(--brand-purple);
     color: #ffffff;
-    border-color: #2a9d8f;
+    border-color: var(--brand-purple);
   }
 }
 
@@ -468,17 +467,17 @@ cite {
   display: inline-block;
   margin-left: 0.4rem;
   padding: 0.05rem 0.5rem;
-  border: 1px solid #2a9d8f;
+  border: 1px solid var(--brand-teal);
   border-radius: 999px;
   font-size: 0.8rem;
   line-height: 1.5;
-  color: #1f7c71;
+  color: var(--brand-teal-dark);
   text-decoration: none;
   white-space: nowrap;
 }
 
 .post-link:hover {
-  background: #2a9d8f;
+  background: var(--brand-teal-dark);
   color: #ffffff;
 }
 
@@ -487,16 +486,16 @@ cite {
   display: inline-block;
   margin-left: 0.4rem;
   padding: 0.05rem 0.5rem;
-  border: 1px solid #707070;
+  border: 1px solid var(--brand-muted);
   border-radius: 999px;
   font-size: 0.8rem;
   line-height: 1.5;
-  color: #333333;
+  color: var(--brand-ink);
   text-decoration: none;
   white-space: nowrap;
 }
 
 .pdf-link:hover {
-  background: #333333;
+  background: var(--brand-ink);
   color: #ffffff;
 }
