@@ -75,4 +75,12 @@ Gender Identity Clinic, Malmö & Medical Faculty, Lund University\
 
 Malena Forsare is a clinical psychologist at the Gender Identity Clinic in Malmö and a PhD student at the Medical Faculty at Lund University. Her research examines gender detransition from multiple perspectives, with a focus on experiences in a Nordic context. Two of the studies in her doctoral thesis are conducted in collaboration with the Uppsala Transgender Health Research Group.
 :::
+::: {.profile-card}
+![](https://api.dicebear.com/9.x/pixel-art/png?seed=ulrika){.profile-img}<br>
+<span class="profile-title">Ulrika Beckman</span>\
+<span class="profile-role">Specialist in Clinical Adult Psychology, Master in Liberal Arts, PhD Candidate</span>\
+Child and Adolescent Psychiatry, Region Halland & Institute of Clinical Sciences, University of Gothenburg\
+
+Ulrika is doing research at the Plastic Surgery Department in Sahlgrenska University Hospital in Gothenburg. Her thesis investigates clinical aspects of the public trans care in Sweden in an epistemologically changing landscape. One of the studies in her thesis is conducted in collaboration with the Uppsala Transgender Health Research Group.
+:::
 :::
